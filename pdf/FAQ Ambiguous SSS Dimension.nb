@@ -1,0 +1,432 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     19443,        424]
+NotebookOptionsPosition[     16367,        380]
+NotebookOutlinePosition[     16767,        396]
+CellTagsIndexPosition[     16724,        393]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.8159227950159807`*^9, 3.815922857230071*^9}, {
+   3.832959057462519*^9, 3.8329590603471575`*^9}, 3.938448124213293*^9, {
+   3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
+   3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
+   3.9390507275600243`*^9, 3.93905072931427*^9}},
+ CellLabel->"In[16]:=",ExpressionUUID->"1769368b-7ecb-4841-bfa7-9951cdf6f61b"],
+
+Cell["\<\
+An exciting and not well understood development is that sometimes the \
+dimensionality tests give differing results.\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.940425006958658*^9}},ExpressionUUID->"2bbec906-d1fb-4cb8-a07b-\
+1342f183039f"],
+
+Cell["First type:  either 2-d or exponential", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.940425008942815*^9}},ExpressionUUID->"000301de-4458-49b9-88e5-\
+a5ede36c3f83"],
+
+Cell[TextData[{
+ StyleBox["DistanceTally",
+  FontSlant->"Italic"],
+ " considers the network to be two-dimensional, but all other tests (and a \
+visual inspection) call it exponential.  There is severe delay in completing \
+one side of the network, and apparent bunching on the other, but plotting all \
+nodes a distance ",
+ StyleBox["n",
+  FontSlant->"Italic"],
+ " from the origin does result in a flat network."
+}], "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250288210497`*^9}},ExpressionUUID->"06c6273b-5a13-4aeb-b13e-\
+c73458465dd3"],
+
+Cell["(insert example here)", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250306488013`*^9}},ExpressionUUID->"6346f8a5-78f7-4564-a78b-\
+7f8f0fb1a9af"],
+
+Cell["Second type:  either 2-d or 1-d", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250342228394`*^9}},ExpressionUUID->"90e31cf1-e9c6-431a-92c4-\
+873339400d6d"],
+
+Cell[TextData[{
+ StyleBox["DistanceTally",
+  FontSlant->"Italic"],
+ " reports 1-d, others 2-d.  Example:  403701: {\"AB\"->\"BA\", \"\"->\"AB\"} \
+: 1x2"
+}], "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.940425047589609*^9}},ExpressionUUID->"743b8c89-9625-48a8-861a-\
+22d8981a5cb1"],
+
+Cell["\<\
+The problem here is that only nodes 1, 4, 8, 13, 19, 26, 34, 43, 53, \
+\[Ellipsis], can be reached from the origin (node 1), so all other nodes are \
+by definition \[Infinity] steps away.  \
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250537806644`*^9}},ExpressionUUID->"097dadf7-85b9-41c3-a054-\
+55a77c2e4a0d"],
+
+Cell["In[266]:= $SSSDistance", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250567001457`*^9}},ExpressionUUID->"32c22eb3-f914-4938-a766-\
+41a4ae3a9cee"],
+
+Cell["\<\
+Out[266]= {0, \[Infinity], \[Infinity], 1, \[Infinity], \[Infinity], \
+\[Infinity], 2, \[Infinity], \[Infinity], \[Infinity], \[Infinity], 3, \
+\[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], 4, \
+\[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \
+5, \[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \
+\[Infinity], \[Infinity], 6, \[Infinity], \[Infinity], \[Infinity], \
+\[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], 7, \
+\[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \
+\[Infinity], \[Infinity], \[Infinity], 8, \[Infinity], \[Infinity], \
+\[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \[Infinity], \
+\[Infinity], \[Infinity], 9}\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.940425063412858*^9}},ExpressionUUID->"f4f35df0-58c1-4f4c-aed5-\
+c84c5c12681e"],
+
+Cell["\<\
+Should we revise the definition of dimension to treat all links in the causal \
+network as bidirectional, for the purposes of \"distance from origin\"?  But \
+the direction of the arrows is the local direction of time flow, so this \
+really is a case of \"you can't get there from here\".    But of course other \
+tests say 2-d, since the network can be contained in the plane but not on a \
+line without bunching up nodes.\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250744847937`*^9}},ExpressionUUID->"95a2df68-c7b5-405f-a00d-\
+eb950f210b3d"],
+
+Cell["Thoughts, anyone?", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.940425077658951*^9}},ExpressionUUID->"1a3c02a9-fd31-404e-acd6-\
+f9f70a3976c1"],
+
+Cell["\<\
+Lucas has emailed some thoughts, some of which definitely apply here, others \
+we may decide to move to different pages:\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250824426575`*^9}},ExpressionUUID->"22941206-1803-4d2e-a4bd-\
+6a2ac87345d8"],
+
+Cell["\<\
+Prof. Caviness has previously discussed time in the causal network template \
+within two contexts: 
+-          Microtime :: :: enumeration sequence
+-          Macrotime :: :: network model\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 
+  3.9404250900583315`*^9}},ExpressionUUID->"e01dd938-ff0a-49a4-be1a-\
+dcb9d8421a7c"],
+
+Cell["\<\
+Original depiction. Pending upload.
+Tentative illustration (requires revision). See attached. \
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, 
+   3.940425093429228*^9},ExpressionUUID->"4d89f851-6621-4581-b1c2-\
+baaf2b7c4544"],
+
+Cell["\<\
+[Note: Microtime is indicated here by the network edges (links), with the \
+direction of time flow always going from the smaller number to the larger \
+number. Two alternative macrotimes (observer-dependent) are shown by the \
+unprimed and prime (purple and yellow) clumping.  The only restriction on the \
+position of the macrotime divisions is that no arrows may go backwards, from \
+\"later\" to \"earlier\" times, and thus causality is still guaranteed. It is \
+interesting that in special relativity causality is also preserved. --kc]\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+  3.940425095337884*^9, 
+  3.940425102499432*^9}},ExpressionUUID->"9cb7b7eb-94c1-4737-999e-\
+0567ee5f6575"],
+
+Cell[TextData[{
+ "Einstein forced physics to consider the observer. Lorentz's math redefined \
+the perception of ",
+ StyleBox["simultaneity",
+  FontSlant->"Italic"],
+ ". Time dilation is observable for speeds at or exceeding (0.1) c; so is a \
+linear treatment of time necessarily appropriate? All physical order seems \
+reducible to the simple harmonic oscillator archetype, such as, ex. the \
+valence superposition of electrons in molecular bonding. Time inherently \
+confers a quality of ",
+ StyleBox["periodicity",
+  FontSlant->"Italic"],
+ ", so can we treat time as a harmonic oscillator with an equilibrium \
+position that can be stretched within limits of the maximum wave amplitude? \
+In context to the node-of-origin inaccessibility proposed by Prof. Caviness \
+\[Dash] can the margins of the amplitude, ",
+ StyleBox["if exceeded",
+  FontWeight->"Bold"],
+ ", correlate to an authentic past and unattainable temporal ",
+ StyleBox["frame of reference",
+  FontSlant->"Italic"],
+ ", as opposed to a spatial constraint? "
+}], "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+  3.940425095337884*^9, 3.940425097933906*^9}, {3.9404251313290544`*^9, 
+  3.940425133325853*^9}},ExpressionUUID->"777e6d50-31f5-4271-9595-\
+92376ba15e17"],
+
+Cell["\<\
+In regard to application of n-dimensionality 'tests': can tests be applied to \
+localized segments of a network or are tests always run on the entire \
+network? This is where my knowledge deficit is most evident.. The algorithms \
+are formulated based on the (linear?) enumeration sequence to manipulate \
+node-encoding components, but not necessarily in consideration of the \
+structural orientation of the causal network model, which is deferred to \
+visual inspection?\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+  3.940425095337884*^9, 3.940425097933906*^9}, {3.9404251392288074`*^9, 
+  3.94042513978412*^9}},ExpressionUUID->"6275397c-f987-46d7-83e4-\
+dc8d5da14460"],
+
+Cell["\<\
+The discrepant ambiguity in dimensionality analysis test results are \
+condensed to either, (1) operator experimental error (programming conflict) \
+or, to infer upon the motives of Caviness introjecting this inquiry, (2) \
+there exists inherent dimensionality-uncertainty in the physical nature of \
+the network \[Dash] credit to Heisenberg. \
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+  3.940425095337884*^9, 3.940425097933906*^9}, {3.9404251392288074`*^9, 
+  3.940425145576308*^9}},ExpressionUUID->"95b8a72f-a49d-4a2e-9dba-\
+f9d97e2bf50b"],
+
+Cell[TextData[{
+ "Regarding causal network mechanics, should the connectivity ",
+ StyleBox["fabric",
+  FontSlant->"Italic"],
+ " be treated as a static, immobile entity or does the network stretch, bend, \
+vibrate, fold, or hold properties of elasticity and malleability? ",
+ StyleBox["Something",
+  FontSlant->"Italic"],
+ " will eventually perturb the network state, maybe? The configuration of \
+nodes and connectivity of events conferring the fundamental enumeration \
+schemes can remain constant while experiencing conformational transformations \
+(analogous to oscillating about an equilibrium position, or cyclohexane \
+transitions between conformer states), correct? How else can \
+macrotime-dependent causal violations be avoided \[Dash] or is it solely the \
+orientation plane of the observer that changes?"
+}], "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+  3.940425095337884*^9, 3.940425097933906*^9}, {3.9404251392288074`*^9, 
+  3.9404251685242434`*^9}},ExpressionUUID->"920f2729-01a3-41d7-9baa-\
+c61b09ef60df"],
+
+Cell[TextData[{
+ "What is the nature of the conflict proposed by Prof. Caviness? The concept \
+of network-origin inaccessibility to certain nodes: is the premise of \
+'permitted conditions' or 'violation of causality' appropriate? Is this what \
+is meant by \"you can't get there from here\"? Is this equivalent to \"that \
+has already happened, you can't experience that anymore\"? Is the spatial \
+inaccessibility of certain nodes to the site-of-origin purely a matter of ",
+ StyleBox["linear",
+  FontSlant->"Italic"],
+ " conflict? "
+}], "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.940425206752109*^9, 
+   3.940425208735731*^9}},ExpressionUUID->"824e804a-d46e-446e-aaf6-\
+1d4e78bc9b93"],
+
+Cell[TextData[{
+ "If infinite-distance (inaccessible) nodes relative to the origin have \
+imposed their ruleset-determined changes in a ",
+ StyleBox["past",
+  FontSlant->"Italic"],
+ "-macrotime, and as the origin ",
+ StyleBox["inertial frame",
+  FontSlant->"Italic"],
+ " observer is not necessarily bothered by simultaneous events, what \
+significance is there to inquire upon spatial incongruity of the network \
+vector space? The thought requires attention to dimensional homogeneity \
+within the network architecture, as such, is the network required to maintain \
+constant dimensional character throughout its corporeal entirety? What if \
+focal (network) segments retain unique dimensional features while \
+cumulatively contributing \[Dash] ultimately \[Dash] to the downstream \
+dimensional manifold destined by ruleset enumeration? High node-densities in \
+the reduced dimensional plane correspond to distinctive facets of an \
+incomplete or dysmorphic network, or perhaps a network that has yet to reveal \
+its existential essence, and, if in fact, therein involves a kinetic destiny, \
+could the motion correct the dimensional incongruity?\nIs the node density on \
+a two-dimensional plane representative of the tensor character in a \
+three-dimensional coordinate axis? "
+}], "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252252901382`*^9, 
+   3.9404252281881466`*^9}},ExpressionUUID->"9dacd35e-cc7f-4041-bff6-\
+dbccc7c3548b"],
+
+Cell["\<\
+Further, Prof. Caviness has discussed 'edge'-effects, or unique localized \
+nodal distributions partial to network boundaries. Edges are reasonably \
+synonymous with surfaces, and surfaces innately hold some degree of curvature \
+(a straight mirror nonetheless is thought to be a convex surface), so do the \
+dimensionality tests require modification if evaluating a surface-edge \
+region? Do network boundaries have spatial privileges, such as to access the \
+nodes that seem illogically out of reach to our frame of reference?\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252303198757`*^9, 
+   3.940425232709272*^9}},ExpressionUUID->"bc1d9821-0bec-441c-91c5-\
+ba9250da005a"],
+
+Cell["\<\
+\"Drew wondered whether there could be a closed loop in a network.  \
+Preliminary answer:  No, since the causal arrows always point toward \
+higher-numbered nodes.\"\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252369136934`*^9, 
+   3.94042523881664*^9}},ExpressionUUID->"31af865c-1f35-43b6-8b1c-\
+18295d1166fd"],
+
+Cell["\<\
+This exact question I have struggled with as well. Can the network not \
+collapse into itself or shift its growth trajectory back towards the origin \
+which can interfere with previously arranged network components? Can the \
+network introduce \"creation\" events upon a voxel of which the territory is \
+saturated by former node occupancy?\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.940425241533665*^9, 
+   3.94042524282199*^9}},ExpressionUUID->"65e188ad-8f1e-463d-9306-\
+bba09168af12"],
+
+Cell["Random:", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252450577316`*^9, 
+   3.9404252465039177`*^9}},ExpressionUUID->"46fc6a3c-5f85-4fc1-a37e-\
+024f81c9d43c"],
+
+Cell["\<\
+(Invalid/rhetorical) Is frequency, or the oscillatory properties of the \
+fundamental quantum fields, the absolute invariance in the physical world? \
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252515964193`*^9, 
+   3.9404252518354564`*^9}},ExpressionUUID->"4b5508cd-007d-4d07-8f1e-\
+aa14efc950b6"],
+
+Cell["\<\
+Can dimensionality be defined in terms of a frequency parameter?\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252515964193`*^9, 
+   3.940425253622713*^9}},ExpressionUUID->"2741ab48-8a00-4bad-a086-\
+19f54d93ef73"],
+
+Cell["\<\
+Are there rulesets that impose node-character exchanges on two separate \
+segments of the string within a single event-node?
+ \
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252515964193`*^9, 
+   3.940425255762382*^9}},ExpressionUUID->"9e03c934-c65c-4c1a-b04d-\
+b0de9a67d175"],
+
+Cell["\<\
+Thank you for any time spent reading these words.
+-lv
+\
+\>", "Text",
+ CellChangeTimes->{{3.940424979364294*^9, 3.940425062688126*^9}, {
+   3.940425095337884*^9, 3.940425097933906*^9}, 3.9404251392288074`*^9, {
+   3.9404252515964193`*^9, 
+   3.940425253394769*^9}},ExpressionUUID->"f0476427-2fa7-499f-9a9e-\
+464e2f94461f"]
+},
+WindowSize->{479, 472},
+WindowMargins->{{Automatic, -5}, {Automatic, 0}},
+FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a73e1df1-3336-4697-a2b7-3ffb82c21134"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 713, 14, 83, "Input",ExpressionUUID->"1769368b-7ecb-4841-bfa7-9951cdf6f61b",
+ InitializationCell->True],
+Cell[1274, 36, 266, 6, 58, "Text",ExpressionUUID->"2bbec906-d1fb-4cb8-a07b-1342f183039f"],
+Cell[1543, 44, 180, 3, 35, "Text",ExpressionUUID->"000301de-4458-49b9-88e5-a5ede36c3f83"],
+Cell[1726, 49, 552, 13, 150, "Text",ExpressionUUID->"06c6273b-5a13-4aeb-b13e-c73458465dd3"],
+Cell[2281, 64, 165, 3, 35, "Text",ExpressionUUID->"6346f8a5-78f7-4564-a78b-7f8f0fb1a9af"],
+Cell[2449, 69, 175, 3, 35, "Text",ExpressionUUID->"90e31cf1-e9c6-431a-92c4-873339400d6d"],
+Cell[2627, 74, 291, 8, 58, "Text",ExpressionUUID->"743b8c89-9625-48a8-861a-22d8981a5cb1"],
+Cell[2921, 84, 341, 7, 81, "Text",ExpressionUUID->"097dadf7-85b9-41c3-a054-55a77c2e4a0d"],
+Cell[3265, 93, 166, 3, 35, "Text",ExpressionUUID->"32c22eb3-f914-4938-a766-41a4ae3a9cee"],
+Cell[3434, 98, 912, 15, 104, "Text",ExpressionUUID->"f4f35df0-58c1-4f4c-aed5-c84c5c12681e"],
+Cell[4349, 115, 575, 10, 173, "Text",ExpressionUUID->"95a2df68-c7b5-405f-a00d-eb950f210b3d"],
+Cell[4927, 127, 159, 3, 35, "Text",ExpressionUUID->"1a3c02a9-fd31-404e-acd6-f9f70a3976c1"],
+Cell[5089, 132, 272, 6, 81, "Text",ExpressionUUID->"22941206-1803-4d2e-a4bd-6a2ac87345d8"],
+Cell[5364, 140, 340, 8, 104, "Text",ExpressionUUID->"e01dd938-ff0a-49a4-be1a-dcb9d8421a7c"],
+Cell[5707, 150, 267, 6, 58, "Text",ExpressionUUID->"4d89f851-6621-4581-b1c2-baaf2b7c4544"],
+Cell[5977, 158, 738, 12, 219, "Text",ExpressionUUID->"9cb7b7eb-94c1-4737-999e-0567ee5f6575"],
+Cell[6718, 172, 1260, 26, 334, "Text",ExpressionUUID->"777e6d50-31f5-4271-9595-92376ba15e17"],
+Cell[7981, 200, 717, 12, 219, "Text",ExpressionUUID->"6275397c-f987-46d7-83e4-dc8d5da14460"],
+Cell[8701, 214, 590, 10, 150, "Text",ExpressionUUID->"95b8a72f-a49d-4a2e-9dba-f9d97e2bf50b"],
+Cell[9294, 226, 1052, 19, 311, "Text",ExpressionUUID->"920f2729-01a3-41d7-9baa-c61b09ef60df"],
+Cell[10349, 247, 798, 15, 196, "Text",ExpressionUUID->"824e804a-d46e-446e-aaf6-1d4e78bc9b93"],
+Cell[11150, 264, 1548, 27, 495, "Text",ExpressionUUID->"9dacd35e-cc7f-4041-bff6-dbccc7c3548b"],
+Cell[12701, 293, 805, 13, 242, "Text",ExpressionUUID->"bc1d9821-0bec-441c-91c5-ba9250da005a"],
+Cell[13509, 308, 441, 9, 81, "Text",ExpressionUUID->"31af865c-1f35-43b6-8b1c-18295d1166fd"],
+Cell[13953, 319, 614, 11, 150, "Text",ExpressionUUID->"65e188ad-8f1e-463d-9306-bba09168af12"],
+Cell[14570, 332, 278, 5, 35, "Text",ExpressionUUID->"46fc6a3c-5f85-4fc1-a37e-024f81c9d43c"],
+Cell[14851, 339, 428, 8, 81, "Text",ExpressionUUID->"4b5508cd-007d-4d07-8f1e-aa14efc950b6"],
+Cell[15282, 349, 341, 7, 58, "Text",ExpressionUUID->"2741ab48-8a00-4bad-a086-19f54d93ef73"],
+Cell[15626, 358, 403, 9, 104, "Text",ExpressionUUID->"9e03c934-c65c-4c1a-b04d-b0de9a67d175"],
+Cell[16032, 369, 331, 9, 81, "Text",ExpressionUUID->"f0476427-2fa7-499f-9a9e-464e2f94461f"]
+}
+]
+*)
+
