@@ -1,0 +1,128 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4742,        120]
+NotebookOptionsPosition[      3721,         98]
+NotebookOutlinePosition[      4125,        114]
+CellTagsIndexPosition[      4082,        111]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", 
+   RowBox[{"ParentDirectory", "[", 
+    RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.8159227950159807`*^9, 3.815922857230071*^9}, {
+   3.832959057462519*^9, 3.8329590603471575`*^9}, 3.938448124213293*^9, {
+   3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
+   3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
+   3.9390507275600243`*^9, 3.93905072931427*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"71cbf5f1-efaf-ef45-baf9-d3eb6d2f2312"],
+
+Cell["NKS (New Kind of Science):", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.940410817494049*^9}},ExpressionUUID->"f278becb-754c-0342-ab1e-\
+b1af4efdc81e"],
+
+Cell["\<\
+Stephen Wolfram\[CloseCurlyQuote]s pet project (*), detailed in the NKS book \
+(**). You take all possible simple rules for some situation, run them, look \
+at the results, see whether interesting patterns emerge.  This strategy is \
+called \[OpenCurlyDoubleQuote]mining the computational universe\
+\[CloseCurlyDoubleQuote].  A showcase example of this was the treatment of \
+all possible elementary cellular automata (ECA), which was only made possible \
+by a clever enumeration of all possible sets of ECA rules.  See FAQ: ECA \
+(elementary cellular automata).\
+\>", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.940410818933058*^9}},ExpressionUUID->"3b89f29b-6668-ef45-81b5-\
+bb718af1017a"],
+
+Cell["\<\
+The current project started when Ken Caviness attended the 2009 NKS Summer \
+School program in Pisa, Italy, and selected SSSs (sequential substitution \
+systems, \[OpenCurlyDoubleQuote]sessies\[CloseCurlyDoubleQuote]) as a \
+research topic.  Sessies are much harder to enumerate than ECAs, but several \
+publications later we now have a robust enumeration algorithm permitting an \
+NKS treatment of sessies.\
+\>", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.9404108202450695`*^9}},ExpressionUUID->"ebbc0a79-195f-704f-b542-\
+6a24bcebafd2"],
+
+Cell["\<\
+(* One of Wolfram\[CloseCurlyQuote]s main goals for creating Mathematica was \
+to make NKS possible.) \
+\>", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.9404108545182457`*^9}},ExpressionUUID->"d6f6e025-d85d-2941-952a-\
+03aa19d1ae33"],
+
+Cell["\<\
+(** http://en.wikipedia.org/wiki/A_New_Kind_of_Science, \
+http://www.wolframscience.com/nksonline/toc.html)\
+\>", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.940410853004114*^9}},ExpressionUUID->"8c61a646-d3d5-0747-8664-\
+4f7a707bd2ae"],
+
+Cell["\<\
+Articles giving some background on Steven Wolfram and his projects:\
+\>", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.940410824773075*^9}},ExpressionUUID->"1ba438c7-dce9-c64c-8e57-\
+4f532ac6258d"],
+
+Cell["\<\
+https://medium.com/cantors-paradise/richard-feynmans-advice-to-a-young-\
+stephen-wolfram-1985-d572dc360c18\
+\>", "Text",
+ CellChangeTimes->{{3.940410813990349*^9, 
+  3.9404108279640846`*^9}},ExpressionUUID->"34869b6f-4d69-2441-8495-\
+9c0126343d55"]
+},
+WindowSize->{1428, 741.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"468cde79-e5f8-af43-9dc3-9b8805524c1b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 713, 14, 64, "Input",ExpressionUUID->"71cbf5f1-efaf-ef45-baf9-d3eb6d2f2312",
+ InitializationCell->True],
+Cell[1274, 36, 168, 3, 35, "Text",ExpressionUUID->"f278becb-754c-0342-ab1e-b1af4efdc81e"],
+Cell[1445, 41, 712, 12, 81, "Text",ExpressionUUID->"3b89f29b-6668-ef45-81b5-bb718af1017a"],
+Cell[2160, 55, 559, 10, 58, "Text",ExpressionUUID->"ebbc0a79-195f-704f-b542-6a24bcebafd2"],
+Cell[2722, 67, 254, 6, 35, "Text",ExpressionUUID->"d6f6e025-d85d-2941-952a-03aa19d1ae33"],
+Cell[2979, 75, 257, 6, 35, "Text",ExpressionUUID->"8c61a646-d3d5-0747-8664-4f7a707bd2ae"],
+Cell[3239, 83, 217, 5, 35, "Text",ExpressionUUID->"1ba438c7-dce9-c64c-8e57-4f532ac6258d"],
+Cell[3459, 90, 258, 6, 35, "Text",ExpressionUUID->"34869b6f-4d69-2441-8495-9c0126343d55"]
+}
+]
+*)
+
