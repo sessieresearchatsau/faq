@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    846078,      16763]
-NotebookOptionsPosition[    842216,      16697]
-NotebookOutlinePosition[    842615,      16713]
-CellTagsIndexPosition[    842572,      16710]
+NotebookDataLength[    918982,      18299]
+NotebookOptionsPosition[    914557,      18224]
+NotebookOutlinePosition[    914957,      18240]
+CellTagsIndexPosition[    914914,      18237]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -22,7 +22,7 @@ Notebook[{
 Cell[CellGroupData[{
 Cell["FAQ: \[OpenCurlyDoubleQuote]Sessie\[CloseCurlyDoubleQuote] \
 Introduction", "Title",
- CellChangeTimes->{{3.9349816517750607`*^9, 
+ CellChangeTimes->{{3.934981651775061*^9, 
   3.9349816698382225`*^9}},ExpressionUUID->"8ee9c5e2-24f6-044a-8f22-\
 72e51ba70cbc"],
 
@@ -40,7 +40,7 @@ Cell[BoxData[{
    3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
    3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
    3.9390507275600243`*^9, 3.93905072931427*^9}},
- CellLabel->"In[3]:=",ExpressionUUID->"d79c0b09-d972-cd43-9c2a-cb7faae7e59a"],
+ CellLabel->"In[7]:=",ExpressionUUID->"d79c0b09-d972-cd43-9c2a-cb7faae7e59a"],
 
 Cell["\<\
 The toy \[OpenCurlyDoubleQuote]universe\[CloseCurlyDoubleQuote] is a string \
@@ -55,7 +55,7 @@ string to replace it with. Ex: {\[OpenCurlyDoubleQuote]AB\
 nor on the size of the strings, nor on the characters in the strings.)\
 \>", "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
-   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242817`*^9}, {
+   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242807`*^9}, {
    3.934990316640726*^9, 
    3.934990317652981*^9}},ExpressionUUID->"50a8a905-32ba-2847-98a6-\
 1cc2b2a25e46"],
@@ -68,7 +68,7 @@ locations in the state string, we apply it in the first possible (left-most) \
 position.\
 \>", "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
-   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242817`*^9}, {
+   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242807`*^9}, {
    3.934990316640726*^9, 
    3.934990320301897*^9}},ExpressionUUID->"94d4bc5b-4980-f441-aa56-\
 c22dad376ae5"],
@@ -81,7 +81,7 @@ be causally connected if a cell created by one is destroyed by the other. \
 connections work, i.e. the lines that connect the nodes.)\
 \>", "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
-   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242807`*^9}, {
+   3.9349820087637157`*^9, {3.934982050358446*^9, 3.93498212382428*^9}, {
    3.934990316640726*^9, 
    3.9349903230105667`*^9}},ExpressionUUID->"3f841c56-8afb-544f-8519-\
 37e9306eb2c4"],
@@ -91,7 +91,7 @@ The causal network of an SSS can be visualized by treating all events as \
 graph nodes and the causal connections between them as graph edges.\
 \>", "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
-   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242817`*^9}, {
+   3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242807`*^9}, {
    3.934990316640726*^9, 
    3.934990322136076*^9}},ExpressionUUID->"083da44b-8432-d24a-9ce5-\
 5f850384ec9f"],
@@ -110,7 +110,7 @@ Cell["\tSSS[ruleset, initial state, number of steps, options]", "CodeText",
    3.9349820087637157`*^9, {3.934982050358446*^9, 3.934982156211899*^9}, {
    3.9349903284428253`*^9, 3.934990334208341*^9}, {3.934990404831047*^9, 
    3.934990405023962*^9}, 3.939820418242113*^9, 
-   3.9398205006342697`*^9},ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-\
+   3.939820500634269*^9},ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-\
 b2311f710ccf"],
 
 Cell["Ex:", "Text",
@@ -140,8 +140,8 @@ Cell[BoxData[
   3.934982958046858*^9}, {3.934983025882826*^9, 3.9349830397543106`*^9}, {
   3.934990216051855*^9, 3.934990263507908*^9}, {3.934990514664009*^9, 
   3.93499051802462*^9}, {3.939197742048079*^9, 3.939197756223591*^9}, {
-  3.9398207254035263`*^9, 3.9398208272165337`*^9}, {3.9398208823280087`*^9, 
-  3.9398209428608246`*^9}, {3.93982115103755*^9, 3.9398211874230633`*^9}},
+  3.9398207254035263`*^9, 3.939820827216534*^9}, {3.9398208823280087`*^9, 
+  3.939820942860824*^9}, {3.93982115103755*^9, 3.9398211874230633`*^9}},
  CellLabel->"In[5]:=",ExpressionUUID->"32164190-3867-0e4e-9b3f-d4142bcd7fb7"],
 
 Cell[BoxData[
@@ -801,7 +801,7 @@ N9c6H/XyUefOPzf/Au9ryyE=
   "RowWithSeparators"]], "Print",
  CellChangeTimes->{
   3.934990518797726*^9, 3.939197775512795*^9, {3.939820756090042*^9, 
-   3.939820805827284*^9}, 3.9398209442982216`*^9, {3.9398211806109657`*^9, 
+   3.939820805827284*^9}, 3.9398209442982206`*^9, {3.9398211806109657`*^9, 
    3.939821188672924*^9}, 3.939995844604395*^9},
  CellLabel->
   "During evaluation of \
@@ -876,6 +876,7 @@ v/K8bW5bn/I3W5cfdWT/A7cYOpc=
              20, 1}}, {{0, 0}, {20, 0}}}]}, {Antialiasing -> False, 
             GrayLevel[
              NCache[-1 + GoldenRatio, 0.6180339887498949]], 
+            
             LineBox[{{{0, 0}, {0, 40}}, {{1, 0}, {1, 40}}, {{2, 0}, {2, 
              40}}, {{3, 0}, {3, 40}}, {{4, 0}, {4, 40}}, {{5, 0}, {5, 40}}, {{
              6, 0}, {6, 40}}, {{7, 0}, {7, 40}}, {{8, 0}, {8, 40}}, {{9, 0}, {
@@ -10468,7 +10469,7 @@ QWf2cGfuLh0oHWl7H1+hB1Ejqxsz+3SwoPFN754yPfwPkr7scg==
   3.934982692430969*^9, 3.9349827343023815`*^9, {3.934982769272776*^9, 
    3.934982820862781*^9}, {3.934982859151024*^9, 3.9349829588010406`*^9}, {
    3.934983026657081*^9, 3.9349830440156116`*^9}, {3.9349902257377415`*^9, 
-   3.934990267060356*^9}, 3.939197815031931*^9, 3.9398214390078297`*^9, 
+   3.934990267060356*^9}, 3.939197815031931*^9, 3.939821439007829*^9, 
    3.9399958508038597`*^9},
  CellLabel->
   "During evaluation of \
@@ -10479,7 +10480,7 @@ Cell["\<\
 To find more information on any function use a question mark. For example:\
 \>", "Text",
  CellChangeTimes->{{3.934990359026993*^9, 3.934990362014345*^9}, {
-  3.934990462039776*^9, 3.934990494167576*^9}, {3.9398213039878216`*^9, 
+  3.934990462039776*^9, 3.934990494167576*^9}, {3.939821303987821*^9, 
   3.939821331777876*^9}},ExpressionUUID->"a58a9446-131f-7647-ac6e-\
 4d1db09c6bae"],
 
@@ -10487,7 +10488,7 @@ Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"?", "SSS"}]], "Input",
- CellChangeTimes->{{3.9349826618928776`*^9, 3.9349826639038486`*^9}},
+ CellChangeTimes->{{3.9349826618928776`*^9, 3.9349826639038477`*^9}},
  CellLabel->"In[9]:=",ExpressionUUID->"0617b732-e8c6-954c-a7cf-85c9a0099251"],
 
 Cell[BoxData[
@@ -10657,6 +10658,7 @@ looking at its keys, \\\"Evolution\\\" and \\\"Net\\\", etc.)\"\>",
              },
              DefaultBaseStyle->"Column",
              GridBoxAlignment->{"Columns" -> {{Left}}},
+             
              GridBoxItemSize->{
               "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
             "Column"],
@@ -11090,6 +11092,7 @@ looking at its keys, \\\"Evolution\\\" and \\\"Net\\\", etc.)\"\>",
            TagBox[
             ButtonBox[
              PaneSelectorBox[{False->
+              
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "UpPointerOpener"]], True->
               
@@ -11193,13 +11196,12 @@ looking at its keys, \\\"Evolution\\\" and \\\"Net\\\", etc.)\"\>",
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
-              True->
+               ImageSizeCache->{10., {3., 7.}}], True->
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
-               Dynamic[System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -11360,6 +11362,1379 @@ keys, \"Evolution\" and \"Net\", etc.)", "Documentation" -> None, "OwnValues" ->
  CellLabel->"Out[9]=",ExpressionUUID->"b3d5aeb0-a102-6f41-93f7-aebcded65f78"]
 }, Open  ]],
 
+Cell[TextData[StyleBox["** Bug: in ?SSSDisplay:  ShowRule is not an Option => \
+replaced by RulePlacement **",
+ Background->RGBColor[1., 0., 0.]]], "Text",
+ CellChangeTimes->{{3.9404136593995*^9, 
+  3.9404137376634903`*^9}},ExpressionUUID->"cb4968d2-9767-6542-ad9c-\
+7d2c515a12ee"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"?", "SSSDisplay"}]], "Input",
+ CellChangeTimes->{{3.940413607524843*^9, 3.940413609991356*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"cfdd8638-1307-c145-854d-0df7131478f6"],
+
+Cell[BoxData[
+ InterpretationBox[
+  StyleBox[
+   FrameBox[
+    DynamicModuleBox[{System`InformationDump`open$$ = False, 
+     System`InformationDump`mouseOver$$ = False}, 
+     PaneSelectorBox[{True->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False,
+             BaseStyle -> None],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"SSSDisplay[\\!\\(\\*StyleBox[\\\"sss\\\",FontSlant->\
+\\\"Italic\\\"]\\), \\!\\(\\*StyleBox[\\\"opts\\\",FontSlant->\\\"Italic\\\"]\
+\\)] displays the sequential substitution system \
+\\!\\(\\*StyleBox[\\\"sss\\\",FontSlant->\\\"Italic\\\"]\\) and/or its causal \
+network.  Use SSS (or SSSInitialize and SSSEvolve) to construct it \
+first.\\n\\nOptions:\\n\\tMin \[Rule] \\!\\(\\*StyleBox[\\\"n\\\",FontSlant->\
+\\\"Italic\\\"]\\) cuts off the display before the first \\!\\(\\*StyleBox[\\\
+\"n\\\",FontSlant->\\\"Italic\\\"]\\) steps of the system.  (Separate values \
+can be specified for SSSMin and NetMin.)\\n\\tMax \[Rule] \
+\\!\\(\\*StyleBox[\\\"n\\\",FontSlant->\\\"Italic\\\"]\\) cuts off the \
+display after the first \
+\\!\\(\\*StyleBox[\\\"n\\\",FontSlant->\\\"Italic\\\"]\\) steps of the \
+system.  (Separate values can be specified for SSSMax and \
+NetMax.)\\n\\tVertexLabels \[Rule] Automatic (or \\\"Name\\\") | \
+\\\"VertexWeight\\\" | \[Ellipsis]  labels vertices by node number or \
+distance from origin, etc.\\n\\n\\tHighlightMethod \[Rule] Dot | Frame | \
+Number (or True) | None (or False) specifies how the matches in the SSS are \
+highlighted. \\n\\n\\tShowRule \[Rule] Bottom | Top | Left | Right | None (or \
+False) specifies where to place the rulelist icon relative to the SSS visual \
+display (if shown).  \\n\\n\\tSizes of display components are specified by \
+the options NetSize, SSSSize, IconSize and ImageSize (which refers to the \
+pane containing the SSS display and icon).\\n\\n\\tNetMethod \[Rule] \
+GraphPlot | LayeredGraphPlot | TreePlot | GraphPlot3D | All | NoSSS | list of \
+methods, \\n\\t\\twhere NoSSS generates no SSS display (causal network only) \
+and the other choices specify how the causal network is to be shown.\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          PaneBox[
+           TagBox[GridBox[{
+              {
+               StyleBox[
+                TagBox[
+                 TooltipBox[
+                  StyleBox["\<\" Definitions\"\>", "InformationRowLabel",
+                   StripOnInput->False],
+                  "\"Definitions\"",
+                  TooltipStyle->"TextStyling"],
+                 Annotation[#, "Definitions", "Tooltip"]& ], "DialogStyle",
+                StripOnInput->False]},
+              {
+               TemplateBox[{"\"\[ThinSpace]\"", 
+                 GridBox[{{
+                    RowBox[{
+                    RowBox[{"SSSDisplay", "[", 
+                    RowBox[{"sss_Association", ",", 
+                    RowBox[{"opts", ":", 
+                    RowBox[{"OptionsPattern", "[", "]"}]}]}], "]"}], ":=", 
+                    RowBox[{"Module", "[", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    
+                    RowBox[{"HlM", ",", "mesh", ",", "IcS", ",", "ImS", ",", 
+                    "SS", ",", "NS", ",", "RP", ",", "NM", ",", "doGP", ",", 
+                    "doLGP", ",", "doTP", ",", "doGP3D", ",", "doSSS", ",", 
+                    "myNet", ",", "ans", ",", "cellsToHighlight", ",", 
+                    "rulesApplied", ",", "mx", ",", "netmx", ",", "sssmx", 
+                    ",", "mn", ",", "netmn", ",", "sssmn", ",", "hs", ",", 
+                    "start", ",", "ev", ",", "vrtxs", ",", "net", ",", "grph",
+                     ",", "DE"}], "}"}], ",", 
+                    RowBox[{
+                    RowBox[{"HlM", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"#1", "===", "True"}], ",", "Number", ",", "#1"}],
+                     "]"}], "&"}], ")"}], "[", 
+                    RowBox[{"OptionValue", "[", "HighlightMethod", "]"}], 
+                    "]"}]}], ";", 
+                    RowBox[{"RP", "=", 
+                    RowBox[{"OptionValue", "[", "RulePlacement", "]"}]}], ";", 
+                    RowBox[{"mesh", "=", 
+                    RowBox[{"OptionValue", "[", "Mesh", "]"}]}], ";", 
+                    RowBox[{"SS", "=", 
+                    RowBox[{"OptionValue", "[", "SSSSize", "]"}]}], ";", 
+                    RowBox[{"IcS", "=", 
+                    RowBox[{"OptionValue", "[", "IconSize", "]"}]}], ";", 
+                    RowBox[{"ImS", "=", 
+                    RowBox[{"OptionValue", "[", "ImageSize", "]"}]}], ";", 
+                    RowBox[{"NS", "=", 
+                    RowBox[{"OptionValue", "[", "NetSize", "]"}]}], ";", 
+                    RowBox[{"NM", "=", 
+                    RowBox[{"OptionValue", "[", "NetMethod", "]"}]}], ";", 
+                    RowBox[{"DE", "=", 
+                    RowBox[{"OptionValue", "[", "DirectedEdges", "]"}]}], ";", 
+                    RowBox[{"mx", "=", 
+                    RowBox[{"OptionValue", "[", "Max", "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"mx", "===", "Automatic"}], ",", 
+                    RowBox[{"mx", "=", "\[Infinity]"}]}], "]"}], ";", 
+                    RowBox[{"sssmx", "=", 
+                    RowBox[{"OptionValue", "[", "SSSMax", "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"sssmx", "===", "Automatic"}], ",", 
+                    RowBox[{"sssmx", "=", "mx"}]}], "]"}], ";", 
+                    RowBox[{"netmx", "=", 
+                    RowBox[{"OptionValue", "[", "NetMax", "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"netmx", "===", "Automatic"}], ",", 
+                    RowBox[{"netmx", "=", "mx"}]}], "]"}], ";", 
+                    RowBox[{"mn", "=", 
+                    RowBox[{"OptionValue", "[", "Min", "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"mn", "===", "Automatic"}], ",", 
+                    RowBox[{"mn", "=", "1"}]}], "]"}], ";", 
+                    RowBox[{"sssmn", "=", 
+                    RowBox[{"OptionValue", "[", "SSSMin", "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"sssmn", "===", "Automatic"}], ",", 
+                    RowBox[{"sssmn", "=", "mn"}]}], "]"}], ";", 
+                    RowBox[{"netmn", "=", 
+                    RowBox[{"OptionValue", "[", "NetMin", "]"}]}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"netmn", "===", "Automatic"}], ",", 
+                    RowBox[{"netmn", "=", "mn"}]}], "]"}], ";", 
+                    RowBox[{"start", "=", "1"}], ";", 
+                    RowBox[{"vrtxs", "=", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Annotation", "[", 
+                    RowBox[{"#1", ",", 
+                    RowBox[{"VertexWeight", "\[Rule]", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"Distance\"", "]"}], 
+                    "\[LeftDoubleBracket]", "#1", 
+                    "\[RightDoubleBracket]"}]}]}], "]"}], "&"}], ")"}], "/@", 
+                    RowBox[{"Range", "[", 
+                    RowBox[{
+                    RowBox[{"Max", "[", 
+                    RowBox[{"start", ",", "netmn"}], "]"}], ",", 
+                    RowBox[{"Min", "[", 
+                    RowBox[{"netmx", ",", 
+                    RowBox[{"Length", "[", 
+                    RowBox[{"sss", "[", "\"Distance\"", "]"}], "]"}]}], 
+                    "]"}]}], "]"}]}]}], ";", 
+                    RowBox[{"net", "=", 
+                    RowBox[{
+                    RowBox[{"Select", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"Net\"", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"And", "@@", 
+                    RowBox[{"Thread", "[", 
+                    RowBox[{
+                    RowBox[{"Max", "[", 
+                    RowBox[{"start", ",", "netmn"}], "]"}], "\[LessEqual]", 
+                    RowBox[{"List", "@@", "#1"}], "\[LessEqual]", "netmx"}], 
+                    "]"}]}], "&"}]}], "]"}], "/.", "\[VeryThinSpace]", 
+                    RowBox[{"n_Integer", "\[RuleDelayed]", 
+                    RowBox[{"n", "+", "1", "-", "start"}]}]}]}], ";", 
+                    RowBox[{"grph", "=", 
+                    RowBox[{"Graph", "[", 
+                    RowBox[{"vrtxs", ",", "net", ",", 
+                    RowBox[{"DirectedEdges", "\[Rule]", "DE"}]}], "]"}]}], 
+                    ";", 
+                    RowBox[{"doGP", "=", 
+                    RowBox[{"doLGP", "=", 
+                    RowBox[{"doTP", "=", 
+                    RowBox[{"doGP3D", "=", "False"}]}]}]}], ";", 
+                    RowBox[{"doSSS", "=", "True"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"MemberQ", "[", 
+                    RowBox[{"NM", ",", "All", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"doGP", "=", 
+                    RowBox[{"doLGP", "=", 
+                    RowBox[{"doTP", "=", 
+                    RowBox[{"doGP3D", "=", "True"}]}]}]}]}], "]"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"MemberQ", "[", 
+                    RowBox[{"NM", ",", "GraphPlot", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"doGP", "=", "True"}]}], "]"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"MemberQ", "[", 
+                    RowBox[{"NM", ",", "LayeredGraphPlot", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"doLGP", "=", "True"}]}], "]"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"MemberQ", "[", 
+                    RowBox[{"NM", ",", "TreePlot", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"doTP", "=", "True"}]}], "]"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"MemberQ", "[", 
+                    RowBox[{"NM", ",", "GraphPlot3D", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"doGP3D", "=", "True"}]}], "]"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"MemberQ", "[", 
+                    RowBox[{"NM", ",", "NoSSS", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "\[Infinity]"}], "}"}]}], "]"}], ",", 
+                    RowBox[{"doSSS", "=", "False"}]}], "]"}], ";", 
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"Verdict\"", "]"}], "\[Equal]", 
+                    "\"Dead\""}], ",", 
+                    RowBox[{"doGP", "=", 
+                    RowBox[{"doLGP", "=", 
+                    RowBox[{"doTP", "=", 
+                    RowBox[{"doGP3D", "=", "False"}]}]}]}]}], "]"}], ";", 
+                    RowBox[{"cellsToHighlight", "=", 
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{
+                    RowBox[{"MapIndexed", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"#1", ",", 
+                    
+                    RowBox[{"#2", "\[LeftDoubleBracket]", "1", 
+                    "\[RightDoubleBracket]"}]}], "}"}], "&"}], ",", 
+                    RowBox[{"Reverse", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"CellsDeleted\"", "]"}], 
+                    "\[LeftDoubleBracket]", 
+                    RowBox[{
+                    RowBox[{"Max", "[", 
+                    RowBox[{"start", ",", "sssmn"}], "]"}], ";;", 
+                    RowBox[{
+                    RowBox[{"Min", "[", 
+                    RowBox[{"sssmx", ",", 
+                    RowBox[{"Length", "[", 
+                    RowBox[{"sss", "[", "\"Evolution\"", "]"}], "]"}]}], 
+                    "]"}], "-", "1"}]}], "\[RightDoubleBracket]"}], "]"}], 
+                    ",", 
+                    RowBox[{"{", "2", "}"}]}], "]"}], ",", "1"}], "]"}]}], 
+                    ";", 
+                    RowBox[{"rulesApplied", "=", 
+                    RowBox[{"Reverse", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"RulesUsed\"", "]"}], 
+                    "\[LeftDoubleBracket]", 
+                    RowBox[{
+                    RowBox[{"Max", "[", 
+                    RowBox[{"start", ",", "sssmn"}], "]"}], ";;", 
+                    RowBox[{
+                    RowBox[{"Min", "[", 
+                    RowBox[{"sssmx", ",", 
+                    RowBox[{"Length", "[", 
+                    RowBox[{"sss", "[", "\"Evolution\"", "]"}], "]"}]}], 
+                    "]"}], "-", "1"}]}], "\[RightDoubleBracket]"}], "]"}]}], 
+                    ";", 
+                    RowBox[{"ans", "=", 
+                    RowBox[{"ArrayPlot", "[", 
+                    RowBox[{
+                    RowBox[{"FromAlpha", "/@", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"Evolution\"", "]"}], 
+                    "\[LeftDoubleBracket]", 
+                    RowBox[{
+                    RowBox[{"Max", "[", 
+                    RowBox[{"start", ",", "sssmn"}], "]"}], ";;", 
+                    RowBox[{"Min", "[", 
+                    RowBox[{"sssmx", ",", 
+                    RowBox[{"Length", "[", 
+                    RowBox[{"sss", "[", "\"Evolution\"", "]"}], "]"}]}], 
+                    "]"}]}], "\[RightDoubleBracket]"}]}], ",", 
+                    RowBox[{"myColorOptions", "[", 
+                    RowBox[{"sss", "[", "\"MaxColor\"", "]"}], "]"}], ",", 
+                    RowBox[{"Mesh", "\[Rule]", "mesh"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "SS"}], ",", 
+                    RowBox[{"Epilog", "\[Rule]", 
+                    RowBox[{"Switch", "[", 
+                    RowBox[{"HlM", ",", "Dot", ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Disk", "[", 
+                    RowBox[{
+                    RowBox[{"#1", "+", 
+                    RowBox[{"0.5`", " ", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}]}]}], ",", "0.18`"}],
+                     "]"}], "&"}], ")"}], "/@", "cellsToHighlight"}], ",", 
+                    "Frame", ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"EdgeForm", "[", "Thick", "]"}], ",", 
+                    RowBox[{"FaceForm", "[", "]"}], ",", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"Rectangle", "[", 
+                    RowBox[{"#1", "-", 
+                    RowBox[{"{", 
+                    RowBox[{"1", ",", "0"}], "}"}]}], "]"}], "&"}], ")"}], 
+                    "/@", "cellsToHighlight"}]}], "}"}], ",", "Number", ",", 
+                    RowBox[{"Text", "@@@", 
+                    RowBox[{"(", 
+                    RowBox[{"cellsToHighlight", "/.", "\[VeryThinSpace]", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"x_Integer", ",", "y_Integer"}], "}"}], 
+                    "\[RuleDelayed]", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    
+                    RowBox[{"rulesApplied", "\[LeftDoubleBracket]", "y", 
+                    "\[RightDoubleBracket]"}], ",", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"x", ",", "y"}], "}"}], "+", 
+                    RowBox[{"0.5`", " ", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], ",", "1"}], "}"}]}]}]}], "}"}]}]}], 
+                    ")"}]}], ",", "_", ",", 
+                    RowBox[{"{", "}"}]}], "]"}]}]}], "]"}]}], ";", 
+                    RowBox[{"Row", "[", 
+                    RowBox[{
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"If", "[", 
+                    RowBox[{
+                    RowBox[{"!", "doSSS"}], ",", 
+                    RowBox[{"{", "}"}], ",", 
+                    RowBox[{"Pane", "[", 
+                    RowBox[{
+                    RowBox[{"Switch", "[", 
+                    RowBox[{"RP", ",", "Right", ",", 
+                    RowBox[{"Grid", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"{", 
+                    RowBox[{"ans", ",", 
+                    RowBox[{"SSSRuleIcon", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"RuleSet\"", "]"}], ",", 
+                    RowBox[{"sss", "[", "\"MaxColor\"", "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "IcS"}]}], "]"}]}], "}"}],
+                     "}"}], "]"}], ",", "Left", ",", 
+                    RowBox[{"Grid", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"SSSRuleIcon", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"RuleSet\"", "]"}], ",", 
+                    RowBox[{"sss", "[", "\"MaxColor\"", "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "IcS"}]}], "]"}], ",", 
+                    "ans"}], "}"}], "}"}], "]"}], ",", 
+                    RowBox[{"Bottom", "|", "True"}], ",", 
+                    RowBox[{"Grid", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", "ans", "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"SSSRuleIcon", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"RuleSet\"", "]"}], ",", 
+                    RowBox[{"sss", "[", "\"MaxColor\"", "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "IcS"}]}], "]"}], "}"}]}],
+                     "}"}], "]"}], ",", "Top", ",", 
+                    RowBox[{"Grid", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"SSSRuleIcon", "[", 
+                    RowBox[{
+                    RowBox[{"sss", "[", "\"RuleSet\"", "]"}], ",", 
+                    RowBox[{"sss", "[", "\"MaxColor\"", "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "IcS"}]}], "]"}], "}"}], 
+                    ",", 
+                    RowBox[{"{", "ans", "}"}]}], "}"}], "]"}], ",", "_", ",", 
+                    "ans"}], "]"}], ",", 
+                    RowBox[{"ImageSize", "\[Rule]", "ImS"}], ",", 
+                    
+                    RowBox[{"ImageSizeAction", "\[Rule]", 
+                    "\"ShrinkToFit\""}]}], "]"}]}], "]"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{"doGP", ",", 
+                    RowBox[{"GraphPlot", "[", 
+                    RowBox[{"grph", ",", 
+                    
+                    RowBox[{"GraphLayout", "\[Rule]", 
+                    "\"SpringElectricalEmbedding\""}], ",", 
+                    RowBox[{"Sequence", "@@", 
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ImageSize", "\[Rule]", "NS"}], ",", 
+                    RowBox[{"FilterRules", "[", 
+                    RowBox[{
+                    RowBox[{"{", "opts", "}"}], ",", 
+                    RowBox[{"Options", "[", "GraphPlot", "]"}]}], "]"}], ",", 
+                    RowBox[{"VertexSize", "\[Rule]", "Large"}], ",", 
+                    RowBox[{"VertexLabels", "\[Rule]", 
+                    RowBox[{"Placed", "[", 
+                    RowBox[{"Automatic", ",", "Center"}], "]"}]}]}], "}"}], 
+                    "]"}]}]}], "]"}], ",", 
+                    RowBox[{"{", "}"}]}], "]"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{"doLGP", ",", 
+                    RowBox[{"LayeredGraphPlot", "[", 
+                    RowBox[{"grph", ",", 
+                    RowBox[{"Sequence", "@@", 
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ImageSize", "\[Rule]", "NS"}], ",", 
+                    RowBox[{"FilterRules", "[", 
+                    RowBox[{
+                    RowBox[{"{", "opts", "}"}], ",", 
+                    RowBox[{"Options", "[", "LayeredGraphPlot", "]"}]}], 
+                    "]"}], ",", 
+                    RowBox[{"VertexSize", "\[Rule]", "Large"}], ",", 
+                    RowBox[{"VertexLabels", "\[Rule]", 
+                    RowBox[{"Placed", "[", 
+                    RowBox[{"Automatic", ",", "Center"}], "]"}]}]}], "}"}], 
+                    "]"}]}]}], "]"}], ",", 
+                    RowBox[{"{", "}"}]}], "]"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{"doTP", ",", 
+                    RowBox[{"TreePlot", "[", 
+                    RowBox[{"grph", ",", "Top", ",", "1", ",", 
+                    RowBox[{"Sequence", "@@", 
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ImageSize", "\[Rule]", "NS"}], ",", 
+                    RowBox[{"FilterRules", "[", 
+                    RowBox[{
+                    RowBox[{"{", "opts", "}"}], ",", 
+                    RowBox[{"Options", "[", "TreePlot", "]"}]}], "]"}], ",", 
+                    RowBox[{"VertexSize", "\[Rule]", "Large"}], ",", 
+                    RowBox[{"VertexLabels", "\[Rule]", 
+                    RowBox[{"Placed", "[", 
+                    RowBox[{"Automatic", ",", "Center"}], "]"}]}], ",", 
+                    RowBox[{"DirectedEdges", "\[Rule]", "True"}]}], "}"}], 
+                    "]"}]}]}], "]"}], ",", 
+                    RowBox[{"{", "}"}]}], "]"}], ",", 
+                    RowBox[{"If", "[", 
+                    RowBox[{"doGP3D", ",", 
+                    RowBox[{"GraphPlot3D", "[", 
+                    RowBox[{"grph", ",", 
+                    
+                    RowBox[{"GraphLayout", "\[Rule]", 
+                    "\"SpringElectricalEmbedding\""}], ",", 
+                    RowBox[{"Sequence", "@@", 
+                    RowBox[{"Flatten", "[", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"ImageSize", "\[Rule]", "NS"}], ",", 
+                    RowBox[{"FilterRules", "[", 
+                    RowBox[{
+                    RowBox[{"{", "opts", "}"}], ",", 
+                    RowBox[{"Options", "[", "GraphPlot3D", "]"}]}], "]"}], 
+                    ",", 
+                    RowBox[{"VertexSize", "\[Rule]", "Large"}], ",", 
+                    RowBox[{"VertexLabels", "\[Rule]", 
+                    RowBox[{"Placed", "[", 
+                    RowBox[{"Automatic", ",", "Center"}], "]"}]}]}], "}"}], 
+                    "]"}]}]}], "]"}], ",", 
+                    RowBox[{"{", "}"}]}], "]"}]}], "}"}], "]"}], ",", 
+                    "\"  \""}], "]"}]}]}], "]"}]}]}, {" "}}, 
+                  GridBoxAlignment -> {"Columns" -> {{Left}}}, 
+                  DefaultBaseStyle -> "Column", 
+                  GridBoxItemSize -> {
+                   "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}]},
+                "RowDefault"]}
+             },
+             DefaultBaseStyle->"Column",
+             GridBoxAlignment->{"Columns" -> {{Left}}},
+             
+             GridBoxItemSize->{
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+            "Column"],
+           FrameMargins->{{6, 0}, {3, 6}}], "\<\"\"\>"},
+         {
+          PaneBox[GridBox[{
+             {
+              
+              DynamicModuleBox[{System`InformationDump`open$$ = {
+               False, False, False, False, False, False}}, 
+               StyleBox[GridBox[{
+                  {
+                   TagBox[
+                    TooltipBox[
+                    
+                    StyleBox["\<\" Default Definitions\"\>", 
+                    "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"DefaultValues\"",
+                    TooltipStyle->"TextStyling"],
+                    Annotation[#, "DefaultValues", "Tooltip"]& ], 
+                   InterpretationBox[GridBox[{
+                    {
+                    RowBox[{
+                    RowBox[{"SyntaxInformation", "[", "SSSDisplay", "]"}], 
+                    "=", 
+                    RowBox[{"{", 
+                    RowBox[{"\<\"ArgumentsPattern\"\>", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"_", ",", 
+                    RowBox[{"OptionsPattern", "[", "]"}]}], "}"}]}], "}"}]}]},
+                    {" "}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    
+                    GridBoxAlignment->{
+                    "Columns" -> {{Left}}, "Rows" -> {{Baseline}}}],
+                    
+                    ColumnForm[{
+                    SyntaxInformation[SSSiCv100`SSSDisplay] = {
+                    "ArgumentsPattern" -> {
+                    Blank[], 
+                    OptionsPattern[]}}, 
+                    SpaceForm[1]}],
+                    Editable->False]},
+                  {
+                   PaneSelectorBox[{True->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "DownPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    False),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"], False->
+                    ButtonBox[
+                    PaneSelectorBox[{False->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpener"]]},
+                    "RowWithSeparators"], True->
+                    TemplateBox[{"\[ThickSpace]", "\"\[ThickSpace]\"", 
+                    StyleBox[
+                    "\"Options\"", "InformationRowLabel", StripOnInput -> 
+                    False], 
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "RightPointerOpenerHot"]]},
+                    "RowWithSeparators"]}, Dynamic[
+                    CurrentValue["MouseOver"]],
+                    FrameMargins->0,
+                    ImageSize->Automatic],
+                    Appearance->None,
+                    BaseStyle->None,
+                    
+                    ButtonFunction:>(Part[System`InformationDump`open$$, 3] = 
+                    True),
+                    Evaluator->Automatic,
+                    FrameMargins->0,
+                    ImageMargins->0,
+                    Method->"Preemptive"]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]]], 
+                   PaneSelectorBox[{True->GridBox[{
+                    {
+                    RowBox[{"HighlightMethod", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"RulePlacement", "\[Rule]", "Bottom"}]},
+                    {
+                    RowBox[{"Mesh", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"NetSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Automatic", ",", "400"}], "}"}]}]},
+                    {
+                    RowBox[{"SSSSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Automatic", ",", "300"}], "}"}]}]},
+                    {
+                    RowBox[{"IconSize", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"Automatic", ",", "20"}], "}"}]}]},
+                    {
+                    RowBox[{"ImageSize", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"NetMethod", "\[Rule]", "GraphPlot"}]},
+                    {
+                    RowBox[{"Max", "\[Rule]", "\[Infinity]"}]},
+                    {
+                    RowBox[{"SSSMax", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"NetMax", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Min", "\[Rule]", "1"}]},
+                    {
+                    RowBox[{"SSSMin", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"NetMin", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"AlignmentPoint", "\[Rule]", "Center"}]},
+                    {
+                    RowBox[{"AnnotationRules", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"AspectRatio", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"AutomaticImageSize", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"Axes", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"AxesEdge", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"AxesLabel", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"AxesOrigin", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"AxesStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"Background", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"BaselinePosition", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"BaseStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"Boxed", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"BoxRatios", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"BoxStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"ClipPlanes", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"ClipPlanesStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ColorOutput", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ContentSelectable", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ControllerLinking", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"ControllerMethod", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ControllerPath", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{
+                    "CoordinatesToolOptions", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"DataRange", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"DirectedEdges", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"DirectedEdges", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"EdgeCapacity", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"EdgeCost", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"EdgeLabels", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"EdgeLabelStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"EdgeShapeFunction", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"EdgeStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"EdgeWeight", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Editable", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"Epilog", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"FaceGrids", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"FaceGridsStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]},
+                    {
+                    RowBox[{"Frame", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"FrameLabel", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"FrameStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"FrameTicks", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"FrameTicksStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"GraphHighlight", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"GraphHighlightStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"GraphLayout", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"GraphRoot", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"GraphStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"GridLines", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"GridLinesStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"ImageMargins", "\[Rule]", "0.`"}]},
+                    {
+                    RowBox[{"ImagePadding", "\[Rule]", "All"}]},
+                    {
+                    RowBox[{"ImageSize", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ImageSizeRaw", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"LabelStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"LayerSizeFunction", "\[Rule]", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "&"}], ")"}]}]},
+                    {
+                    RowBox[{"Lighting", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Method", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"MultiedgeStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PackingMethod", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PerformanceGoal", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PlotLabel", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"PlotRange", "\[Rule]", "All"}]},
+                    {
+                    RowBox[{"PlotRangeClipping", "\[Rule]", "False"}]},
+                    {
+                    RowBox[{"PlotRangePadding", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PlotRegion", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PlotStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PlotTheme", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"PreserveImageOptions", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Prolog", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"Properties", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"RotateLabel", "\[Rule]", "True"}]},
+                    {
+                    RowBox[{"RotationAction", "\[Rule]", "Fit"}]},
+                    {
+                    RowBox[{"SelfLoopStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"SphericalRegion", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"Ticks", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"TicksStyle", "\[Rule]", 
+                    RowBox[{"{", "}"}]}]},
+                    {
+                    RowBox[{"TouchscreenAutoZoom", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexCapacity", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexCoordinates", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexLabels", "\[Rule]", "None"}]},
+                    {
+                    RowBox[{"VertexLabelStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexShape", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexShapeFunction", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexSize", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexStyle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"VertexWeight", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ViewAngle", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ViewCenter", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ViewMatrix", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ViewPoint", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"1.3`", ",", 
+                    RowBox[{"-", "2.4`"}], ",", "2.`"}], "}"}]}]},
+                    {
+                    RowBox[{"ViewProjection", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ViewRange", "\[Rule]", "All"}]},
+                    {
+                    RowBox[{"ViewVector", "\[Rule]", "Automatic"}]},
+                    {
+                    RowBox[{"ViewVertical", "\[Rule]", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "0", ",", "1"}], "}"}]}]},
+                    {
+                    RowBox[{
+                    "DisplayFunction", "\[RuleDelayed]", "$DisplayFunction"}]},
+                    {
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "110", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}
+                    },
+                    BaselinePosition->{Baseline, {1, 1}},
+                    DefaultBaseStyle->"Column",
+                    GridBoxAlignment->{"Columns" -> {{Left}}},
+                    
+                    GridBoxItemSize->{
+                    "Columns" -> {{Automatic}}, "Rows" -> {{1.}}}], False->
+                    RowBox[{
+                    RowBox[{"HighlightMethod", "\[Rule]", "True"}], 
+                    "\[ThinSpace]", 
+                    StyleBox["\<\"\[Ellipsis]\"\>", "InformationRowOpener",
+                    StripOnInput->False], "\[ThinSpace]", 
+                    StyleBox[
+                    
+                    TemplateBox[{
+                    "\"(\"", "\"\[InvisibleSpace]\"", "110", "\" total)\""},
+                    "RowDefault"], "InformationRowOpener",
+                    StripOnInput->False]}]}, Dynamic[
+                    FEPrivate`Part[System`InformationDump`open$$, 3]],
+                    BaselinePosition->Baseline,
+                    ImageSize->Automatic]},
+                  {
+                   TagBox[
+                    TooltipBox[
+                    StyleBox["\<\" Full Name\"\>", "InformationRowLabel",
+                    StripOnInput->False],
+                    "\"FullName\"",
+                    TooltipStyle->"TextStyling"],
+                    
+                    Annotation[#, "FullName", 
+                    "Tooltip"]& ], "\<\"SSSiCv100`SSSDisplay\"\>"}
+                 },
+                 AutoDelete->False,
+                 GridBoxAlignment->{"Columns" -> {Right, Left}},
+                 GridBoxDividers->None,
+                 GridBoxItemSize->{"Columns" -> {Automatic, Automatic}},
+                 GridBoxSpacings->{"Columns" -> {
+                    Offset[0.27999999999999997`], {
+                    Offset[0.5599999999999999]}, 
+                    Offset[0.27999999999999997`]}, "Rows" -> {
+                    Offset[0.2], {
+                    Offset[0.8]}, 
+                    Offset[0.2]}}], "DialogStyle",
+                StripOnInput->False],
+               DynamicModuleValues:>{}]}
+            },
+            DefaultBaseStyle->"Column",
+            GridBoxAlignment->{"Columns" -> {{Left}}},
+            GridBoxDividers->{"Columns" -> {{False}}, "Rows" -> {{False}}},
+            GridBoxItemSize->{
+             "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+            GridBoxSpacings->{"Columns" -> {
+                Offset[0.27999999999999997`], {
+                 Offset[0.5599999999999999]}, 
+                Offset[0.27999999999999997`]}, "Rows" -> {
+                Offset[0.2], {
+                 Offset[3.6]}, 
+                Offset[0.2]}}],
+           FrameMargins->{{6, 6}, {6, 3}}], ""},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpener"]], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "UpPointerOpenerHot"]]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, False],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"], False->
+      TagBox[GridBox[{
+         {
+          ItemBox[
+           PaneBox[
+            StyleBox[
+             TagBox[
+              TooltipBox[
+               StyleBox["\<\" Symbol\"\>", "InformationRowLabel",
+                StripOnInput->False],
+               "\"Symbol\"",
+               TooltipStyle->"TextStyling"],
+              Annotation[#, "Symbol", "Tooltip"]& ], "InformationTitleText",
+             StripOnInput->False],
+            FrameMargins->{{4, 0}, {-1, 1}}],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           PaneBox[
+            
+            StyleBox["\<\"SSSDisplay[\\!\\(\\*StyleBox[\\\"sss\\\",FontSlant->\
+\\\"Italic\\\"]\\), \\!\\(\\*StyleBox[\\\"opts\\\",FontSlant->\\\"Italic\\\"]\
+\\)] displays the sequential substitution system \
+\\!\\(\\*StyleBox[\\\"sss\\\",FontSlant->\\\"Italic\\\"]\\) and/or its causal \
+network.  Use SSS (or SSSInitialize and SSSEvolve) to construct it \
+first.\\n\\nOptions:\\n\\tMin \[Rule] \\!\\(\\*StyleBox[\\\"n\\\",FontSlant->\
+\\\"Italic\\\"]\\) cuts off the display before the first \\!\\(\\*StyleBox[\\\
+\"n\\\",FontSlant->\\\"Italic\\\"]\\) steps of the system.  (Separate values \
+can be specified for SSSMin and NetMin.)\\n\\tMax \[Rule] \
+\\!\\(\\*StyleBox[\\\"n\\\",FontSlant->\\\"Italic\\\"]\\) cuts off the \
+display after the first \
+\\!\\(\\*StyleBox[\\\"n\\\",FontSlant->\\\"Italic\\\"]\\) steps of the \
+system.  (Separate values can be specified for SSSMax and \
+NetMax.)\\n\\tVertexLabels \[Rule] Automatic (or \\\"Name\\\") | \
+\\\"VertexWeight\\\" | \[Ellipsis]  labels vertices by node number or \
+distance from origin, etc.\\n\\n\\tHighlightMethod \[Rule] Dot | Frame | \
+Number (or True) | None (or False) specifies how the matches in the SSS are \
+highlighted. \\n\\n\\tShowRule \[Rule] Bottom | Top | Left | Right | None (or \
+False) specifies where to place the rulelist icon relative to the SSS visual \
+display (if shown).  \\n\\n\\tSizes of display components are specified by \
+the options NetSize, SSSSize, IconSize and ImageSize (which refers to the \
+pane containing the SSS display and icon).\\n\\n\\tNetMethod \[Rule] \
+GraphPlot | LayeredGraphPlot | TreePlot | GraphPlot3D | All | NoSSS | list of \
+methods, \\n\\t\\twhere NoSSS generates no SSS display (causal network only) \
+and the other choices specify how the causal network is to be shown.\"\>", 
+             "InformationUsageText",
+             StripOnInput->False,
+             LineSpacing->{1.5, 1.5, 3.}],
+            FrameMargins->{{10, 10}, {8, 10}}],
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False], 
+          ItemBox["\<\"\"\>",
+           BaseStyle->"InformationUsageSubtitleBackground",
+           StripOnInput->False]},
+         {
+          ItemBox[
+           TagBox[
+            ButtonBox[
+             PaneSelectorBox[{False->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpener"],
+               ImageSizeCache->{10., {3., 7.}}], True->
+              
+              DynamicBox[FEPrivate`FrontEndResource[
+               "FEBitmaps", "DownPointerOpenerHot"],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
+             Alignment->Left,
+             Appearance->{"Default" -> None},
+             
+             ButtonFunction:>FEPrivate`Set[
+              System`InformationDump`open$$, True],
+             Evaluator->Automatic,
+             FrameMargins->{{9, 0}, {0, 0}},
+             ImageMargins->0,
+             ImageSize->Full,
+             Method->"Preemptive"],
+            
+            EventHandlerTag[{
+             "MouseEntered" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, True], 
+              "MouseExited" :> 
+              FEPrivate`Set[System`InformationDump`mouseOver$$, False], 
+              Method -> "Preemptive", PassEventsDown -> Automatic, 
+              PassEventsUp -> True}]],
+           BaseStyle->"InformationTitleBackground",
+           StripOnInput->False], "\[SpanFromLeft]"}
+        },
+        AutoDelete->False,
+        FrameStyle->Directive[
+          GrayLevel[0.8], 
+          Thickness[Tiny]],
+        GridBoxAlignment->{"Columns" -> {Left, Right}, "Rows" -> {{Center}}},
+        GridBoxDividers->{
+         "Columns" -> {{None}}, "Rows" -> {False, {True}, False}},
+        GridBoxItemSize->{
+         "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+       "Grid"]}, Dynamic[System`InformationDump`open$$],
+      BaselinePosition->Baseline,
+      FrameMargins->0,
+      ImageSize->Automatic],
+     DynamicModuleValues:>{}],
+    BaseStyle->"InformationGridFrame",
+    StripOnInput->False], "InformationGridPlain",
+   StripOnInput->False],
+  InformationData[<|
+   "ObjectType" -> "Symbol", "Usage" -> 
+    "SSSDisplay[\!\(\*StyleBox[\"sss\",FontSlant->\"Italic\"]\), \
+\!\(\*StyleBox[\"opts\",FontSlant->\"Italic\"]\)] displays the sequential \
+substitution system \!\(\*StyleBox[\"sss\",FontSlant->\"Italic\"]\) and/or \
+its causal network.  Use SSS (or SSSInitialize and SSSEvolve) to construct it \
+first.\n\nOptions:\n\tMin \[Rule] \!\(\*StyleBox[\"n\",FontSlant->\"Italic\"]\
+\) cuts off the display before the first \
+\!\(\*StyleBox[\"n\",FontSlant->\"Italic\"]\) steps of the system.  (Separate \
+values can be specified for SSSMin and NetMin.)\n\tMax \[Rule] \
+\!\(\*StyleBox[\"n\",FontSlant->\"Italic\"]\) cuts off the display after the \
+first \!\(\*StyleBox[\"n\",FontSlant->\"Italic\"]\) steps of the system.  \
+(Separate values can be specified for SSSMax and NetMax.)\n\tVertexLabels \
+\[Rule] Automatic (or \"Name\") | \"VertexWeight\" | \[Ellipsis]  labels \
+vertices by node number or distance from origin, etc.\n\n\tHighlightMethod \
+\[Rule] Dot | Frame | Number (or True) | None (or False) specifies how the \
+matches in the SSS are highlighted. \n\n\tShowRule \[Rule] Bottom | Top | \
+Left | Right | None (or False) specifies where to place the rulelist icon \
+relative to the SSS visual display (if shown).  \n\n\tSizes of display \
+components are specified by the options NetSize, SSSSize, IconSize and \
+ImageSize (which refers to the pane containing the SSS display and icon).\n\n\
+\tNetMethod \[Rule] GraphPlot | LayeredGraphPlot | TreePlot | GraphPlot3D | \
+All | NoSSS | list of methods, \n\t\twhere NoSSS generates no SSS display \
+(causal network only) and the other choices specify how the causal network is \
+to be shown.", "Documentation" -> None, "OwnValues" -> None, "UpValues" -> 
+    None, "DownValues" -> 
+    Information`InformationValueForm[
+     DownValues, SSSiCv100`SSSDisplay, {SSSiCv100`SSSDisplay[
+         Pattern[SSSiCv100`sss, 
+          Blank[Association]], 
+         Pattern[SSSiCv100`opts, 
+          OptionsPattern[]]] :> 
+       Module[{SSSiCv100`HlM, SSSiCv100`mesh, SSSiCv100`IcS, SSSiCv100`ImS, 
+          SSSiCv100`SS, SSSiCv100`NS, SSSiCv100`RP, SSSiCv100`NM, 
+          SSSiCv100`doGP, SSSiCv100`doLGP, SSSiCv100`doTP, SSSiCv100`doGP3D, 
+          SSSiCv100`doSSS, SSSiCv100`myNet, SSSiCv100`ans, 
+          SSSiCv100`cellsToHighlight, SSSiCv100`rulesApplied, SSSiCv100`mx, 
+          SSSiCv100`netmx, SSSiCv100`sssmx, SSSiCv100`mn, SSSiCv100`netmn, 
+          SSSiCv100`sssmn, SSSiCv100`hs, SSSiCv100`start, SSSiCv100`ev, 
+          SSSiCv100`vrtxs, SSSiCv100`net, SSSiCv100`grph, SSSiCv100`DE}, 
+         SSSiCv100`HlM = (If[# === True, Number, #]& )[
+            OptionValue[SSSiCv100`HighlightMethod]]; 
+         SSSiCv100`RP = OptionValue[SSSiCv100`RulePlacement]; 
+         SSSiCv100`mesh = OptionValue[Mesh]; 
+         SSSiCv100`SS = OptionValue[SSSiCv100`SSSSize]; 
+         SSSiCv100`IcS = OptionValue[SSSiCv100`IconSize]; 
+         SSSiCv100`ImS = OptionValue[ImageSize]; 
+         SSSiCv100`NS = OptionValue[SSSiCv100`NetSize]; 
+         SSSiCv100`NM = OptionValue[SSSiCv100`NetMethod]; 
+         SSSiCv100`DE = OptionValue[DirectedEdges]; 
+         SSSiCv100`mx = OptionValue[Max]; 
+         If[SSSiCv100`mx === Automatic, SSSiCv100`mx = Infinity]; 
+         SSSiCv100`sssmx = OptionValue[SSSiCv100`SSSMax]; 
+         If[SSSiCv100`sssmx === Automatic, SSSiCv100`sssmx = SSSiCv100`mx]; 
+         SSSiCv100`netmx = OptionValue[SSSiCv100`NetMax]; 
+         If[SSSiCv100`netmx === Automatic, SSSiCv100`netmx = SSSiCv100`mx]; 
+         SSSiCv100`mn = OptionValue[Min]; 
+         If[SSSiCv100`mn === Automatic, SSSiCv100`mn = 1]; 
+         SSSiCv100`sssmn = OptionValue[SSSiCv100`SSSMin]; 
+         If[SSSiCv100`sssmn === Automatic, SSSiCv100`sssmn = SSSiCv100`mn]; 
+         SSSiCv100`netmn = OptionValue[SSSiCv100`NetMin]; 
+         If[SSSiCv100`netmn === Automatic, SSSiCv100`netmn = SSSiCv100`mn]; 
+         SSSiCv100`start = 1; 
+         SSSiCv100`vrtxs = Map[Annotation[#, VertexWeight -> Part[
+               SSSiCv100`sss["Distance"], #]]& , 
+            Range[
+             Max[SSSiCv100`start, SSSiCv100`netmn], 
+             Min[SSSiCv100`netmx, 
+              Length[
+               SSSiCv100`sss["Distance"]]]]]; SSSiCv100`net = ReplaceAll[
+            Select[
+             SSSiCv100`sss["Net"], Apply[And, 
+              Thread[
+              Max[SSSiCv100`start, SSSiCv100`netmn] <= Apply[List, #] <= 
+               SSSiCv100`netmx]]& ], Pattern[SSSiCv100`n, 
+              Blank[Integer]] :> SSSiCv100`n + 1 - SSSiCv100`start]; 
+         SSSiCv100`grph = 
+          Graph[SSSiCv100`vrtxs, SSSiCv100`net, DirectedEdges -> 
+            SSSiCv100`DE]; 
+         SSSiCv100`doGP = (
+           SSSiCv100`doLGP = (SSSiCv100`doTP = (SSSiCv100`doGP3D = False))); 
+         SSSiCv100`doSSS = True; If[
+           MemberQ[SSSiCv100`NM, All, {0, Infinity}], 
+           SSSiCv100`doGP = (
+            SSSiCv100`doLGP = (SSSiCv100`doTP = (SSSiCv100`doGP3D = True)))]; 
+         If[
+           MemberQ[SSSiCv100`NM, GraphPlot, {0, Infinity}], SSSiCv100`doGP = 
+           True]; If[
+           MemberQ[SSSiCv100`NM, LayeredGraphPlot, {0, Infinity}], 
+           SSSiCv100`doLGP = True]; If[
+           MemberQ[SSSiCv100`NM, TreePlot, {0, Infinity}], SSSiCv100`doTP = 
+           True]; If[
+           MemberQ[SSSiCv100`NM, GraphPlot3D, {0, Infinity}], 
+           SSSiCv100`doGP3D = True]; If[
+           MemberQ[SSSiCv100`NM, SSSiCv100`NoSSS, {0, Infinity}], 
+           SSSiCv100`doSSS = False]; 
+         If[
+          SSSiCv100`sss["Verdict"] == "Dead", 
+           SSSiCv100`doGP = (
+            SSSiCv100`doLGP = (SSSiCv100`doTP = (SSSiCv100`doGP3D = False)))]; 
+         SSSiCv100`cellsToHighlight = Flatten[
+            MapIndexed[{#, 
+              Part[#2, 1]}& , 
+             Reverse[
+              Part[
+               SSSiCv100`sss["CellsDeleted"], 
+               Span[
+                Max[SSSiCv100`start, SSSiCv100`sssmn], Min[SSSiCv100`sssmx, 
+                  Length[
+                   SSSiCv100`sss["Evolution"]]] - 1]]], {2}], 1]; 
+         SSSiCv100`rulesApplied = Reverse[
+            Part[
+             SSSiCv100`sss["RulesUsed"], 
+             Span[
+              Max[SSSiCv100`start, SSSiCv100`sssmn], Min[SSSiCv100`sssmx, 
+                Length[
+                 SSSiCv100`sss["Evolution"]]] - 1]]]; 
+         SSSiCv100`ans = ArrayPlot[
+            Map[SSSiCv100`FromAlpha, 
+             Part[
+              SSSiCv100`sss["Evolution"], 
+              Span[
+               Max[SSSiCv100`start, SSSiCv100`sssmn], 
+               Min[SSSiCv100`sssmx, 
+                Length[
+                 SSSiCv100`sss["Evolution"]]]]]], 
+            SSSiCv100`myColorOptions[
+             SSSiCv100`sss["MaxColor"]], Mesh -> SSSiCv100`mesh, ImageSize -> 
+            SSSiCv100`SS, Epilog -> Switch[SSSiCv100`HlM, Dot, 
+              Map[Disk[# + 0.5 {-1, 1}, 0.18]& , SSSiCv100`cellsToHighlight], 
+              Frame, {
+               EdgeForm[Thick], 
+               FaceForm[], 
+               Map[Rectangle[# - {1, 0}]& , SSSiCv100`cellsToHighlight]}, 
+              Number, 
+              MapApply[Text, 
+               ReplaceAll[SSSiCv100`cellsToHighlight, {
+                  Pattern[SSSiCv100`x, 
+                   Blank[Integer]], 
+                  Pattern[SSSiCv100`y, 
+                   Blank[Integer]]} :> {
+                  Part[
+                  SSSiCv100`rulesApplied, SSSiCv100`y], {
+                   SSSiCv100`x, SSSiCv100`y} + 0.5 {-1, 1}}]], 
+              Blank[], {}]]; Row[
+           Flatten[{
+             If[
+              Not[SSSiCv100`doSSS], {}, 
+              Pane[
+               Switch[SSSiCv100`RP, Right, 
+                Grid[{{SSSiCv100`ans, 
+                   SSSiCv100`SSSRuleIcon[
+                    SSSiCv100`sss["RuleSet"], 
+                    SSSiCv100`sss["MaxColor"], ImageSize -> SSSiCv100`IcS]}}],
+                 Left, 
+                Grid[{{
+                   SSSiCv100`SSSRuleIcon[
+                    SSSiCv100`sss["RuleSet"], 
+                    SSSiCv100`sss["MaxColor"], ImageSize -> SSSiCv100`IcS], 
+                   SSSiCv100`ans}}], 
+                Alternatives[Bottom, True], 
+                Grid[{{SSSiCv100`ans}, {
+                   SSSiCv100`SSSRuleIcon[
+                    SSSiCv100`sss["RuleSet"], 
+                    SSSiCv100`sss["MaxColor"], ImageSize -> SSSiCv100`IcS]}}],
+                 Top, 
+                Grid[{{
+                   SSSiCv100`SSSRuleIcon[
+                    SSSiCv100`sss["RuleSet"], 
+                    SSSiCv100`sss["MaxColor"], ImageSize -> SSSiCv100`IcS]}, {
+                  SSSiCv100`ans}}], 
+                Blank[], SSSiCv100`ans], ImageSize -> SSSiCv100`ImS, 
+               ImageSizeAction -> "ShrinkToFit"]], 
+             If[SSSiCv100`doGP, 
+              GraphPlot[
+              SSSiCv100`grph, GraphLayout -> "SpringElectricalEmbedding", 
+               Apply[Sequence, 
+                Flatten[{ImageSize -> SSSiCv100`NS, 
+                  FilterRules[{SSSiCv100`opts}, 
+                   Options[GraphPlot]], VertexSize -> Large, VertexLabels -> 
+                  Placed[Automatic, Center]}]]], {}], 
+             If[SSSiCv100`doLGP, 
+              LayeredGraphPlot[SSSiCv100`grph, 
+               Apply[Sequence, 
+                Flatten[{ImageSize -> SSSiCv100`NS, 
+                  FilterRules[{SSSiCv100`opts}, 
+                   Options[LayeredGraphPlot]], VertexSize -> Large, 
+                  VertexLabels -> Placed[Automatic, Center]}]]], {}], 
+             If[SSSiCv100`doTP, 
+              TreePlot[SSSiCv100`grph, Top, 1, 
+               Apply[Sequence, 
+                Flatten[{ImageSize -> SSSiCv100`NS, 
+                  FilterRules[{SSSiCv100`opts}, 
+                   Options[TreePlot]], VertexSize -> Large, VertexLabels -> 
+                  Placed[Automatic, Center], DirectedEdges -> True}]]], {}], 
+             If[SSSiCv100`doGP3D, 
+              GraphPlot3D[
+              SSSiCv100`grph, GraphLayout -> "SpringElectricalEmbedding", 
+               Apply[Sequence, 
+                Flatten[{ImageSize -> SSSiCv100`NS, 
+                  FilterRules[{SSSiCv100`opts}, 
+                   Options[GraphPlot3D]], VertexSize -> Large, VertexLabels -> 
+                  Placed[Automatic, Center]}]]], {}]}], "  "]]}], "SubValues" -> 
+    None, "DefaultValues" -> 
+    Information`InformationValueForm[
+     DefaultValues, SSSiCv100`SSSDisplay, {
+      SyntaxInformation[SSSiCv100`SSSDisplay] -> {"ArgumentsPattern" -> {
+           Blank[], 
+           OptionsPattern[]}}}], "NValues" -> None, "FormatValues" -> None, 
+    "Options" -> {
+     SSSiCv100`HighlightMethod -> True, SSSiCv100`RulePlacement -> Bottom, 
+      Mesh -> True, SSSiCv100`NetSize -> {Automatic, 400}, 
+      SSSiCv100`SSSSize -> {Automatic, 300}, 
+      SSSiCv100`IconSize -> {Automatic, 20}, ImageSize -> Automatic, 
+      SSSiCv100`NetMethod -> GraphPlot, Max -> DirectedInfinity[1], 
+      SSSiCv100`SSSMax -> Automatic, SSSiCv100`NetMax -> Automatic, Min -> 1, 
+      SSSiCv100`SSSMin -> Automatic, SSSiCv100`NetMin -> Automatic, 
+      AlignmentPoint -> Center, AnnotationRules -> {}, AspectRatio -> 
+      Automatic, AutomaticImageSize -> False, Axes -> False, AxesEdge -> 
+      Automatic, AxesLabel -> None, AxesOrigin -> Automatic, AxesStyle -> {}, 
+      Background -> None, BaselinePosition -> Automatic, BaseStyle -> {}, 
+      Boxed -> False, BoxRatios -> Automatic, BoxStyle -> {}, ClipPlanes -> 
+      None, ClipPlanesStyle -> Automatic, ColorOutput -> Automatic, 
+      ContentSelectable -> Automatic, ControllerLinking -> False, 
+      ControllerMethod -> Automatic, ControllerPath -> Automatic, 
+      CoordinatesToolOptions -> Automatic, DataRange -> Automatic, 
+      DirectedEdges -> Automatic, DirectedEdges -> False, EdgeCapacity -> 
+      Automatic, EdgeCost -> Automatic, EdgeLabels -> None, EdgeLabelStyle -> 
+      Automatic, EdgeShapeFunction -> Automatic, EdgeStyle -> Automatic, 
+      EdgeWeight -> Automatic, Editable -> False, Epilog -> {}, FaceGrids -> 
+      None, FaceGridsStyle -> {}, FormatType -> TraditionalForm, Frame -> 
+      False, FrameLabel -> None, FrameStyle -> {}, FrameTicks -> None, 
+      FrameTicksStyle -> {}, GraphHighlight -> {}, GraphHighlightStyle -> 
+      Automatic, GraphLayout -> Automatic, GraphRoot -> Automatic, GraphStyle -> 
+      Automatic, GridLines -> None, GridLinesStyle -> {}, ImageMargins -> 0., 
+      ImagePadding -> All, ImageSize -> Automatic, ImageSizeRaw -> Automatic, 
+      LabelStyle -> {}, LayerSizeFunction -> (1& ), Lighting -> Automatic, 
+      Method -> Automatic, MultiedgeStyle -> Automatic, PackingMethod -> 
+      Automatic, PerformanceGoal -> Automatic, PlotLabel -> None, PlotRange -> 
+      All, PlotRangeClipping -> False, PlotRangePadding -> Automatic, 
+      PlotRegion -> Automatic, PlotStyle -> Automatic, PlotTheme -> Automatic,
+       PreserveImageOptions -> Automatic, Prolog -> {}, Properties -> {}, 
+      RotateLabel -> True, RotationAction -> Fit, SelfLoopStyle -> Automatic, 
+      SphericalRegion -> Automatic, Ticks -> Automatic, TicksStyle -> {}, 
+      TouchscreenAutoZoom -> Automatic, VertexCapacity -> Automatic, 
+      VertexCoordinates -> Automatic, VertexLabels -> None, VertexLabelStyle -> 
+      Automatic, VertexShape -> Automatic, VertexShapeFunction -> Automatic, 
+      VertexSize -> Automatic, VertexStyle -> Automatic, VertexWeight -> 
+      Automatic, ViewAngle -> Automatic, ViewCenter -> Automatic, ViewMatrix -> 
+      Automatic, ViewPoint -> {1.3, -2.4, 2.}, ViewProjection -> Automatic, 
+      ViewRange -> All, ViewVector -> Automatic, ViewVertical -> {0, 0, 1}, 
+      DisplayFunction :> $DisplayFunction}, "Attributes" -> {}, "FullName" -> 
+    "SSSiCv100`SSSDisplay"|>, False]]], "Output",
+ CellChangeTimes->{3.9404136143885593`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"5bf99526-9e72-b64a-a5a6-700900a32e20"]
+}, Open  ]],
+
 Cell[TextData[{
  "Once the ",
  StyleBox["sessie",
@@ -11368,10 +12743,162 @@ Cell[TextData[{
 etc. Choose options using SSSInteractiveDisplay, click one of the use buttons \
 for one time or default use. "
 }], "Text",
- CellChangeTimes->{{3.9391978610881824`*^9, 3.9391978916078873`*^9}, {
+ CellChangeTimes->{{3.9391978610881824`*^9, 3.9391978916078877`*^9}, {
   3.9391981121134377`*^9, 
   3.939198144465431*^9}},ExpressionUUID->"f33d4044-cde4-9c43-9e6d-\
 122b6420d61a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Options", "[", "SSSDisplay", "]"}]], "Input",
+ CellChangeTimes->{{3.94041369981629*^9, 3.9404137091074715`*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"de20bf1e-9843-4d46-9824-461f627aef0f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"HighlightMethod", "\[Rule]", "True"}], ",", 
+   RowBox[{"RulePlacement", "\[Rule]", "Bottom"}], ",", 
+   RowBox[{"Mesh", "\[Rule]", "True"}], ",", 
+   RowBox[{"NetSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Automatic", ",", "400"}], "}"}]}], ",", 
+   RowBox[{"SSSSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Automatic", ",", "300"}], "}"}]}], ",", 
+   RowBox[{"IconSize", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Automatic", ",", "20"}], "}"}]}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"NetMethod", "\[Rule]", "GraphPlot"}], ",", 
+   RowBox[{"Max", "\[Rule]", "\[Infinity]"}], ",", 
+   RowBox[{"SSSMax", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"NetMax", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"Min", "\[Rule]", "1"}], ",", 
+   RowBox[{"SSSMin", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"NetMin", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"AlignmentPoint", "\[Rule]", "Center"}], ",", 
+   RowBox[{"AnnotationRules", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"AspectRatio", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"AutomaticImageSize", "\[Rule]", "False"}], ",", 
+   RowBox[{"Axes", "\[Rule]", "False"}], ",", 
+   RowBox[{"AxesEdge", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", "None"}], ",", 
+   RowBox[{"AxesOrigin", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"AxesStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"Background", "\[Rule]", "None"}], ",", 
+   RowBox[{"BaselinePosition", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"BaseStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"Boxed", "\[Rule]", "False"}], ",", 
+   RowBox[{"BoxRatios", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"BoxStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"ClipPlanes", "\[Rule]", "None"}], ",", 
+   RowBox[{"ClipPlanesStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ColorOutput", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ContentSelectable", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ControllerLinking", "\[Rule]", "False"}], ",", 
+   RowBox[{"ControllerMethod", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ControllerPath", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"CoordinatesToolOptions", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"DataRange", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"DirectedEdges", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"DirectedEdges", "\[Rule]", "False"}], ",", 
+   RowBox[{"EdgeCapacity", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"EdgeCost", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"EdgeLabels", "\[Rule]", "None"}], ",", 
+   RowBox[{"EdgeLabelStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"EdgeShapeFunction", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"EdgeStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"EdgeWeight", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"Editable", "\[Rule]", "False"}], ",", 
+   RowBox[{"Epilog", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"FaceGrids", "\[Rule]", "None"}], ",", 
+   RowBox[{"FaceGridsStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "False"}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", "None"}], ",", 
+   RowBox[{"FrameStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"FrameTicks", "\[Rule]", "None"}], ",", 
+   RowBox[{"FrameTicksStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"GraphHighlight", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"GraphHighlightStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GraphLayout", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GraphRoot", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GraphStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"GridLines", "\[Rule]", "None"}], ",", 
+   RowBox[{"GridLinesStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"ImageMargins", "\[Rule]", "0.`"}], ",", 
+   RowBox[{"ImagePadding", "\[Rule]", "All"}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ImageSizeRaw", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"LabelStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"LayerSizeFunction", "\[Rule]", 
+    RowBox[{"(", 
+     RowBox[{"1", "&"}], ")"}]}], ",", 
+   RowBox[{"Lighting", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"Method", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"MultiedgeStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PackingMethod", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PerformanceGoal", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PlotLabel", "\[Rule]", "None"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"PlotRangeClipping", "\[Rule]", "False"}], ",", 
+   RowBox[{"PlotRangePadding", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PlotRegion", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PlotStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PlotTheme", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"PreserveImageOptions", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"Prolog", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"Properties", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"RotateLabel", "\[Rule]", "True"}], ",", 
+   RowBox[{"RotationAction", "\[Rule]", "Fit"}], ",", 
+   RowBox[{"SelfLoopStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"SphericalRegion", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"Ticks", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"TicksStyle", "\[Rule]", 
+    RowBox[{"{", "}"}]}], ",", 
+   RowBox[{"TouchscreenAutoZoom", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexCapacity", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexCoordinates", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexLabels", "\[Rule]", "None"}], ",", 
+   RowBox[{"VertexLabelStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexShape", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexShapeFunction", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexSize", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexStyle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"VertexWeight", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ViewAngle", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ViewCenter", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ViewMatrix", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ViewPoint", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"1.3`", ",", 
+      RowBox[{"-", "2.4`"}], ",", "2.`"}], "}"}]}], ",", 
+   RowBox[{"ViewProjection", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ViewRange", "\[Rule]", "All"}], ",", 
+   RowBox[{"ViewVector", "\[Rule]", "Automatic"}], ",", 
+   RowBox[{"ViewVertical", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"0", ",", "0", ",", "1"}], "}"}]}], ",", 
+   RowBox[{"DisplayFunction", "\[RuleDelayed]", "$DisplayFunction"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.940413710073704*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"1d9f3526-52f6-f248-8d6e-99813863a6cf"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"SSSInteractiveDisplay", "[", "sss2", "]"}]], "Input",
@@ -11416,8 +12943,8 @@ Cell[BoxData[
    RowBox[{"DirectedEdges", "\[Rule]", "False"}]}], "]"}]], "Input",
  CellChangeTimes->{
   3.939198162759537*^9, {3.9391981987408867`*^9, 3.939198209674585*^9}, {
-   3.9398213608977737`*^9, 3.9398213625383415`*^9}, {3.939821708063841*^9, 
-   3.9398217233827496`*^9}},
+   3.939821360897774*^9, 3.9398213625383415`*^9}, {3.939821708063841*^9, 
+   3.939821723382749*^9}},
  CellLabel->"In[7]:=",ExpressionUUID->"2776552f-1dce-1844-8037-32c26daadd91"],
 
 Cell[BoxData[
@@ -16516,7 +18043,7 @@ PvE3W8cPXdn/AM/RNp4=
   "RowWithSeparators"]], "Output",
  CellChangeTimes->{
   3.939198172403866*^9, 3.939198212590021*^9, 3.939821363444477*^9, 
-   3.9398214752186546`*^9, {3.939821715342989*^9, 3.939821724766136*^9}, 
+   3.939821475218654*^9, {3.939821715342989*^9, 3.939821724766136*^9}, 
    3.939995861694215*^9},
  CellLabel->"Out[7]=",ExpressionUUID->"306a7feb-7da0-4250-859a-e1de57cea511"]
 }, Open  ]],
@@ -16596,7 +18123,7 @@ Cell[BoxData[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.939198289068182*^9, 3.9398216088092327`*^9, 
+ CellChangeTimes->{3.939198289068182*^9, 3.939821608809233*^9, 
   3.939995901568897*^9},
  CellLabel->"Out[9]=",ExpressionUUID->"16493dc6-9636-4a7f-b269-b16d72fccb30"]
 }, Open  ]],
@@ -16604,7 +18131,7 @@ Cell[BoxData[
 Cell["\<\
 Other components of the Sessie object can also be studied individually. \
 \>", "Text",
- CellChangeTimes->{{3.9391983478680577`*^9, 
+ CellChangeTimes->{{3.939198347868058*^9, 
   3.939198370921517*^9}},ExpressionUUID->"636b1af7-976e-3043-aa2f-\
 c0d9bc0af530"],
 
@@ -16613,7 +18140,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"sss1", "[", 
   RowBox[{"[", "\"\<RuleSet\>\"", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.9391983759095726`*^9, 3.9391983903956146`*^9}},
+ CellChangeTimes->{{3.9391983759095726`*^9, 3.939198390395614*^9}},
  CellLabel->"In[9]:=",ExpressionUUID->"39ce9149-b506-8348-a365-81947dd58d2a"],
 
 Cell[BoxData[
@@ -16630,8 +18157,8 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"sss1", "[", 
   RowBox[{"[", "\"\<Evolution\>\"", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.9391983759095726`*^9, 3.9391984342670193`*^9}, {
-  3.939198482124792*^9, 3.9391984888108616`*^9}},
+ CellChangeTimes->{{3.9391983759095726`*^9, 3.939198434267019*^9}, {
+  3.939198482124792*^9, 3.939198488810861*^9}},
  CellLabel->"In[12]:=",ExpressionUUID->"3e631371-7452-634c-8b8d-cff59e564a0a"],
 
 Cell[BoxData[
@@ -16657,7 +18184,7 @@ Cell[CellGroupData[{
 Cell[BoxData[
  RowBox[{"sss1", "[", 
   RowBox[{"[", "\"\<RulesUsed\>\"", "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.9391984942382126`*^9, 3.939198503099695*^9}},
+ CellChangeTimes->{{3.939198494238212*^9, 3.939198503099695*^9}},
  CellLabel->"In[13]:=",ExpressionUUID->"8a187969-03ad-194e-8cfb-af60327d4432"],
 
 Cell[BoxData[
@@ -16690,14 +18217,14 @@ RulesUsed gives the list of which rules were used at each time step.
 Cell["\<\
 FAQ Sessie Intro, 2024.11.07, Kenneth Caviness and Colton Edelbach\
 \>", "Affiliation",
- CellChangeTimes->{{3.9399954163335657`*^9, 3.9399955199292727`*^9}, {
+ CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
   3.9399960732544947`*^9, 3.939996081692621*^9}},
  TextAlignment->Center,ExpressionUUID->"5ca40168-f2a4-47e3-bb90-bf95c3ad21c3"]
 }, Open  ]]
 },
-WindowSize->{949, 467},
+WindowSize->{949, 461},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"1378fcc5-01cb-420a-992d-28589599ae90"
 ]
@@ -16713,57 +18240,66 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 220, 4, 98, "Title",ExpressionUUID->"8ee9c5e2-24f6-044a-8f22-72e51ba70cbc"],
-Cell[803, 28, 712, 14, 64, "Input",ExpressionUUID->"d79c0b09-d972-cd43-9c2a-cb7faae7e59a",
+Cell[580, 22, 218, 4, 98, "Title",ExpressionUUID->"8ee9c5e2-24f6-044a-8f22-72e51ba70cbc"],
+Cell[801, 28, 712, 14, 64, "Input",ExpressionUUID->"d79c0b09-d972-cd43-9c2a-cb7faae7e59a",
  InitializationCell->True],
-Cell[1518, 44, 1026, 16, 104, "Text",ExpressionUUID->"50a8a905-32ba-2847-98a6-1cc2b2a25e46"],
-Cell[2547, 62, 598, 11, 81, "Text",ExpressionUUID->"94d4bc5b-4980-f441-aa56-c22dad376ae5"],
-Cell[3148, 75, 643, 11, 81, "Text",ExpressionUUID->"3f841c56-8afb-544f-8519-37e9306eb2c4"],
-Cell[3794, 88, 421, 8, 58, "Text",ExpressionUUID->"083da44b-8432-d24a-9ce5-5f850384ec9f"],
-Cell[4218, 98, 375, 7, 35, "Text",ExpressionUUID->"d3915951-b6ee-6b4a-807e-3288f05626c5"],
-Cell[4596, 107, 426, 6, 38, "CodeText",ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-b2311f710ccf"],
-Cell[5025, 115, 276, 5, 35, "Text",ExpressionUUID->"93cb3ee2-8b24-f940-9838-0b0fe052d78c"],
+Cell[1516, 44, 1026, 16, 104, "Text",ExpressionUUID->"50a8a905-32ba-2847-98a6-1cc2b2a25e46"],
+Cell[2545, 62, 598, 11, 81, "Text",ExpressionUUID->"94d4bc5b-4980-f441-aa56-c22dad376ae5"],
+Cell[3146, 75, 640, 11, 81, "Text",ExpressionUUID->"3f841c56-8afb-544f-8519-37e9306eb2c4"],
+Cell[3789, 88, 421, 8, 58, "Text",ExpressionUUID->"083da44b-8432-d24a-9ce5-5f850384ec9f"],
+Cell[4213, 98, 375, 7, 35, "Text",ExpressionUUID->"d3915951-b6ee-6b4a-807e-3288f05626c5"],
+Cell[4591, 107, 424, 6, 38, "CodeText",ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-b2311f710ccf"],
+Cell[5018, 115, 276, 5, 35, "Text",ExpressionUUID->"93cb3ee2-8b24-f940-9838-0b0fe052d78c"],
 Cell[CellGroupData[{
-Cell[5326, 124, 1080, 20, 28, "Input",ExpressionUUID->"32164190-3867-0e4e-9b3f-d4142bcd7fb7"],
-Cell[6409, 146, 32430, 661, 194, "Print",ExpressionUUID->"5a96082d-5de7-48d1-b191-37746341e40e"]
+Cell[5319, 124, 1076, 20, 28, "Input",ExpressionUUID->"32164190-3867-0e4e-9b3f-d4142bcd7fb7"],
+Cell[6398, 146, 32430, 661, 193, "Print",ExpressionUUID->"5a96082d-5de7-48d1-b191-37746341e40e"]
 }, Open  ]],
-Cell[38854, 810, 277, 6, 35, "Text",ExpressionUUID->"9dcd13da-1b34-ce45-a144-9754e87692cb"],
+Cell[38843, 810, 277, 6, 35, "Text",ExpressionUUID->"9dcd13da-1b34-ce45-a144-9754e87692cb"],
 Cell[CellGroupData[{
-Cell[39156, 820, 893, 19, 28, "Input",ExpressionUUID->"3173bd8a-6d7e-694f-bb33-adbf60e7bd85"],
-Cell[40052, 841, 507018, 9633, 280, "Print",ExpressionUUID->"668b7c34-2cb0-43a6-a953-d515fb7637da"]
+Cell[39145, 820, 893, 19, 28, "Input",ExpressionUUID->"3173bd8a-6d7e-694f-bb33-adbf60e7bd85"],
+Cell[40041, 841, 507029, 9634, 291, "Print",ExpressionUUID->"668b7c34-2cb0-43a6-a953-d515fb7637da"]
 }, Open  ]],
-Cell[547085, 10477, 321, 6, 35, "Text",ExpressionUUID->"a58a9446-131f-7647-ac6e-4d1db09c6bae"],
+Cell[547085, 10478, 319, 6, 35, "Text",ExpressionUUID->"a58a9446-131f-7647-ac6e-4d1db09c6bae"],
 Cell[CellGroupData[{
-Cell[547431, 10487, 194, 3, 28, "Input",ExpressionUUID->"0617b732-e8c6-954c-a7cf-85c9a0099251"],
-Cell[547628, 10492, 40328, 867, 245, "Output",ExpressionUUID->"b3d5aeb0-a102-6f41-93f7-aebcded65f78"]
+Cell[547429, 10488, 194, 3, 28, "Input",ExpressionUUID->"0617b732-e8c6-954c-a7cf-85c9a0099251"],
+Cell[547626, 10493, 40284, 868, 245, "Output",ExpressionUUID->"b3d5aeb0-a102-6f41-93f7-aebcded65f78"]
 }, Open  ]],
-Cell[587971, 11362, 459, 11, 58, "Text",ExpressionUUID->"f33d4044-cde4-9c43-9e6d-122b6420d61a"],
-Cell[588433, 11375, 225, 3, 28, "Input",ExpressionUUID->"55f33d92-e6dc-c54b-848a-30ffa73a388c"],
-Cell[588661, 11380, 279, 6, 35, "Text",ExpressionUUID->"5024d2a7-d01f-394b-a12b-0d5d96aebf79"],
+Cell[587925, 11364, 281, 5, 35, "Text",ExpressionUUID->"cb4968d2-9767-6542-ad9c-7d2c515a12ee"],
 Cell[CellGroupData[{
-Cell[588965, 11390, 1398, 30, 86, "Input",ExpressionUUID->"2776552f-1dce-1844-8037-32c26daadd91"],
-Cell[590366, 11422, 244542, 5098, 315, "Output",ExpressionUUID->"306a7feb-7da0-4250-859a-e1de57cea511"]
+Cell[588231, 11373, 197, 3, 28, "Input",ExpressionUUID->"cfdd8638-1307-c145-854d-0df7131478f6"],
+Cell[588431, 11378, 64676, 1356, 499, "Output",ExpressionUUID->"5bf99526-9e72-b64a-a5a6-700900a32e20"]
 }, Open  ]],
-Cell[834923, 16523, 244, 4, 35, "Text",ExpressionUUID->"1ae5c6ad-82d4-b245-bb85-88d6892b9284"],
+Cell[653122, 12737, 459, 11, 58, "Text",ExpressionUUID->"f33d4044-cde4-9c43-9e6d-122b6420d61a"],
 Cell[CellGroupData[{
-Cell[835192, 16531, 210, 3, 28, "Input",ExpressionUUID->"475ba7fe-429d-be44-9a0b-cf36e190ff79"],
-Cell[835405, 16536, 2893, 64, 385, "Output",ExpressionUUID->"16493dc6-9636-4a7f-b269-b16d72fccb30"]
+Cell[653606, 12752, 215, 3, 28, "Input",ExpressionUUID->"de20bf1e-9843-4d46-9824-461f627aef0f"],
+Cell[653824, 12757, 6955, 142, 470, "Output",ExpressionUUID->"1d9f3526-52f6-f248-8d6e-99813863a6cf"]
 }, Open  ]],
-Cell[838313, 16603, 224, 5, 35, "Text",ExpressionUUID->"636b1af7-976e-3043-aa2f-c0d9bc0af530"],
+Cell[660794, 12902, 225, 3, 28, "Input",ExpressionUUID->"55f33d92-e6dc-c54b-848a-30ffa73a388c"],
+Cell[661022, 12907, 279, 6, 35, "Text",ExpressionUUID->"5024d2a7-d01f-394b-a12b-0d5d96aebf79"],
 Cell[CellGroupData[{
-Cell[838562, 16612, 242, 4, 28, "Input",ExpressionUUID->"39ce9149-b506-8348-a365-81947dd58d2a"],
-Cell[838807, 16618, 293, 6, 32, "Output",ExpressionUUID->"238be05f-90ad-b04d-a406-4084714d2d2f"]
+Cell[661326, 12917, 1394, 30, 86, "Input",ExpressionUUID->"2776552f-1dce-1844-8037-32c26daadd91"],
+Cell[662723, 12949, 244540, 5098, 326, "Output",ExpressionUUID->"306a7feb-7da0-4250-859a-e1de57cea511"]
+}, Open  ]],
+Cell[907278, 18050, 244, 4, 35, "Text",ExpressionUUID->"1ae5c6ad-82d4-b245-bb85-88d6892b9284"],
+Cell[CellGroupData[{
+Cell[907547, 18058, 210, 3, 28, "Input",ExpressionUUID->"475ba7fe-429d-be44-9a0b-cf36e190ff79"],
+Cell[907760, 18063, 2891, 64, 385, "Output",ExpressionUUID->"16493dc6-9636-4a7f-b269-b16d72fccb30"]
+}, Open  ]],
+Cell[910666, 18130, 222, 5, 35, "Text",ExpressionUUID->"636b1af7-976e-3043-aa2f-c0d9bc0af530"],
+Cell[CellGroupData[{
+Cell[910913, 18139, 240, 4, 28, "Input",ExpressionUUID->"39ce9149-b506-8348-a365-81947dd58d2a"],
+Cell[911156, 18145, 293, 6, 32, "Output",ExpressionUUID->"238be05f-90ad-b04d-a406-4084714d2d2f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[839137, 16629, 296, 5, 28, "Input",ExpressionUUID->"3e631371-7452-634c-8b8d-cff59e564a0a"],
-Cell[839436, 16636, 912, 15, 71, "Output",ExpressionUUID->"f84ce110-c7b8-e64f-b2cd-da73f331f9c6"]
+Cell[911486, 18156, 292, 5, 28, "Input",ExpressionUUID->"3e631371-7452-634c-8b8d-cff59e564a0a"],
+Cell[911781, 18163, 912, 15, 71, "Output",ExpressionUUID->"f84ce110-c7b8-e64f-b2cd-da73f331f9c6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[840385, 16656, 243, 4, 28, "Input",ExpressionUUID->"8a187969-03ad-194e-8cfb-af60327d4432"],
-Cell[840631, 16662, 439, 8, 32, "Output",ExpressionUUID->"3a4b04c8-c526-964f-85f8-b8ffbc48b9d4"]
+Cell[912730, 18183, 241, 4, 28, "Input",ExpressionUUID->"8a187969-03ad-194e-8cfb-af60327d4432"],
+Cell[912974, 18189, 439, 8, 32, "Output",ExpressionUUID->"3a4b04c8-c526-964f-85f8-b8ffbc48b9d4"]
 }, Open  ]],
-Cell[841085, 16673, 815, 14, 127, "Text",ExpressionUUID->"0b3bb6ae-9102-ae41-8df4-38580f34ef8c"],
-Cell[841903, 16689, 297, 5, 31, "Affiliation",ExpressionUUID->"5ca40168-f2a4-47e3-bb90-bf95c3ad21c3"]
+Cell[913428, 18200, 815, 14, 127, "Text",ExpressionUUID->"0b3bb6ae-9102-ae41-8df4-38580f34ef8c"],
+Cell[914246, 18216, 295, 5, 31, "Affiliation",ExpressionUUID->"5ca40168-f2a4-47e3-bb90-bf95c3ad21c3"]
 }, Open  ]]
 }
 ]
