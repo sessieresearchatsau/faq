@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    706317,      12015]
-NotebookOptionsPosition[    703269,      11961]
-NotebookOutlinePosition[    703674,      11977]
-CellTagsIndexPosition[    703631,      11974]
+NotebookDataLength[    716329,      12221]
+NotebookOptionsPosition[    712582,      12158]
+NotebookOutlinePosition[    712981,      12174]
+CellTagsIndexPosition[    712938,      12171]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -41,7 +41,7 @@ Cell[BoxData[{
    3.939048652824898*^9, 3.939048662772999*^9}, {3.939048891462473*^9, 
    3.939048899769232*^9}, {3.939050675614113*^9, 3.9390506757015133`*^9}, {
    3.9390507275600243`*^9, 3.93905072931427*^9}},
- CellLabel->"In[23]:=",ExpressionUUID->"cef5c5d2-55d4-47d0-adce-42b0f5efa22a"],
+ CellLabel->"In[1]:=",ExpressionUUID->"cef5c5d2-55d4-47d0-adce-42b0f5efa22a"],
 
 Cell[CellGroupData[{
 
@@ -51,15 +51,41 @@ Cell[TextData[StyleBox["Original Sessie Enumeration",
   3.9386078234522743`*^9}},ExpressionUUID->"7de7bb53-7b63-9c4c-a567-\
 c9c502fd73fa"],
 
+Cell["The first attempt to enumerate sessies was published here:", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+   3.938609219772644*^9, 3.9386092204075623`*^9}, 3.9405365618738537`*^9, 
+   3.9405366453288536`*^9},ExpressionUUID->"c65f00c2-5dcc-f447-b593-\
+cb3cc37b746d"],
+
+Cell[TextData[{
+ "\t",
+ ButtonBox["http://www.mathematica-journal.com/2011/05/indexing-strings-and-\
+rulesets/",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    URL["http://www.mathematica-journal.com/2011/05/indexing-strings-and-\
+rulesets/"], None},
+  ButtonNote->
+   "http://www.mathematica-journal.com/2011/05/indexing-strings-and-rulesets/"]
+}], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+  3.938609219772644*^9, 3.9386092204075623`*^9}, {3.940536565177908*^9, 
+  3.940536578680151*^9}, {3.9405366410499*^9, 
+  3.9405366410499*^9}},ExpressionUUID->"ce50beaa-1a02-2141-ab42-1fa47836a33b"],
+
 Cell["\<\
-The first attempt to enumerate sessies was published here This has now been \
-replaced by enumerations allowing better predictions based on simpler \
-mathematical relationships.\
+The article delineates the step-by-step process involved in creating a \
+limited enumeration of strings, a universal enumeration of all strings (think \
+all words in all languages), an enumeration of all lists of strings (think \
+all books in all languages), and finally a first attempt at enumerating all \
+sessie rule sets. The latter has now been replaced by enumerations allowing \
+better predictions based on simpler mathematical relationships.\
 \>", "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
-  3.938609219772644*^9, 
-  3.9386092204075623`*^9}},ExpressionUUID->"c65f00c2-5dcc-f447-b593-\
-cb3cc37b746d"]
+  3.938609219772644*^9, 3.9386092204075623`*^9}, {3.940536655703905*^9, 
+  3.9405367459196663`*^9}, {3.940536778423521*^9, 
+  3.9405369048450165`*^9}},ExpressionUUID->"0512e0fc-4263-c64f-8872-\
+666cdd0bfb0a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -82,15 +108,28 @@ Cell[TextData[StyleBox["Generalized Sessie Enumeration",
 Cell["\<\
 Since then we have simplified and generalized the enumeration algorithm (the \
 subject of a paper by Caviness, Case, Morrow & Kratzke)(2020). A new fully \
-general algorithm based on 1 base-2 digit (starting with an empty string or \
-non empty string) and further base-5 operation codes (which progressively \
-modify the rules) were used in the code everywhere for several years.\
+general algorithm based on one base-2 digit and further base-5 operation \
+codes has been used in the code everywhere for several years. The first bit \
+specifies the use of an empty string or a non-empty string in the first rule \
+set, further codes progressively modify the rules.\
 \>", "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
   3.938609219772644*^9, 3.9386092226449223`*^9}, {3.9404264331848125`*^9, 
-  3.9404264532984877`*^9}, {3.940426860670981*^9, 
-  3.940426920230582*^9}},ExpressionUUID->"5a4753e1-a863-3742-b5ba-\
+  3.9404264532984877`*^9}, {3.940426860670981*^9, 3.940426920230582*^9}, {
+  3.940537005553505*^9, 3.9405370069110985`*^9}, {3.9405374464995747`*^9, 
+  3.9405376903778095`*^9}},ExpressionUUID->"5a4753e1-a863-3742-b5ba-\
 7c9f7a9ae2f7"],
+
+Cell["\<\
+Here are the first 62 rule sets in the Generalized Sequential Substititution \
+System Enumeration:\
+\>", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+  3.938609219772644*^9, 3.9386092226449223`*^9}, {3.9404264331848125`*^9, 
+  3.9404264532984877`*^9}, {3.940426860670981*^9, 3.940426920230582*^9}, {
+  3.940537005553505*^9, 3.9405370069110985`*^9}, {3.9405374464995747`*^9, 
+  3.940537754489546*^9}},ExpressionUUID->"e70d71b1-d122-024c-8d8d-\
+ec950e7ca058"],
 
 Cell[TextData[Cell[BoxData[
  GraphicsBox[
@@ -10844,7 +10883,7 @@ AADgP4Oopv8B60wPQw==
     "], {{0, 973.}, {393., 0}}, {0, 255},
     ColorFunction->RGBColor,
     ImageResolution->{144., 144.},
-    SmoothingQuality->"High"],
+    RasterInterpolation->"High"],
    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
@@ -10869,21 +10908,28 @@ Cell[TextData[StyleBox["Reduced Sessie Enumeration",
 f4dac992a86e"],
 
 Cell[TextData[{
- "Reduced Sessie Enumeration uses only base-5 codes, meaning that you never \
-start with an empty string in the first rule. ",
+ "The Reduced Sessie Enumeration uses only quinary (base-5) codes, meaning \
+that you never start with an empty string in the first rule. ",
  StyleBox["fromReducedRank[n] ",
   FontSlant->"Italic"],
- "gives the n-th ruleset in the reduced quinary (base-5) enumeration. The \
-first 62 rulesets are listed below. If we define the weight of a ruleset as \
-the sum of the individual letters, with A=1, B=2, C=3, \[Ellipsis], it is \
-clear that in this list, weight 1 rulesets (containing only 1 letter, an A) \
-all appear before weight 2 rulesets (containing either 2 As or 1 B), and \
-weight 2 rulesets before those of weight 3, etc. "
+ "gives the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["n", "th"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "316988ab-6918-ec47-ba90-b5885a58a24e"],
+ " ruleset in the reduced quinary enumeration. The first 62 rulesets are \
+listed below. If we define the weight of a ruleset as the sum of the \
+individual letters, with A=1, B=2, C=3, \[Ellipsis], it is clear that in this \
+list, weight 1 rulesets (containing only 1 letter, an A) all appear before \
+weight 2 rulesets (containing either 2 As or 1 B), and weight 2 rulesets \
+before those of weight 3, etc. "
 }], "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079338445625`*^9}, {
   3.938609081225607*^9, 3.938609093793503*^9}, {3.9386091694447746`*^9, 
-  3.9386091747886124`*^9}, {3.940426970139702*^9, 
-  3.9404270236143017`*^9}},ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-\
+  3.9386091747886124`*^9}, {3.940426970139702*^9, 3.9404270236143017`*^9}, {
+  3.9405378773411674`*^9, 
+  3.940537928220003*^9}},ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-\
 a6659e93b944"],
 
 Cell[CellGroupData[{
@@ -11772,20 +11818,22 @@ Cell["\<\
 Within any given weight, advancing through the enumeration tends to compact \
 the weight into fewer characters, moving it gradually towards the left. So \
 the most spread out ruleset of weight 3, {\[OpenCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
-\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\
-\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]} \
-is the first of this weight in the list, {\[OpenCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\
-\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]} is \
+the first of this weight in the list, {\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]B\
 \[CloseCurlyDoubleQuote]} appears further down, and {\[OpenCurlyDoubleQuote]C\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote]} \
-is the last of this weight, with the entire weight compacted to the left.\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]} is \
+the last of this weight, with the entire weight compacted to the left.\
 \>", "Text",
- CellChangeTimes->{{3.938607774823105*^9, 
-  3.9386080186467*^9}},ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386080186467*^9}, {
+  3.940537986249012*^9, 
+  3.9405380284254436`*^9}},ExpressionUUID->"a5998614-67a9-694f-891c-\
+733ead3577d1"],
 
 Cell["\<\
 Note: The \[OpenCurlyDoubleQuote]most spread out\[CloseCurlyDoubleQuote] \
@@ -11796,42 +11844,52 @@ deletion rules (where the replacement string is \[OpenCurlyDoubleQuote]\
 \[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]), and the possibility that an \
 insertion might follow right after a deletion, thus putting 2 empty strings \
 in sequence. E.g., {\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\
-\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]}. \
-But we will never need more than 2 consecutive empty strings, and this \
-algorithm also produces \[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\
-\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote] rules. More on that problem \
-below.\
+\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]}. \
+But we will never need more than 2 consecutive empty strings, and \
+unfortunately this algorithm also produces \[OpenCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote] \
+rules. More on that problem below.\
 \>", "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, 
-   3.9386082120747185`*^9},ExpressionUUID->"53a68df3-21ea-2641-872e-\
+   3.9386082120747185`*^9, {3.940538049679123*^9, 
+   3.9405380720702057`*^9}},ExpressionUUID->"53a68df3-21ea-2641-872e-\
 15508eda4e4a"],
 
 Cell["\<\
 The algorithm is guaranteed to produce all valid rulesets somewhere in the \
 list, if one goes far enough. It can easily be seen that there is no limit on \
-the number of rules in the ruleset, all cases eventually occurring, and all \
+the number of rules in the ruleset: all cases will eventually occur, and all \
 combinations of all letters will eventually appear everywhere in the ruleset.\
 \>", "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, 
-   3.9386082142183266`*^9},ExpressionUUID->"1a933d5e-6161-b443-9f40-\
+   3.9386082142183266`*^9, {3.9405380923221073`*^9, 3.9405380983112926`*^9}, 
+   3.9405382376405754`*^9},ExpressionUUID->"1a933d5e-6161-b443-9f40-\
 e71b9baf0e4a"],
 
-Cell["\<\
-As already mentioned, this does generate some unneeded cases, e.g., with \
-empty strings at too many positions in the ruleset, such as \
-\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\
-\[CloseCurlyDoubleQuote] rules, or multiple \[OpenCurlyDoubleQuote]\
-\[CloseCurlyDoubleQuote]->something rules -- only the first one could ever be \
-used, or indeed any case where an insertion rule appears before the final \
-position in the ruleset. But the most important thing is that all cases we \
-want to study are included, and there is no repetition at all in the \
-enumeration. It is also worth noting that this enumeration never produces \
-invalid rulesets.\
-\>", "Text",
+Cell[TextData[{
+ "As already mentioned, this does generate some unneeded cases, e.g., with \
+empty strings at too many positions in the ruleset, such as ",
+ StyleBox["nothing",
+  FontSlant->"Italic"],
+ "->",
+ StyleBox["nothing",
+  FontSlant->"Italic"],
+ " rules, or multiple ",
+ StyleBox["nothing",
+  FontSlant->"Italic"],
+ "->",
+ StyleBox["something",
+  FontSlant->"Italic"],
+ " rules -- only the first one could ever be used, or indeed any case where \
+an insertion rule appears before the final position in the ruleset. But the \
+most important thing is that all cases we want to study are included, and \
+there is no repetition at all in the enumeration. It is also worth noting \
+that this enumeration never produces invalid rulesets either."
+}], "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
-  3.9386082350548935`*^9, 
-  3.938608271495035*^9}},ExpressionUUID->"32c8b98f-7e92-af4d-b450-\
+  3.9386082350548935`*^9, 3.938608271495035*^9}, {3.9405381142147408`*^9, 
+  3.9405381741982803`*^9}},ExpressionUUID->"32c8b98f-7e92-af4d-b450-\
 749c65828672"]
 }, Open  ]],
 
@@ -11846,20 +11904,21 @@ Cell[TextData[StyleBox["Explanation of Q-Codes",
 a90cf2e51ddf"],
 
 Cell["\<\
- \[FilledSmallSquare] 0: end this string, insert two empty strings and start \
-a new string with an \[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] \
+\[FilledSmallSquare] 0: end this string, insert two empty strings and start a \
+new string with an \"A\" \
 \>", "Text",
- CellChangeTimes->{{3.9404273272912436`*^9, 
-  3.940427356024347*^9}},ExpressionUUID->"7398668d-2f2a-49bf-b382-\
-dc8fc59732cc"],
+ CellChangeTimes->{{3.9404273272912436`*^9, 3.940427340528697*^9}, 
+   3.9405382040476456`*^9, {3.9405382510629005`*^9, 
+   3.9405382596900787`*^9}},ExpressionUUID->"04d28a3d-b184-b04a-8056-\
+73e4187bdbdc"],
 
 Cell["\<\
 \[FilledSmallSquare] 1: end this string, insert one empty string and start a \
 new string with an \"A\" \
 \>", "Text",
- CellChangeTimes->{{3.9404273272912436`*^9, 
-  3.940427340528697*^9}},ExpressionUUID->"e6668b67-29d6-44a7-a371-\
-ce5a10301b70"],
+ CellChangeTimes->{{3.9404273272912436`*^9, 3.940427340528697*^9}, 
+   3.9405382040476456`*^9},ExpressionUUID->"7e16824d-5a5c-964f-9267-\
+e1ce4977a950"],
 
 Cell["\[FilledSmallSquare] 2: end this string and start a new string with an \
 \"A\" ", "Text",
@@ -11875,16 +11934,19 @@ Cell["\<\
   3.9404273450113587`*^9}},ExpressionUUID->"b4d7ca10-be3c-451e-a523-\
 fa84b0754c2e"],
 
-Cell[TextData[{
- "\[FilledSmallSquare] 4: increment this character\n",
- StyleBox["***Look at the RSSEnumerationIntro.pptx in Intro-Documents in \
-0intro to make animation****",
-  FontWeight->"Bold"]
-}], "Text",
+Cell["\[FilledSmallSquare] 4: increment this character", "Text",
+ CellChangeTimes->{
+  3.9404273272912436`*^9, {3.9404275702476196`*^9, 3.94042761964515*^9}, 
+   3.9405382859579906`*^9},ExpressionUUID->"cf984beb-48f2-4d25-8c07-\
+fdc93ea832fb"],
+
+Cell[TextData[StyleBox["***Look at the RSSEnumerationIntro.pptx in \
+Intro-Documents in 0intro to make animation****",
+ FontWeight->"Bold"]], "Text",
  CellChangeTimes->{
   3.9404273272912436`*^9, {3.9404275702476196`*^9, 
-   3.94042761964515*^9}},ExpressionUUID->"cf984beb-48f2-4d25-8c07-\
-fdc93ea832fb"],
+   3.94042761964515*^9}},ExpressionUUID->"491c3464-2b71-ed49-822c-\
+d027685e63f2"],
 
 Cell[TextData[StyleBox["Ruleset tests:",
  FontWeight->"Bold"]], "Text",
@@ -11893,75 +11955,210 @@ Cell[TextData[StyleBox["Ruleset tests:",
   3.938608270448229*^9}},ExpressionUUID->"5184138c-136d-b44c-9fdc-\
 2b02344918df"],
 
-Cell["\<\
-Any ruleset that contains a problem can be skipped without generating the \
-sessie and its network, to save time. In addition, the pattern and order of \
-the enumeration lets us skip over multiple cases at once. If such a \
+Cell[TextData[{
+ "To save time, any ruleset that contains a problem can be skipped without \
+generating the sessie and its network. In addition, the pattern and order of \
+the enumeration allow us to skip over multiple cases at once. If such a \
 \[OpenCurlyDoubleQuote]long-jump\[CloseCurlyDoubleQuote] is possible, the \
-test returns the first ruleset in the enumeration that does not have that \
-particular problem, the target of the long-jump. The main tests are:\
-\>", "Text",
+test returns the first ruleset in the enumeration that does ",
+ StyleBox["not",
+  FontSlant->"Italic"],
+ " have that particular problem, i.e., the ",
+ StyleBox["target",
+  FontSlant->"Italic"],
+ " of the long-jump. The main tests are:"
+}], "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
-  3.9386082350548935`*^9, 
-  3.938608274224966*^9}},ExpressionUUID->"c0a1ef9d-4aef-a042-b109-\
+  3.9386082350548935`*^9, 3.938608274224966*^9}, {3.940538310663679*^9, 
+  3.940538355373062*^9}},ExpressionUUID->"c0a1ef9d-4aef-a042-b109-\
 88f487fb68b2"],
 
-Cell["Test that eliminate the ruleset, but don\[CloseCurlyQuote]t allow \
-long-jumps:", "Text",
+Cell["Test that eliminate the ruleset, and allow long-jumps:", "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
-  3.9386082350548935`*^9, 
-  3.9386083129436016`*^9}},ExpressionUUID->"638331d6-c528-ef44-8c03-\
+  3.9386082350548935`*^9, 3.9386083129436016`*^9}, {3.94053839056118*^9, 
+  3.9405383916471424`*^9}},ExpressionUUID->"638331d6-c528-ef44-8c03-\
 9777dddf3b15"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Test\>\"", ",", "\"\<Subsection\>\""}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Description\>\"", ",", "\"\<Subsection\>\""}], "]"}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForConflictingRules\>\"", ",", 
+       "\"\<(* Two rules conflict if the second rule never has a chance to be \
+used because the first rule preempts it. Ex/ {\\\"C\\\"\[Rule]\\\"\\\", \\\"A\
+\\\"\[Rule]\\\"B\\\", \\\"AA\\\"\[Rule]\\\"C\\\"}: rule 3 conflicts with rule \
+2, so the ruleset is equivalent to {\\\"C\\\"\[Rule]\\\"\\\", \
+\\\"A\\\"\[Rule]\\\"B\\\"}, omitting rule 3 *)\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForNonSoloIdentityRule\>\"", ",", 
+       "\"\<(* an identity rule is a rule in which a string is replaced by \
+itself, no further rules will be used if the identity rule ever matches \
+*)\>\""}], "}"}], ",", "\n", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<(or TestForIdentityRule)\>\"", ",", 
+       "\"\<(* if solo identity rules are treated separately *)\>\""}], "}"}],
+      ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForNonSoloInitialSubstringRule\>\"", ",", 
+       "\"\<(* Ex/ {\\\"A\\\"\[Rule]\\\"BAB\\\", \[Ellipsis]} If 1st rule \
+matches, it will never fail again. *)\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForRenamedRuleSet\>\"", ",", 
+       "\"\<(* If the characters used in the strings of the ruleset are \
+permuted or replaced by other characters, the SSS will look the same up to a \
+permutation of colors, and the causal network will be identical. Ex/ {\\\"BAB\
+\\\"\[RightArrow]\\\"ABA\\\", \\\"A\\\"\[RightArrow]\\\"B\\\", \\\"B\\\"\
+\[RightArrow]\\\"AA\\\"} is indistinguishable from \
+{\\\"ABA\\\"\[RightArrow]\\\"BAB\\\", \\\"B\\\"\[RightArrow]\\\"A\\\", \
+\\\"A\\\"\[RightArrow]\\\"BB\\\"} *)\>\""}], "}"}], ",", "\n", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForUnusedRules\>\"", ",", "\n", 
+       "\"\<(* Still under construction: the idea is that if a rule is never \
+used, it could be omitted without affecting the results. The difficulty is in \
+being sure that the rule will never be used, rather than only rarely. \
+*)\>\""}], "}"}]}], "\[IndentingNewLine]", "}"}], ",", " ", 
+   RowBox[{"Alignment", "->", "Left"}], ",", 
+   RowBox[{"Frame", "->", "All"}], ",", " ", 
+   RowBox[{"Spacings", "->", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1"}], "}"}]}], ",", " ", 
+   RowBox[{"BaseStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Medium", ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Times\>\""}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.940538759124077*^9, 3.9405391438435116`*^9}, {
+  3.9405391828549137`*^9, 3.9405392369037247`*^9}, {3.9405392930391636`*^9, 
+  3.9405393268479195`*^9}, {3.9405394167696075`*^9, 3.9405394285022793`*^9}, {
+  3.9405394617170887`*^9, 3.9405395158948727`*^9}, {3.940539588848753*^9, 
+  3.9405397241702824`*^9}, {3.9405397898719406`*^9, 3.9405397936749477`*^9}, {
+  3.9405398537200375`*^9, 3.9405398650457153`*^9}, {3.9405399044348087`*^9, 
+  3.9405400249032536`*^9}, {3.940540057426777*^9, 3.940540118563072*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"8d5db6a0-8633-4d47-9b3b-9c6d76bb775e"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Test\"\>", "Subsection",
+      StripOnInput->False], 
+     StyleBox["\<\"Description\"\>", "Subsection",
+      StripOnInput->False]},
+    {"\<\"TestForConflictingRules\"\>", "\<\"(* Two rules conflict if the \
+second rule never has a chance to be used because the first rule preempts it. \
+Ex/ {\\\"C\\\"\[Rule]\\\"\\\", \\\"A\\\"\[Rule]\\\"B\\\", \\\"AA\\\"\[Rule]\\\
+\"C\\\"}: rule 3 conflicts with rule 2, so the ruleset is equivalent to \
+{\\\"C\\\"\[Rule]\\\"\\\", \\\"A\\\"\[Rule]\\\"B\\\"}, omitting rule 3 \
+*)\"\>"},
+    {"\<\"TestForNonSoloIdentityRule\"\>", "\<\"(* an identity rule is a rule \
+in which a string is replaced by itself, no further rules will be used if the \
+identity rule ever matches *)\"\>"},
+    {"\<\"(or TestForIdentityRule)\"\>", "\<\"(* if solo identity rules are \
+treated separately *)\"\>"},
+    {"\<\"TestForNonSoloInitialSubstringRule\"\>", "\<\"(* Ex/ {\\\"A\\\"\
+\[Rule]\\\"BAB\\\", \[Ellipsis]} If 1st rule matches, it will never fail \
+again. *)\"\>"},
+    {"\<\"TestForRenamedRuleSet\"\>", "\<\"(* If the characters used in the \
+strings of the ruleset are permuted or replaced by other characters, the SSS \
+will look the same up to a permutation of colors, and the causal network will \
+be identical. Ex/ {\\\"BAB\\\"\[RightArrow]\\\"ABA\\\", \
+\\\"A\\\"\[RightArrow]\\\"B\\\", \\\"B\\\"\[RightArrow]\\\"AA\\\"} is \
+indistinguishable from {\\\"ABA\\\"\[RightArrow]\\\"BAB\\\", \\\"B\\\"\
+\[RightArrow]\\\"A\\\", \\\"A\\\"\[RightArrow]\\\"BB\\\"} *)\"\>"},
+    {"\<\"TestForUnusedRules\"\>", "\<\"(* Still under construction: the idea \
+is that if a rule is never used, it could be omitted without affecting the \
+results. The difficulty is in being sure that the rule will never be used, \
+rather than only rarely. *)\"\>"}
+   },
+   AutoDelete->False,
+   BaseStyle->{Medium, FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.940539283193905*^9, 3.940539327472004*^9}, {
+   3.9405394385613327`*^9, 3.9405395176891117`*^9}, {3.9405395988870697`*^9, 
+   3.940539667643633*^9}, {3.9405398974220695`*^9, 3.940539922206217*^9}, 
+   3.940539986694828*^9, 3.9405400298659344`*^9, 3.9405400912103424`*^9, 
+   3.9405401217230453`*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"cda76716-a429-bf41-bcbb-e3cc7e6aea13"]
+}, Open  ]],
 
 Cell["\<\
 Command\tTest Description
 (* Two rules conflict if the second rule never has a chance to be used \
 because the first rule preempts it. Ex/ {\[OpenCurlyDoubleQuote]C\
 \[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
-\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]B\
 \[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]->\
-\[CloseCurlyDoubleQuote]C\[CloseCurlyDoubleQuote]} : rule 3 conflicts with \
+\[OpenCurlyDoubleQuote]C\[CloseCurlyDoubleQuote]} : rule 3 conflicts with \
 rule 2, so the ruleset is equivalent to {\[OpenCurlyDoubleQuote]C\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
-\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]B\
 \[CloseCurlyDoubleQuote]}, omitting rule 3 *)
 (* an identity rule is a rule in which a string is replaced by itself, no \
 further rules will be used if the identity rule ever matches *)
 (or 
 )\t(* if solo identity rules are treated separately *)
 (* Ex/ {\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\
-\[CloseCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote], \[Ellipsis]} If 1st rule \
+\[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote], \[Ellipsis]} If 1st rule \
 matches, it will never fail again. *)
 (* If the characters used in the strings of the ruleset are permuted or \
 replaced by other characters, the SSS will look the same up to a permutation \
 of colors, and the causal network will be identical. Ex/ {\
 \[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote]\[RightArrow]\
-\[CloseCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]\[RightArrow]\[CloseCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\
-\[RightArrow]\[CloseCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]} is \
+\[OpenCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]\[RightArrow]\[OpenCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\
+\[RightArrow]\[OpenCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]} is \
 indistinguishable from {\[OpenCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote]\
-\[RightArrow]\[CloseCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote],\
-\[CloseCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\[RightArrow]\
-\[CloseCurlyDoubleQuote]A\[CloseCurlyDoubleQuote],\[CloseCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]\[RightArrow]\[CloseCurlyDoubleQuote]BB\
+\[RightArrow]\[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote],\
+\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\[RightArrow]\
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]A\
+\[CloseCurlyDoubleQuote]\[RightArrow]\[OpenCurlyDoubleQuote]BB\
 \[CloseCurlyDoubleQuote]}
 (* Still under construction: the idea is that if a rule is never used, it \
 could be omitted without affecting the results. The difficulty is in being \
-sure that the rule will never be used, rather than only rarely. *)
-Tests that eliminate the ruleset, but don\[CloseCurlyQuote]t allow long-jumps\
+sure that the rule will never be used, rather than only rarely. *)\
 \>", "Text",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+   3.9386082350548925`*^9, 3.938608312490452*^9}, {3.93860933701322*^9, 
+   3.9386093378691654`*^9}, 3.9405384080924053`*^9, {3.940538442587673*^9, 
+   3.940538497712452*^9}},ExpressionUUID->"5895f51b-5412-be42-bfae-\
+3c71c5fcba65"],
+
+Cell["Tests that eliminate the ruleset, but don\[CloseCurlyQuote]t allow \
+long-jumps", "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
   3.9386082350548925`*^9, 3.938608312490452*^9}, {3.93860933701322*^9, 
-  3.9386093378691654`*^9}},ExpressionUUID->"5895f51b-5412-be42-bfae-\
-3c71c5fcba65"]
+  3.9386093378691654`*^9}},ExpressionUUID->"a8bac8be-4c4b-be43-bca1-\
+a9f84bfc655f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{960, 478},
-WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
-FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+WindowSize->{916, 511},
+WindowMargins->{{-5.5, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"3ffc0c55-281c-ab46-b941-549132a817c7"
 ]
@@ -11977,43 +12174,52 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 316, 5, 98, "Title",ExpressionUUID->"a3854beb-fd0e-4df7-aa0c-bab197b93b32"],
-Cell[899, 29, 713, 14, 64, "Input",ExpressionUUID->"cef5c5d2-55d4-47d0-adce-42b0f5efa22a",
+Cell[580, 22, 316, 5, 96, "Title",ExpressionUUID->"a3854beb-fd0e-4df7-aa0c-bab197b93b32"],
+Cell[899, 29, 712, 14, 63, "Input",ExpressionUUID->"cef5c5d2-55d4-47d0-adce-42b0f5efa22a",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[1637, 47, 218, 4, 54, "Subsection",ExpressionUUID->"7de7bb53-7b63-9c4c-a567-c9c502fd73fa"],
-Cell[1858, 53, 378, 8, 58, "Text",ExpressionUUID->"c65f00c2-5dcc-f447-b593-cb3cc37b746d"]
+Cell[1636, 47, 218, 4, 53, "Subsection",ExpressionUUID->"7de7bb53-7b63-9c4c-a567-c9c502fd73fa"],
+Cell[1857, 53, 301, 4, 33, "Text",ExpressionUUID->"c65f00c2-5dcc-f447-b593-cb3cc37b746d"],
+Cell[2161, 59, 622, 14, 33, "Text",ExpressionUUID->"ce50beaa-1a02-2141-ab42-1fa47836a33b"],
+Cell[2786, 75, 749, 12, 99, "Text",ExpressionUUID->"0512e0fc-4263-c64f-8872-666cdd0bfb0a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2273, 66, 317, 4, 54, "Subsection",ExpressionUUID->"201a5103-bafb-6747-8d6b-4b5bdcab6842"],
+Cell[3572, 92, 317, 4, 53, "Subsection",ExpressionUUID->"201a5103-bafb-6747-8d6b-4b5bdcab6842"],
 Cell[CellGroupData[{
-Cell[2615, 74, 319, 5, 45, "Subsubsection",ExpressionUUID->"c4b0e155-fcfc-496e-b257-147c2d44aac8"],
-Cell[2937, 81, 679, 11, 81, "Text",ExpressionUUID->"5a4753e1-a863-3742-b5ba-7c9f7a9ae2f7"],
-Cell[3619, 94, 656090, 10763, 988, "Text",ExpressionUUID->"672bc828-4489-474e-bcdc-83791c81dd7b"]
+Cell[3914, 100, 319, 5, 43, "Subsubsection",ExpressionUUID->"c4b0e155-fcfc-496e-b257-147c2d44aac8"],
+Cell[4236, 107, 839, 13, 77, "Text",ExpressionUUID->"5a4753e1-a863-3742-b5ba-7c9f7a9ae2f7"],
+Cell[5078, 122, 497, 9, 33, "Text",ExpressionUUID->"e70d71b1-d122-024c-8d8d-ec950e7ca058"],
+Cell[5578, 133, 656093, 10763, 988, "Text",ExpressionUUID->"672bc828-4489-474e-bcdc-83791c81dd7b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[659746, 10862, 366, 6, 45, "Subsubsection",ExpressionUUID->"e3599bf7-351f-4b90-b69e-f4dac992a86e"],
-Cell[660115, 10870, 923, 16, 127, "Text",ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-a6659e93b944"],
+Cell[661708, 10901, 366, 6, 43, "Subsubsection",ExpressionUUID->"e3599bf7-351f-4b90-b69e-f4dac992a86e"],
+Cell[662077, 10909, 1145, 23, 121, "Text",ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-a6659e93b944"],
 Cell[CellGroupData[{
-Cell[661063, 10890, 1215, 28, 86, "Input",ExpressionUUID->"0521ee7a-7701-bf48-b428-782099279bb5"],
-Cell[662281, 10920, 31576, 847, 1080, "Output",ExpressionUUID->"06913b4a-a447-4e4a-80fc-46e60087c66b"]
+Cell[663247, 10936, 1215, 28, 86, "Input",ExpressionUUID->"0521ee7a-7701-bf48-b428-782099279bb5"],
+Cell[664465, 10966, 31576, 847, 1054, "Output",ExpressionUUID->"06913b4a-a447-4e4a-80fc-46e60087c66b"]
 }, {2}]],
-Cell[693869, 11770, 1206, 17, 81, "Text",ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
-Cell[695078, 11789, 1178, 18, 104, "Text",ExpressionUUID->"53a68df3-21ea-2641-872e-15508eda4e4a"],
-Cell[696259, 11809, 489, 8, 81, "Text",ExpressionUUID->"1a933d5e-6161-b443-9f40-e71b9baf0e4a"],
-Cell[696751, 11819, 881, 15, 104, "Text",ExpressionUUID->"32c8b98f-7e92-af4d-b450-749c65828672"]
+Cell[696053, 11816, 1249, 19, 77, "Text",ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
+Cell[697305, 11837, 1240, 19, 99, "Text",ExpressionUUID->"53a68df3-21ea-2641-872e-15508eda4e4a"],
+Cell[698548, 11858, 568, 9, 77, "Text",ExpressionUUID->"1a933d5e-6161-b443-9f40-e71b9baf0e4a"],
+Cell[699119, 11869, 988, 23, 121, "Text",ExpressionUUID->"32c8b98f-7e92-af4d-b450-749c65828672"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[697669, 11839, 362, 6, 45, "Subsubsection",ExpressionUUID->"ebcaf03d-5a34-4b3a-8d41-a90cf2e51ddf"],
-Cell[698034, 11847, 301, 6, 35, "Text",ExpressionUUID->"7398668d-2f2a-49bf-b382-dc8fc59732cc"],
-Cell[698338, 11855, 256, 6, 35, "Text",ExpressionUUID->"e6668b67-29d6-44a7-a371-ce5a10301b70"],
-Cell[698597, 11863, 225, 4, 35, "Text",ExpressionUUID->"069e38a4-31ee-469e-acb1-cc8446d8c251"],
-Cell[698825, 11869, 239, 6, 35, "Text",ExpressionUUID->"b4d7ca10-be3c-451e-a523-fa84b0754c2e"],
-Cell[699067, 11877, 365, 9, 58, "Text",ExpressionUUID->"cf984beb-48f2-4d25-8c07-fdc93ea832fb"],
-Cell[699435, 11888, 250, 5, 35, "Text",ExpressionUUID->"5184138c-136d-b44c-9fdc-2b02344918df"],
-Cell[699688, 11895, 647, 11, 81, "Text",ExpressionUUID->"c0a1ef9d-4aef-a042-b109-88f487fb68b2"],
-Cell[700338, 11908, 276, 5, 35, "Text",ExpressionUUID->"638331d6-c528-ef44-8c03-9777dddf3b15"],
-Cell[700617, 11915, 2612, 41, 311, "Text",ExpressionUUID->"5895f51b-5412-be42-bfae-3c71c5fcba65"]
+Cell[700144, 11897, 362, 6, 43, "Subsubsection",ExpressionUUID->"ebcaf03d-5a34-4b3a-8d41-a90cf2e51ddf"],
+Cell[700509, 11905, 336, 7, 33, "Text",ExpressionUUID->"04d28a3d-b184-b04a-8056-73e4187bdbdc"],
+Cell[700848, 11914, 281, 6, 33, "Text",ExpressionUUID->"7e16824d-5a5c-964f-9267-e1ce4977a950"],
+Cell[701132, 11922, 225, 4, 33, "Text",ExpressionUUID->"069e38a4-31ee-469e-acb1-cc8446d8c251"],
+Cell[701360, 11928, 239, 6, 33, "Text",ExpressionUUID->"b4d7ca10-be3c-451e-a523-fa84b0754c2e"],
+Cell[701602, 11936, 243, 4, 33, "Text",ExpressionUUID->"cf984beb-48f2-4d25-8c07-fdc93ea832fb"],
+Cell[701848, 11942, 304, 6, 33, "Text",ExpressionUUID->"491c3464-2b71-ed49-822c-d027685e63f2"],
+Cell[702155, 11950, 250, 5, 33, "Text",ExpressionUUID->"5184138c-136d-b44c-9fdc-2b02344918df"],
+Cell[702408, 11957, 794, 16, 99, "Text",ExpressionUUID->"c0a1ef9d-4aef-a042-b109-88f487fb68b2"],
+Cell[703205, 11975, 298, 4, 33, "Text",ExpressionUUID->"638331d6-c528-ef44-8c03-9777dddf3b15"],
+Cell[CellGroupData[{
+Cell[703528, 11983, 3508, 72, 446, "Input",ExpressionUUID->"8d5db6a0-8633-4d47-9b3b-9c6d76bb775e"],
+Cell[707039, 12057, 2569, 45, 294, "Output",ExpressionUUID->"cda76716-a429-bf41-bcbb-e3cc7e6aea13"]
+}, Open  ]],
+Cell[709623, 12105, 2595, 41, 274, "Text",ExpressionUUID->"5895f51b-5412-be42-bfae-3c71c5fcba65"],
+Cell[712221, 12148, 321, 5, 33, "Text",ExpressionUUID->"a8bac8be-4c4b-be43-bca1-a9f84bfc655f"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
