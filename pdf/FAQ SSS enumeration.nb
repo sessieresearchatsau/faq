@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    706247,      11946]
-NotebookOptionsPosition[    702404,      11879]
-NotebookOutlinePosition[    702803,      11895]
-CellTagsIndexPosition[    702760,      11892]
+NotebookDataLength[    724795,      12371]
+NotebookOptionsPosition[    719019,      12276]
+NotebookOutlinePosition[    719425,      12292]
+CellTagsIndexPosition[    719382,      12289]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -10946,12 +10946,33 @@ This ordering of rulesets is what makes \[OpenCurlyDoubleQuote]long-jumps\
 \[CloseCurlyDoubleQuote] and the accelerated looping through the enumeration \
 possible."
 }], "Text",
- CellChangeTimes->{{3.938607774823105*^9, 3.9386079338445625`*^9}, {
-  3.938609081225607*^9, 3.938609093793503*^9}, {3.9386091694447746`*^9, 
-  3.9386091747886124`*^9}, {3.940426970139702*^9, 3.9404270236143017`*^9}, {
-  3.9405378773411674`*^9, 3.940537928220003*^9}, {3.940590235505411*^9, 
-  3.9405903407343063`*^9}},ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-\
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607933844562*^9}, {
+  3.938609081225607*^9, 3.938609093793503*^9}, {3.9386091694447737`*^9, 
+  3.938609174788612*^9}, {3.940426970139702*^9, 3.9404270236143017`*^9}, {
+  3.940537877341168*^9, 3.940537928220003*^9}, {3.940590235505411*^9, 
+  3.9405903407343073`*^9}, {3.9410160034624386`*^9, 
+  3.9410160073916435`*^9}},ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-\
 a6659e93b944"],
+
+Cell[TextData[{
+ "Since all rulesets containing an insertion rule (\[OpenCurlyDoubleQuote]\
+\[CloseCurlyDoubleQuote]->something) will be discarded by ",
+ StyleBox["TestForConflictingRules",
+  FontSlant->"Italic"],
+ ", if the insertion rule is not the last rule, the only way an insertion \
+rule can be the first one is if the ruleset has only the one rule.  A solo \
+insertion rule can never delete cells, and so cannot produce a network.  \
+Therefore it is logical to eliminate all initial insertion rule cases, and \
+this can easily be done by an adjustment to the enumeration itself, basically \
+dropping the first (binary) digit of the Generalized Quinary enumeration."
+}], "Text",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607933844562*^9}, {
+  3.938609081225607*^9, 3.938609093793503*^9}, {3.9386091694447737`*^9, 
+  3.938609174788612*^9}, {3.940426970139702*^9, 3.9404270236143017`*^9}, {
+  3.940537877341168*^9, 3.940537928220003*^9}, {3.940590235505411*^9, 
+  3.9405903407343073`*^9}, {3.9410160034624386`*^9, 
+  3.9410160064054794`*^9}},ExpressionUUID->"07762384-11f7-1f43-bbac-\
+999d3e5ffc20"],
 
 Cell[CellGroupData[{
 
@@ -11518,11 +11539,23 @@ Cell[BoxData[
    GridBoxSpacings->{"Columns" -> {{0}}}],
   "Grid"]], "Output",
  CellChangeTimes->{{3.938608553816368*^9, 3.938608577627905*^9}, 
-   3.9386086417128353`*^9, 3.938608740628174*^9, 3.9386088238605022`*^9, {
-   3.9386088766867657`*^9, 3.938608937352661*^9}, 3.938609009622305*^9, {
+   3.9386086417128353`*^9, 3.938608740628174*^9, 3.9386088238605013`*^9, {
+   3.938608876686765*^9, 3.938608937352661*^9}, 3.938609009622305*^9, {
    3.9405902056058044`*^9, 3.9405902156460056`*^9}},
  CellLabel->"Out[4]=",ExpressionUUID->"13a56fac-886c-3044-99d8-60b9256daa67"]
 }, {2}]],
+
+Cell["\<\
+The RSS enumeration contains the same rulesets as the GSS enumeration in the \
+same order, with initial insertion rules removed.  The encoding is also the \
+same, except for the removal of the initial bit that distinguished between \
+rulesets beginning with an empty string and those not.  The decision was made \
+to use the RSS enumeration by default, since initial insertion rules have \
+simple, well-understood behavior.\
+\>", "Text",
+ CellChangeTimes->{{3.941016077979046*^9, 
+  3.941016084902565*^9}},ExpressionUUID->"d19f4bc1-edf0-5840-89e3-\
+700ec3fc85f8"],
 
 Cell["\<\
 Within any given weight, advancing through the enumeration tends to compact \
@@ -11694,10 +11727,12 @@ test returns the first ruleset in the enumeration that does ",
 
 Cell[CellGroupData[{
 
-Cell["Test that eliminate the ruleset, and allow long-jumps:", "Subsubsection",
+Cell["Tests that eliminate the ruleset, and allow long-jumps:", \
+"Subsubsection",
  CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
-  3.9386082350548935`*^9, 3.9386083129436016`*^9}, {3.94053839056118*^9, 
-  3.9405383916471424`*^9}},ExpressionUUID->"638331d6-c528-ef44-8c03-\
+   3.9386082350548925`*^9, 3.9386083129436007`*^9}, {3.94053839056118*^9, 
+   3.940538391647143*^9}, 
+   3.9410154670433674`*^9},ExpressionUUID->"638331d6-c528-ef44-8c03-\
 9777dddf3b15"],
 
 Cell[CellGroupData[{
@@ -11817,69 +11852,431 @@ rather than only rarely. *)\"\>"}
    GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
   "Grid"]], "Output",
  CellChangeTimes->{{3.940539283193905*^9, 3.940539327472004*^9}, {
-   3.9405394385613327`*^9, 3.9405395176891117`*^9}, {3.9405395988870697`*^9, 
+   3.9405394385613337`*^9, 3.940539517689112*^9}, {3.94053959888707*^9, 
    3.940539667643633*^9}, {3.9405398974220695`*^9, 3.940539922206217*^9}, 
-   3.940539986694828*^9, 3.9405400298659344`*^9, 3.9405400912103424`*^9, 
-   3.9405401217230453`*^9},
+   3.940539986694828*^9, 3.9405400298659344`*^9, 3.940540091210343*^9, 
+   3.940540121723045*^9},
  CellLabel->"Out[29]=",ExpressionUUID->"cda76716-a429-bf41-bcbb-e3cc7e6aea13"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Tests that eliminate the ruleset, but don\[CloseCurlyQuote]t allow long-jumps:\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
+   3.9386082350548925`*^9, 3.9386083129436007`*^9}, {3.94053839056118*^9, 
+   3.940538391647143*^9}, 3.9410154670433674`*^9, 
+   3.9410155819146748`*^9},ExpressionUUID->"37bca606-7753-b644-9a86-\
+2526d07bc11d"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Test\>\"", ",", "\"\<Subsection\>\""}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Description\>\"", ",", "\"\<Subsection\>\""}], "]"}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForShorteningRuleSet\>\"", ",", 
+       "\"\<(* at least one rule shortens the state string, and none lengthen \
+it, so this will eventually die out *)\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<TestForUnbalancedRuleSet\>\"", ",", 
+       "\"\<(* some letter appears on only one side of the rules, so that \
+letter is either created or destroyed, but not both: that letter is not \
+needed for the main pattern of the sessie *)\>\""}], "}"}]}], 
+    "\[IndentingNewLine]", "}"}], ",", " ", 
+   RowBox[{"Alignment", "->", "Left"}], ",", 
+   RowBox[{"Frame", "->", "All"}], ",", " ", 
+   RowBox[{"Spacings", "->", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1"}], "}"}]}], ",", " ", 
+   RowBox[{"BaseStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Medium", ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Times\>\""}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.940538759124077*^9, 3.9405391438435116`*^9}, {
+  3.9405391828549147`*^9, 3.9405392369037247`*^9}, {3.9405392930391636`*^9, 
+  3.94053932684792*^9}, {3.9405394167696075`*^9, 3.9405394285022798`*^9}, {
+  3.940539461717089*^9, 3.940539515894873*^9}, {3.940539588848753*^9, 
+  3.940539724170283*^9}, {3.940539789871941*^9, 3.940539793674948*^9}, {
+  3.940539853720038*^9, 3.940539865045716*^9}, {3.9405399044348087`*^9, 
+  3.940540024903253*^9}, {3.940540057426777*^9, 3.940540118563072*^9}, {
+  3.941015625408968*^9, 3.9410156332529373`*^9}, {3.9410156791571865`*^9, 
+  3.9410156940522423`*^9}, {3.9410157273643284`*^9, 3.9410157660444145`*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"eccbb270-6813-104a-a5d4-93f078f93939"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Test\"\>", "Subsection",
+      StripOnInput->False], 
+     StyleBox["\<\"Description\"\>", "Subsection",
+      StripOnInput->False]},
+    {"\<\"TestForShorteningRuleSet\"\>", "\<\"(* at least one rule shortens \
+the state string, and none lengthen it, so this will eventually die out \
+*)\"\>"},
+    {"\<\"TestForUnbalancedRuleSet\"\>", "\<\"(* some letter appears on only \
+one side of the rules, so that letter is either created or destroyed, but not \
+both: that letter is not needed for the main pattern of the sessie *)\"\>"}
+   },
+   AutoDelete->False,
+   BaseStyle->{Medium, FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.9410156126328354`*^9, 3.941015769322365*^9},
+ CellLabel->"Out[4]=",ExpressionUUID->"7541ea55-a232-1942-9a76-6d4d82cdc538"]
 }, Open  ]],
 
 Cell["\<\
-Command\tTest Description
-(* Two rules conflict if the second rule never has a chance to be used \
-because the first rule preempts it. Ex/ {\[OpenCurlyDoubleQuote]C\
-\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
-\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]->\
-\[OpenCurlyDoubleQuote]C\[CloseCurlyDoubleQuote]} : rule 3 conflicts with \
-rule 2, so the ruleset is equivalent to {\[OpenCurlyDoubleQuote]C\
-\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote], \
-\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\[OpenCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote]}, omitting rule 3 *)
-(* an identity rule is a rule in which a string is replaced by itself, no \
-further rules will be used if the identity rule ever matches *)
-(or 
-)\t(* if solo identity rules are treated separately *)
-(* Ex/ {\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote]->\
-\[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote], \[Ellipsis]} If 1st rule \
-matches, it will never fail again. *)
-(* If the characters used in the strings of the ruleset are permuted or \
-replaced by other characters, the SSS will look the same up to a permutation \
-of colors, and the causal network will be identical. Ex/ {\
-\[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote]\[RightArrow]\
-\[OpenCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]\[RightArrow]\[OpenCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\
-\[RightArrow]\[OpenCurlyDoubleQuote]AA\[CloseCurlyDoubleQuote]} is \
-indistinguishable from {\[OpenCurlyDoubleQuote]ABA\[CloseCurlyDoubleQuote]\
-\[RightArrow]\[OpenCurlyDoubleQuote]BAB\[CloseCurlyDoubleQuote],\
-\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]\[RightArrow]\
-\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote],\[OpenCurlyDoubleQuote]A\
-\[CloseCurlyDoubleQuote]\[RightArrow]\[OpenCurlyDoubleQuote]BB\
-\[CloseCurlyDoubleQuote]}
-(* Still under construction: the idea is that if a rule is never used, it \
-could be omitted without affecting the results. The difficulty is in being \
-sure that the rule will never be used, rather than only rarely. *)\
+(*mod*) TestForAll checks all of these, in optimum order to allow longest \
+possible long jumps.\
 \>", "Text",
- CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
-   3.9386082350548925`*^9, 3.938608312490452*^9}, {3.93860933701322*^9, 
-   3.9386093378691654`*^9}, 3.9405384080924053`*^9, {3.940538442587673*^9, 
-   3.940538497712452*^9}},ExpressionUUID->"5895f51b-5412-be42-bfae-\
-3c71c5fcba65"]
+ CellChangeTimes->{{3.9410158325831623`*^9, 
+  3.941015835157606*^9}},ExpressionUUID->"57cf8b90-179a-1443-976e-\
+82a3c2f383af"],
+
+Cell["\<\
+Camille continued Christen\[CloseCurlyQuote]s effort to identify the long \
+jump target ruleset directly based on the quinary (base-5) index of the \
+problem ruleset.  The plan was to speed up the tests, as well as to increase \
+understanding of the enumeration.  This effort will now be transferred to the \
+new base-3 algorithm (see below).\
+\>", "Text",
+ CellChangeTimes->{{3.9410158325831623`*^9, 
+  3.9410158384435062`*^9}},ExpressionUUID->"11f61f1e-6a53-3240-b81e-\
+eed300dee629"]
+}, Open  ]]
 }, Open  ]],
 
-Cell["Tests that eliminate the ruleset, but don\[CloseCurlyQuote]t allow \
-long-jumps", "Subsubsection",
- CellChangeTimes->{{3.938607774823105*^9, 3.9386079739759865`*^9}, {
-  3.9386082350548925`*^9, 3.938608312490452*^9}, {3.93860933701322*^9, 
-  3.9386093378691654`*^9}},ExpressionUUID->"a8bac8be-4c4b-be43-bca1-\
-a9f84bfc655f"]
+Cell[CellGroupData[{
+
+Cell["Updated Sessie Enumerations", "Subsection",
+ CellChangeTimes->{{3.938607774823105*^9, 3.938607876794874*^9}, {
+   3.938609219772644*^9, 3.938609223054897*^9}, 3.940426668506416*^9, {
+   3.940426717661736*^9, 3.940426728898861*^9}},
+ FontWeight->"Bold",ExpressionUUID->"ab0df75f-fd2e-a340-8cef-afbded482eee"],
+
+Cell["\<\
+This may supersede the quinary enumerations, since the math is significantly \
+simpler, and the only disadvantage is the appearance of some invalid codes, \
+which are easily jumped over, much as with any long jumps.\
+\>", "Text",
+ CellChangeTimes->{{3.9410161747631416`*^9, 
+  3.941016176337311*^9}},ExpressionUUID->"85d8cd1a-3f5a-234c-876f-\
+55206609e4f9"],
+
+Cell["\<\
+In the course of lengthy discussion, we have fine-tuned the new, trinary \
+enumeration that will generate all sessie rulesets.\[NonBreakingSpace] The \
+base-3 codes represent the following operations:\
+\>", "Text",
+ CellChangeTimes->{{3.9410161747631416`*^9, 
+  3.9410161819757843`*^9}},ExpressionUUID->"dc3cedda-201b-8a4c-b4e2-\
+e73005284dfc"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+     "{", "\"\<0 = Increment last character (if there is one)\>\"", "}"}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"\"\<1 = Append an \>\"", "A", "\"\<\>\""}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", "\"\<2 = Start a new empty/null string\>\"", "}"}]}], 
+    "\[IndentingNewLine]", "}"}], ",", " ", 
+   RowBox[{"Alignment", "->", "Left"}], ",", 
+   RowBox[{"Frame", "->", "All"}], ",", " ", 
+   RowBox[{"Spacings", "->", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1"}], "}"}]}], ",", " ", 
+   RowBox[{"BaseStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Medium", ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Times\>\""}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.940538759124077*^9, 3.9405391438435116`*^9}, {
+  3.9405391828549147`*^9, 3.9405392369037247`*^9}, {3.9405392930391636`*^9, 
+  3.94053932684792*^9}, {3.9405394167696075`*^9, 3.9405394285022798`*^9}, {
+  3.940539461717089*^9, 3.940539515894873*^9}, {3.940539588848753*^9, 
+  3.940539724170283*^9}, {3.940539789871941*^9, 3.940539793674948*^9}, {
+  3.940539853720038*^9, 3.940539865045716*^9}, {3.9405399044348087`*^9, 
+  3.940540024903253*^9}, {3.940540057426777*^9, 3.940540118563072*^9}, {
+  3.941015625408968*^9, 3.9410156332529373`*^9}, {3.9410156791571865`*^9, 
+  3.9410156940522423`*^9}, {3.9410157273643284`*^9, 3.9410157660444145`*^9}, {
+  3.9410162290810623`*^9, 3.9410163647385674`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"7817992a-c963-f44d-b678-aecd2814e366"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {"\<\"0 = Increment last character (if there is one)\"\>"},
+    {
+     RowBox[{"\<\"\"\>", " ", "\<\"1 = Append an \"\>", " ", "A"}]},
+    {"\<\"2 = Start a new empty/null string\"\>"}
+   },
+   AutoDelete->False,
+   BaseStyle->{Medium, FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{3.9410162339370613`*^9, 3.941016367909422*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"f3dd28b0-0dd3-854c-9f8e-70e66263568c"]
+}, Open  ]],
+
+Cell["A couple of points to note:", "Text",
+ CellChangeTimes->{{3.9410164031968327`*^9, 
+  3.941016409489134*^9}},ExpressionUUID->"527c6318-2139-c04d-a8a5-\
+48fdbcbf5ca1"],
+
+Cell["\<\
+1. The math is simpler than using the original sessie enumeration (already \
+published) or the generalized or reduced quinary (base-5) enumerations \
+(published in CCMK).\[NonBreakingSpace] But unlike them, some forbidden codes \
+exist, yielding no ruleset.\
+\>", "Text",
+ CellChangeTimes->{{3.9410164031968327`*^9, 
+  3.9410164157711697`*^9}},ExpressionUUID->"33cec26e-0227-2148-b786-\
+afec9d77fea7"],
+
+Cell["\<\
+2. An initial \[OpenCurlyDoubleQuote]0\[CloseCurlyDoubleQuote] or a \
+\[OpenCurlyDoubleQuote]20\[CloseCurlyDoubleQuote] anywhere in the trinary \
+code is invalid, and should simply be skipped over in running through the \
+enumeration.\[NonBreakingSpace] This is not a hardship, since it\
+\[CloseCurlyQuote]s easy to check and go on.\[NonBreakingSpace] The simpler \
+math may make it worth it.\
+\>", "Text",
+ CellChangeTimes->{{3.9410164031968327`*^9, 
+  3.9410164208272533`*^9}},ExpressionUUID->"93025586-baeb-8d47-a786-\
+3d30ad0f8fe0"],
+
+Cell["\<\
+3. Our working version is to also drop any ruleset generated that has an odd \
+number of strings.\[NonBreakingSpace] This can easily be checked by counting \
+the number of times \[OpenCurlyDoubleQuote]2\[CloseCurlyDoubleQuote] appears \
+in the trinary operation code, no need to even generate the ruleset!\
+\[NonBreakingSpace] (Sadly, I see no way to long-jump over runs of such cases \
+in the enumeration, so we just check and go on.)\
+\>", "Text",
+ CellChangeTimes->{{3.9410164031968327`*^9, 
+  3.9410164298832912`*^9}},ExpressionUUID->"2779f732-dd1b-ef4b-a696-\
+0b46081d4a1b"],
+
+Cell["\<\
+4. The next task is to determine the easiest way to perform long-jumps over \
+runs of invalid cases, non-final creation rulesets, conflicting rules, \
+initial substring rules, etc. These are all situations that occur in runs in \
+the enumeration, so if found, the odds are we can long-jump over a run of \
+similar cases, and so quickly move on to more interesting cases.\
+\[NonBreakingSpace] (That is the strength of the enumeration.)\
+\>", "Text",
+ CellChangeTimes->{{3.9410164031968327`*^9, 
+  3.941016447169359*^9}},ExpressionUUID->"ba8e6a9b-cea7-644b-b406-\
+6e6f799211ad"],
+
+Cell["\<\
+Below is the list of the first 50 positive integers, first in base 10, then \
+in base 3, with the ruleset generated by the new enumeration algorithm, if \
+any, shown.  In case of an invalid ruleset, the \[OpenCurlyDoubleQuote]ok?\
+\[CloseCurlyDoubleQuote] column indicates why:  \[OpenCurlyDoubleQuote]\
+\[Ellipsis]20\[Ellipsis]\[CloseCurlyDoubleQuote] means that the trinary code \
+contains the digits 2 and 0 sequentially (new empty string followed by \
+increment last character of current string: impossible), \
+\[OpenCurlyDoubleQuote]odd\[CloseCurlyDoubleQuote] means that an odd number \
+of strings was generated, a situation that does not correspond to a ruleset, \
+which must have an integer number of rules, an even number of strings (each \
+search string has a corresponding replacement string).
+\
+\>", "Text",
+ CellChangeTimes->{{3.9410164031968327`*^9, 
+  3.9410164294172344`*^9}},ExpressionUUID->"18a46a66-93ee-924d-befa-\
+d959146c92b5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Grid", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Index\>\"", ",", "\"\<Subsection\>\""}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Base-3\>\"", ",", "\"\<Subsection\>\""}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Ok?\>\"", ",", "\"\<Subsection\>\""}], "]"}], ",", 
+       RowBox[{"Style", "[", 
+        RowBox[{"\"\<Ruleset\>\"", ",", "\"\<Subsection\>\""}], "]"}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<1\>\"", ",", "\"\<1\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<2\>\"", ",", "\"\<2\>\"", ",", "\"\<\>\"", ",", 
+       "\"\<\\\"\\\" -> \\\"\\\"\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<3\>\"", ",", "\"\<10\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}], 
+      "}"}], ",", "\[IndentingNewLine]", " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<4\>\"", ",", "\"\<11\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<5\>\"", ",", "\"\<12\>\"", ",", "\"\<\>\"", ",", 
+       "\"\<\\\"A\\\" -> \\\"\\\"\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     " ", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<6\>\"", ",", "\"\<20\>\"", ",", "\"\<...20...\>\"", ",", 
+       "\"\<\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<7\>\"", ",", "\"\<21\>\"", ",", "\"\<\>\"", ",", 
+       "\"\<\\\"\\\"->\\\"A\\\"\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<8\>\"", ",", "\"\<22\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<9\>\"", ",", "\"\<100\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<10\>\"", ",", "\"\<101\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<11\>\"", ",", "\"\<102\>\"", ",", "\"\<\>\"", ",", 
+       "\"\<\\\"B\\\"->\\\"\\\"\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<12\>\"", ",", "\"\<110\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<13\>\"", ",", "\"\<111\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<14\>\"", ",", "\"\<112\>\"", ",", "\"\<\>\"", ",", 
+       "\"\<\\\"AA\\\"->\\\"\\\"\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<15\>\"", ",", "\"\<120\>\"", ",", "\"\<...20...\>\"", ",", 
+       "\"\<\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<16\>\"", ",", "\"\<121\>\"", ",", "\"\<\>\"", ",", 
+       "\"\<\\\"A\\\"->\\\"A\\\"\>\""}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<17\>\"", ",", "\"\<122\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}],
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+      "\"\<1\>\"", ",", "\"\<1\>\"", ",", "\"\<odd\>\"", ",", "\"\<\>\""}], 
+      "}"}]}], "\[IndentingNewLine]", "}"}], ",", " ", 
+   RowBox[{"Alignment", "->", "Left"}], ",", 
+   RowBox[{"Frame", "->", "All"}], ",", " ", 
+   RowBox[{"Spacings", "->", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1"}], "}"}]}], ",", " ", 
+   RowBox[{"BaseStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"Medium", ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Times\>\""}]}], "}"}]}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQXfDjscHv6LeOPP9+JYDosujbqSA64PWcHBB9xWFh
+MYjWVLpdDqIXLJBoBtFrhSa0gOjUT9s6QPTZRTX9IPqPxuwZIPprUetKEP3x
+2e6NIFp3pukmEN3LtX0niG4sU9wNor+85D0Aooufy5wH0RordC+D6A0sl26B
+aBcxXc4nMW8dBSQ0uED0Gvan/CD6x+qDgiB6yorXoiD6RvZBKRDNU51WAlYX
+x9ULos8YvJ0MFt+RuAVEt1Sc3gGit2QJHQPRHrcPXwDTTMZ3QHRKnvUDEB3Q
+q/gMROsEeb8B0SzfNnwE0QBRP62z
+  "],
+ CellLabel->"In[23]:=",ExpressionUUID->"277db6c4-519b-7d4e-83e5-f12005e0b669"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     StyleBox["\<\"Index\"\>", "Subsection",
+      StripOnInput->False], 
+     StyleBox["\<\"Base-3\"\>", "Subsection",
+      StripOnInput->False], 
+     StyleBox["\<\"Ok?\"\>", "Subsection",
+      StripOnInput->False], 
+     StyleBox["\<\"Ruleset\"\>", "Subsection",
+      StripOnInput->False]},
+    {"\<\"1\"\>", "\<\"1\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"2\"\>", "\<\"2\"\>", "\<\"\"\>", "\<\"\\\"\\\" -> \\\"\\\"\"\>"},
+    {"\<\"3\"\>", "\<\"10\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"4\"\>", "\<\"11\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"5\"\>", "\<\"12\"\>", "\<\"\"\>", "\<\"\\\"A\\\" -> \\\"\\\"\"\>"},
+    {"\<\"6\"\>", "\<\"20\"\>", "\<\"...20...\"\>", "\<\"\"\>"},
+    {"\<\"7\"\>", "\<\"21\"\>", "\<\"\"\>", "\<\"\\\"\\\"->\\\"A\\\"\"\>"},
+    {"\<\"8\"\>", "\<\"22\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"9\"\>", "\<\"100\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"10\"\>", "\<\"101\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"11\"\>", "\<\"102\"\>", "\<\"\"\>", "\<\"\\\"B\\\"->\\\"\\\"\"\>"},
+    {"\<\"12\"\>", "\<\"110\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"13\"\>", "\<\"111\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"14\"\>", "\<\"112\"\>", "\<\"\"\>", "\<\"\\\"AA\\\"->\\\"\\\"\"\>"},
+    {"\<\"15\"\>", "\<\"120\"\>", "\<\"...20...\"\>", "\<\"\"\>"},
+    {"\<\"16\"\>", "\<\"121\"\>", "\<\"\"\>", "\<\"\\\"A\\\"->\\\"A\\\"\"\>"},
+    {"\<\"17\"\>", "\<\"122\"\>", "\<\"odd\"\>", "\<\"\"\>"},
+    {"\<\"1\"\>", "\<\"1\"\>", "\<\"odd\"\>", "\<\"\"\>"}
+   },
+   AutoDelete->False,
+   BaseStyle->{Medium, FontFamily -> "Times"},
+   GridBoxAlignment->{"Columns" -> {{Left}}},
+   GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+   GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+   GridBoxSpacings->{"Columns" -> {{1}}, "Rows" -> {{1}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.9410166456980057`*^9, 3.9410166936840057`*^9, 3.941016797311386*^9, 
+   3.9410170062099304`*^9, {3.941017102692045*^9, 3.941017121223276*^9}, 
+   3.9410171621008263`*^9, 3.941017284336836*^9, 3.941017316603863*^9, {
+   3.9410173610423946`*^9, 3.9410173758663692`*^9}, {3.9410174301016655`*^9, 
+   3.9410174867830105`*^9}},
+ CellLabel->"Out[23]=",ExpressionUUID->"dde836e0-e8b2-764f-88a8-666661d03c46"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{916, 511},
-WindowMargins->{{-5.5, Automatic}, {Automatic, 0}},
-FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+WindowSize->{1440, 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"3ffc0c55-281c-ab46-b941-549132a817c7"
 ]
@@ -11895,57 +12292,85 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 316, 5, 96, "Title",ExpressionUUID->"a3854beb-fd0e-4df7-aa0c-bab197b93b32"],
-Cell[899, 29, 712, 14, 63, "Input",ExpressionUUID->"cef5c5d2-55d4-47d0-adce-42b0f5efa22a",
+Cell[580, 22, 316, 5, 98, "Title",ExpressionUUID->"a3854beb-fd0e-4df7-aa0c-bab197b93b32"],
+Cell[899, 29, 712, 14, 64, "Input",ExpressionUUID->"cef5c5d2-55d4-47d0-adce-42b0f5efa22a",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[1636, 47, 218, 4, 53, "Subsection",ExpressionUUID->"7de7bb53-7b63-9c4c-a567-c9c502fd73fa"],
-Cell[1857, 53, 301, 4, 33, "Text",ExpressionUUID->"c65f00c2-5dcc-f447-b593-cb3cc37b746d"],
-Cell[2161, 59, 622, 14, 33, "Text",ExpressionUUID->"ce50beaa-1a02-2141-ab42-1fa47836a33b"],
-Cell[2786, 75, 1073, 17, 121, "Text",ExpressionUUID->"0512e0fc-4263-c64f-8872-666cdd0bfb0a"]
+Cell[1636, 47, 218, 4, 54, "Subsection",ExpressionUUID->"7de7bb53-7b63-9c4c-a567-c9c502fd73fa"],
+Cell[1857, 53, 301, 4, 35, "Text",ExpressionUUID->"c65f00c2-5dcc-f447-b593-cb3cc37b746d"],
+Cell[2161, 59, 622, 14, 35, "Text",ExpressionUUID->"ce50beaa-1a02-2141-ab42-1fa47836a33b"],
+Cell[2786, 75, 1073, 17, 81, "Text",ExpressionUUID->"0512e0fc-4263-c64f-8872-666cdd0bfb0a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3896, 97, 317, 4, 53, "Subsection",ExpressionUUID->"201a5103-bafb-6747-8d6b-4b5bdcab6842"],
+Cell[3896, 97, 317, 4, 54, "Subsection",ExpressionUUID->"201a5103-bafb-6747-8d6b-4b5bdcab6842"],
 Cell[CellGroupData[{
-Cell[4238, 105, 319, 5, 43, "Subsubsection",ExpressionUUID->"c4b0e155-fcfc-496e-b257-147c2d44aac8"],
-Cell[4560, 112, 1666, 26, 164, "Text",ExpressionUUID->"5a4753e1-a863-3742-b5ba-7c9f7a9ae2f7"],
-Cell[6229, 140, 548, 10, 33, "Text",ExpressionUUID->"e70d71b1-d122-024c-8d8d-ec950e7ca058"],
+Cell[4238, 105, 319, 5, 45, "Subsubsection",ExpressionUUID->"c4b0e155-fcfc-496e-b257-147c2d44aac8"],
+Cell[4560, 112, 1666, 26, 104, "Text",ExpressionUUID->"5a4753e1-a863-3742-b5ba-7c9f7a9ae2f7"],
+Cell[6229, 140, 548, 10, 35, "Text",ExpressionUUID->"e70d71b1-d122-024c-8d8d-ec950e7ca058"],
 Cell[6780, 152, 656093, 10763, 988, "Text",ExpressionUUID->"672bc828-4489-474e-bcdc-83791c81dd7b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[662910, 10920, 366, 6, 43, "Subsubsection",ExpressionUUID->"e3599bf7-351f-4b90-b69e-f4dac992a86e"],
-Cell[663279, 10928, 1373, 25, 143, "Text",ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-a6659e93b944"],
+Cell[662910, 10920, 366, 6, 45, "Subsubsection",ExpressionUUID->"e3599bf7-351f-4b90-b69e-f4dac992a86e"],
+Cell[663279, 10928, 1420, 26, 104, "Text",ExpressionUUID->"619f27b9-6f9f-d44e-8ea5-a6659e93b944"],
+Cell[664702, 10956, 1109, 18, 81, "Text",ExpressionUUID->"07762384-11f7-1f43-bbac-999d3e5ffc20"],
 Cell[CellGroupData[{
-Cell[664677, 10957, 1268, 29, 47, "Input",ExpressionUUID->"0521ee7a-7701-bf48-b428-782099279bb5"],
-Cell[665948, 10988, 19523, 535, 684, "Output",ExpressionUUID->"13a56fac-886c-3044-99d8-60b9256daa67"]
+Cell[665836, 10978, 1268, 29, 47, "Input",ExpressionUUID->"0521ee7a-7701-bf48-b428-782099279bb5"],
+Cell[667107, 11009, 19521, 535, 686, "Output",ExpressionUUID->"13a56fac-886c-3044-99d8-60b9256daa67"]
 }, {2}]],
-Cell[685483, 11526, 1249, 19, 99, "Text",ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
-Cell[686735, 11547, 1373, 21, 121, "Text",ExpressionUUID->"53a68df3-21ea-2641-872e-15508eda4e4a"],
-Cell[688111, 11570, 568, 9, 77, "Text",ExpressionUUID->"1a933d5e-6161-b443-9f40-e71b9baf0e4a"],
-Cell[688682, 11581, 1041, 24, 121, "Text",ExpressionUUID->"32c8b98f-7e92-af4d-b450-749c65828672"]
+Cell[686640, 11547, 573, 10, 58, "Text",ExpressionUUID->"d19f4bc1-edf0-5840-89e3-700ec3fc85f8"],
+Cell[687216, 11559, 1249, 19, 58, "Text",ExpressionUUID->"a5998614-67a9-694f-891c-733ead3577d1"],
+Cell[688468, 11580, 1373, 21, 81, "Text",ExpressionUUID->"53a68df3-21ea-2641-872e-15508eda4e4a"],
+Cell[689844, 11603, 568, 9, 58, "Text",ExpressionUUID->"1a933d5e-6161-b443-9f40-e71b9baf0e4a"],
+Cell[690415, 11614, 1041, 24, 81, "Text",ExpressionUUID->"32c8b98f-7e92-af4d-b450-749c65828672"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[689760, 11610, 362, 6, 43, "Subsubsection",ExpressionUUID->"ebcaf03d-5a34-4b3a-8d41-a90cf2e51ddf"],
-Cell[690125, 11618, 336, 7, 33, "Text",ExpressionUUID->"04d28a3d-b184-b04a-8056-73e4187bdbdc"],
-Cell[690464, 11627, 281, 6, 33, "Text",ExpressionUUID->"7e16824d-5a5c-964f-9267-e1ce4977a950"],
-Cell[690748, 11635, 225, 4, 33, "Text",ExpressionUUID->"069e38a4-31ee-469e-acb1-cc8446d8c251"],
-Cell[690976, 11641, 239, 6, 33, "Text",ExpressionUUID->"b4d7ca10-be3c-451e-a523-fa84b0754c2e"],
-Cell[691218, 11649, 243, 4, 33, "Text",ExpressionUUID->"cf984beb-48f2-4d25-8c07-fdc93ea832fb"],
-Cell[691464, 11655, 304, 6, 33, "Text",ExpressionUUID->"491c3464-2b71-ed49-822c-d027685e63f2"]
+Cell[691493, 11643, 362, 6, 45, "Subsubsection",ExpressionUUID->"ebcaf03d-5a34-4b3a-8d41-a90cf2e51ddf"],
+Cell[691858, 11651, 336, 7, 35, "Text",ExpressionUUID->"04d28a3d-b184-b04a-8056-73e4187bdbdc"],
+Cell[692197, 11660, 281, 6, 35, "Text",ExpressionUUID->"7e16824d-5a5c-964f-9267-e1ce4977a950"],
+Cell[692481, 11668, 225, 4, 35, "Text",ExpressionUUID->"069e38a4-31ee-469e-acb1-cc8446d8c251"],
+Cell[692709, 11674, 239, 6, 35, "Text",ExpressionUUID->"b4d7ca10-be3c-451e-a523-fa84b0754c2e"],
+Cell[692951, 11682, 243, 4, 35, "Text",ExpressionUUID->"cf984beb-48f2-4d25-8c07-fdc93ea832fb"],
+Cell[693197, 11688, 304, 6, 35, "Text",ExpressionUUID->"491c3464-2b71-ed49-822c-d027685e63f2"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[691817, 11667, 256, 5, 53, "Subsection",ExpressionUUID->"5184138c-136d-b44c-9fdc-2b02344918df"],
-Cell[692076, 11674, 908, 18, 99, "Text",ExpressionUUID->"c0a1ef9d-4aef-a042-b109-88f487fb68b2"],
+Cell[693550, 11700, 256, 5, 54, "Subsection",ExpressionUUID->"5184138c-136d-b44c-9fdc-2b02344918df"],
+Cell[693809, 11707, 908, 18, 81, "Text",ExpressionUUID->"c0a1ef9d-4aef-a042-b109-88f487fb68b2"],
 Cell[CellGroupData[{
-Cell[693009, 11696, 307, 4, 43, "Subsubsection",ExpressionUUID->"638331d6-c528-ef44-8c03-9777dddf3b15"],
+Cell[694742, 11729, 338, 6, 45, "Subsubsection",ExpressionUUID->"638331d6-c528-ef44-8c03-9777dddf3b15"],
 Cell[CellGroupData[{
-Cell[693341, 11704, 3508, 72, 427, "Input",ExpressionUUID->"8d5db6a0-8633-4d47-9b3b-9c6d76bb775e"],
-Cell[696852, 11778, 2569, 45, 294, "Output",ExpressionUUID->"cda76716-a429-bf41-bcbb-e3cc7e6aea13"]
+Cell[695105, 11739, 3508, 72, 314, "Input",ExpressionUUID->"8d5db6a0-8633-4d47-9b3b-9c6d76bb775e"],
+Cell[698616, 11813, 2560, 45, 225, "Output",ExpressionUUID->"cda76716-a429-bf41-bcbb-e3cc7e6aea13"]
+}, Open  ]]
 }, Open  ]],
-Cell[699436, 11826, 2595, 41, 274, "Text",ExpressionUUID->"5895f51b-5412-be42-bfae-3c71c5fcba65"]
+Cell[CellGroupData[{
+Cell[701225, 11864, 391, 7, 45, "Subsubsection",ExpressionUUID->"37bca606-7753-b644-9a86-2526d07bc11d"],
+Cell[CellGroupData[{
+Cell[701641, 11875, 2086, 44, 143, "Input",ExpressionUUID->"eccbb270-6813-104a-a5d4-93f078f93939"],
+Cell[703730, 11921, 1071, 22, 95, "Output",ExpressionUUID->"7541ea55-a232-1942-9a76-6d4d82cdc538"]
 }, Open  ]],
-Cell[702046, 11870, 330, 5, 43, "Subsubsection",ExpressionUUID->"a8bac8be-4c4b-be43-bca1-a9f84bfc655f"]
+Cell[704816, 11946, 248, 6, 35, "Text",ExpressionUUID->"57cf8b90-179a-1443-976e-82a3c2f383af"],
+Cell[705067, 11954, 496, 9, 58, "Text",ExpressionUUID->"11f61f1e-6a53-3240-b81e-eed300dee629"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[705612, 11969, 313, 4, 54, "Subsection",ExpressionUUID->"ab0df75f-fd2e-a340-8cef-afbded482eee"],
+Cell[705928, 11975, 367, 7, 58, "Text",ExpressionUUID->"85d8cd1a-3f5a-234c-876f-55206609e4f9"],
+Cell[706298, 11984, 354, 7, 35, "Text",ExpressionUUID->"dc3cedda-201b-8a4c-b4e2-e73005284dfc"],
+Cell[CellGroupData[{
+Cell[706677, 11995, 1622, 33, 105, "Input",ExpressionUUID->"7817992a-c963-f44d-b678-aecd2814e366"],
+Cell[708302, 12030, 704, 15, 88, "Output",ExpressionUUID->"f3dd28b0-0dd3-854c-9f8e-70e66263568c"]
+}, Open  ]],
+Cell[709021, 12048, 171, 3, 35, "Text",ExpressionUUID->"527c6318-2139-c04d-a8a5-48fdbcbf5ca1"],
+Cell[709195, 12053, 411, 8, 58, "Text",ExpressionUUID->"33cec26e-0227-2148-b786-afec9d77fea7"],
+Cell[709609, 12063, 546, 10, 58, "Text",ExpressionUUID->"93025586-baeb-8d47-a786-3d30ad0f8fe0"],
+Cell[710158, 12075, 589, 10, 58, "Text",ExpressionUUID->"2779f732-dd1b-ef4b-a696-0b46081d4a1b"],
+Cell[710750, 12087, 586, 10, 58, "Text",ExpressionUUID->"ba8e6a9b-cea7-644b-b406-6e6f799211ad"],
+Cell[711339, 12099, 959, 16, 104, "Text",ExpressionUUID->"18a46a66-93ee-924d-befa-d959146c92b5"],
+Cell[CellGroupData[{
+Cell[712323, 12119, 4349, 107, 409, "Input",ExpressionUUID->"277db6c4-519b-7d4e-83e5-f12005e0b669"],
+Cell[716675, 12228, 2304, 43, 461, "Output",ExpressionUUID->"dde836e0-e8b2-764f-88a8-666661d03c46"]
+}, Open  ]]
 }, Open  ]]
 }, Open  ]]
 }
