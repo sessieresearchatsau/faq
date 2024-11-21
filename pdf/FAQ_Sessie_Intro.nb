@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    913124,      18172]
-NotebookOptionsPosition[    908907,      18100]
-NotebookOutlinePosition[    909309,      18116]
-CellTagsIndexPosition[    909266,      18113]
+NotebookDataLength[    924052,      18384]
+NotebookOptionsPosition[    918293,      18294]
+NotebookOutlinePosition[    918698,      18310]
+CellTagsIndexPosition[    918655,      18307]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -43,6 +43,45 @@ Cell[BoxData[{
    3.9390507275600243`*^9, 3.93905072931427*^9}},
  CellLabel->"In[18]:=",ExpressionUUID->"d79c0b09-d972-cd43-9c2a-cb7faae7e59a"],
 
+Cell[CellGroupData[{
+
+Cell["Sequential Substitution Systems", "Subsubsection",
+ CellChangeTimes->{{3.9412055584850225`*^9, 
+  3.9412055648701706`*^9}},ExpressionUUID->"de5dc2a5-688f-441e-aaec-\
+eeb2c63ce787"],
+
+Cell["\<\
+\tYou can experiment with these functions. Download the \"SSS.wl\" header \
+file, containing the sessie code, save it locally on your computer or in your \
+Wolfram Cloud, in your sessie research folder.\
+\>", "Text",
+ CellChangeTimes->{{3.9412055584850225`*^9, 3.941205577412485*^9}, {
+  3.9412056264358573`*^9, 
+  3.9412056267629385`*^9}},ExpressionUUID->"7788ee38-7edd-40e7-9f32-\
+645493f97ffe"],
+
+Cell["\<\
+\t\thttps://www.wolframcloud.com/obj/90ec721d-78e2-4836-83ce-7c844556144d\
+\>", "Text",
+ CellChangeTimes->{{3.9412055584850225`*^9, 
+  3.9412056245972643`*^9}},ExpressionUUID->"ad77f93e-485b-4529-b944-\
+540f67dcb711"],
+
+Cell["\<\
+\tDownload the \"sandbox\" file, save it rename it if you want to try \
+something new and keep a record of it.\
+\>", "Text",
+ CellChangeTimes->{{3.9412055584850225`*^9, 
+  3.941205622190521*^9}},ExpressionUUID->"98f3a8cc-bc83-41b7-89c5-\
+785d120547c7"],
+
+Cell["\<\
+\t\thttps://www.wolframcloud.com/obj/256e508b-d3b5-4d91-80bf-0f78a6ebe85d\
+\>", "Text",
+ CellChangeTimes->{{3.9412055584850225`*^9, 
+  3.9412056190068293`*^9}},ExpressionUUID->"2848175d-9ed5-42b7-8397-\
+e966bc5d5d5b"],
+
 Cell["\<\
 The toy \[OpenCurlyDoubleQuote]universe\[CloseCurlyDoubleQuote] is a string \
 of characters, whose initial state can have any length and can contain any \
@@ -63,13 +102,15 @@ the size of any of the strings, nor on the characters in the strings.)\
    3.9405344329712505`*^9}},ExpressionUUID->"50a8a905-32ba-2847-98a6-\
 1cc2b2a25e46"],
 
-Cell["\<\
-In a sequential substitution system, rules must be applied sequentially in \
-order (use the first rule if possible, the second only if the first fails, \
-etc.) from left-to-right: if the first usable rule can be used at multiple \
-locations in the state string, we apply it in the first possible (left-most) \
-position.\
-\>", "Text",
+Cell[TextData[{
+ "In a ",
+ StyleBox["sequential",
+  FontSlant->"Italic"],
+ " substitution system, rules must be applied sequentially in order (use the \
+first rule if possible, the second only if the first fails, etc.) from \
+left-to-right: if the first usable rule can be used at multiple locations in \
+the state string, we apply it in the first possible (left-most) position."
+}], "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
    3.9349820087637157`*^9, {3.934982050358446*^9, 3.9349821238242807`*^9}, {
    3.934990316640726*^9, 
@@ -80,13 +121,12 @@ Cell["\<\
 Each application of any rule is an event, and each event destroys and/or \
 creates cells (or letters) in the state string.  Two events are considered to \
 be causally connected if a cell created by one is destroyed by the other. \
-(Later we\[CloseCurlyQuote]ll explain more about how the causal network \
-connections work, i.e. the lines that connect the event nodes.)\
 \>", "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
    3.9349820087637157`*^9, {3.934982050358446*^9, 3.93498212382428*^9}, {
    3.934990316640726*^9, 3.9349903230105667`*^9}, {3.9405344995229893`*^9, 
-   3.9405345010968266`*^9}},ExpressionUUID->"3f841c56-8afb-544f-8519-\
+   3.9405345010968266`*^9}, 
+   3.941205680165064*^9},ExpressionUUID->"3f841c56-8afb-544f-8519-\
 37e9306eb2c4"],
 
 Cell["\<\
@@ -118,11 +158,11 @@ Cell["\tSSS[ruleset, initial state, number of steps, options]", "CodeText",
    3.939820500634269*^9},ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-\
 b2311f710ccf"],
 
-Cell["Ex:", "Text",
+Cell["Example:", "Text",
  CellChangeTimes->{{3.934981903316576*^9, 3.9349819060347366`*^9}, 
    3.9349820087637157`*^9, {3.934982050358446*^9, 3.934982156211899*^9}, {
-   3.9349903284428253`*^9, 
-   3.9349903311714897`*^9}},ExpressionUUID->"93cb3ee2-8b24-f940-9838-\
+   3.9349903284428253`*^9, 3.9349903311714897`*^9}, {3.9412056958048143`*^9, 
+   3.9412056963421636`*^9}},ExpressionUUID->"93cb3ee2-8b24-f940-9838-\
 0b0fe052d78c"],
 
 Cell[CellGroupData[{
@@ -813,18 +853,172 @@ N9c6H/XyUefOPzf/Au9ryyE=
 In[20]:=",ExpressionUUID->"16e3be0e-2a4e-49fe-b545-0132784dfd28"]
 }, Open  ]],
 
-Cell[TextData[{
- "Try changing the rules in the ruleset, or the initial state string, or the \
-number of steps.  Or try it with some options. Some common options include \
-changing the size or maximum event/node shown in the SSS or the Net, or \
-changing how ",
- StyleBox["VertexLabels", "CodeText"],
- " are displayed:"
-}], "Text",
+Cell["\<\
+(1) By default, the display includes both the sessie (on the left) and its \
+causal network (on the right).  The colored cells in the sessie display \
+represent the changing state string, one line per state, with (micro-)time \
+advancing downward.  (Here the gray cells are As and the red cells Bs).  \
+Events correspond to the change from one state to the next.  \
+\>", "Text",
  CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
   3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
-  3.940536426918558*^9}},ExpressionUUID->"9dcd13da-1b34-ce45-a144-\
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 
+  3.9412058208314743`*^9}},ExpressionUUID->"9dcd13da-1b34-ce45-a144-\
 9754e87692cb"],
+
+Cell["\<\
+(2) We can dispense with the arrows indicating the direction of the causal \
+connection in the network if the node numbers are given, since the arrow will \
+always point from smaller to larger node number.\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+  3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 
+  3.941205821982177*^9}},ExpressionUUID->"13a485e6-3a43-4258-8101-\
+d09b8812ca95"],
+
+Cell["\<\
+(3) Although the command above performed 25 steps and so the causal network \
+has 25 events, the SSSMax option can limit the display of the actual sessie \
+to whatever we want, showing only the beginning of the continuing pattern.\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+  3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 
+  3.9412058361091456`*^9}},ExpressionUUID->"a4737711-7f19-440f-a8bd-\
+f0761d816ef3"],
+
+Cell["\<\
+(a couple other common options:  NetSize\[RightArrow]200,HighlightMethod\
+\[RightArrow]Dot)\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+  3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 
+  3.9412058484117093`*^9}},ExpressionUUID->"8694ccff-2094-4ff2-8fb8-\
+73a2bb66cb77"],
+
+Cell["Context:  Sessies and Simple Programs:", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+   3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+   3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+   3.9412057926337414`*^9, 3.9412058153826404`*^9}, 
+   3.941205850644172*^9},ExpressionUUID->"7b87f425-2eac-4a6f-9bb0-\
+8c810b585205"],
+
+Cell["\<\
+Sequential Substitution Systems are treated in one chapter of Stephen \
+Wolfram's book A New Kind of Science, and an initial (not directly \
+extensible) treatment has been published in the journal Complex Systems:\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+  3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 3.9412058153826404`*^9}, {3.941205863927991*^9, 
+  3.9412058851321015`*^9}},ExpressionUUID->"c957a170-c0dc-4613-9c93-\
+87a84699c8c0"],
+
+Cell["\<\
+Exploring the Space of Substitution Systems.  \
+http://www.complex-systems.com/pdf/22-1-1.pdf\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+  3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 3.9412058153826404`*^9}, {3.941205863927991*^9, 
+  3.9412058842427897`*^9}},ExpressionUUID->"04eff2b1-53e9-41bb-b1f5-\
+285a1c260c6a"],
+
+Cell["\<\
+SSSs (\"Sessies\") serve as one example of the larger class of systems that \
+although defined by simple rules can result in complex behavior. Perhaps the \
+simplest such system is the Elementary Cellular Automaton (see FAQ: ECA), a \
+1-d finite length binary string that is modified as specified to be a finite \
+fixed length set of rules, depending on the bit under consideration and its \
+neighbors.  John Conway's famous \"Game of Life\" is a 2-d version of this.\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+  3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+  3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+  3.9412057926337414`*^9, 3.9412058153826404`*^9}, {3.941205863927991*^9, 
+  3.9412058915419335`*^9}},ExpressionUUID->"f1672f49-ba7a-4719-b0c8-\
+0308f9153d98"],
+
+Cell["\<\
+Turing Machines add an internal state of the \"head\" to the bits recorded on \
+the \"tape\", thus extending the concept of cellular automaton, which only \
+consists of the \"tape\". (Possibly explain more on what you mean by \"head\" \
+and \"tape\" in this context)\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+   3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+   3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+   3.9412057926337414`*^9, 3.9412058153826404`*^9}, 3.941205863927991*^9, 
+   3.9412059012640424`*^9},ExpressionUUID->"9665fa49-4161-4899-9aa0-\
+729e51e6e0f1"],
+
+Cell["\<\
+Substitution systems add the possibility of increasing or decreasing the \
+length of string, by replacing a substring by another of different length. \
+Our treatment extends this variation by allowing either target or replacement \
+to be the empty string, forming insertion and deletion rules.  Substitution \
+systems also allow multiple rules and an unbounded set of characters making \
+up the strings the rules refer to.  In a sequential substitution system, \
+application of these rules is attempted successively and sequentially, as has \
+been described above.  In a multi-way substitution system, all rules are \
+applied at all positions simultaneously, possibly forming a large (but not \
+infinite) number of outcomes.  The Generalized Substitution System \
+enumeration includes all multi-way SS rulesets, as well as all Sessie \
+rulesets.\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+   3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+   3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+   3.9412057926337414`*^9, 3.9412058153826404`*^9}, 3.941205863927991*^9, {
+   3.941205915536256*^9, 
+   3.94120591999572*^9}},ExpressionUUID->"e474088b-6e3b-45e4-a067-\
+a98ae147e35e"],
+
+Cell["\<\
+Added complications:  Could the SSS 1-d state string be extended to 2-d or \
+higher dimensions, given the possibility of inserting/deleting characters?  \
+Would the fabric of the state array (2-d analog of the state string) bunch up \
+due to these changes?  Could a n x m target block be searched for, and \
+deleted, shrinking each of the n rows by m letters, and then a n' x m' block \
+inserted at the same place, inserting m' characters into each of n' rows?  \
+Possible, but complicated!\
+\>", "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+   3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+   3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+   3.9412057926337414`*^9, 3.9412058153826404`*^9}, 3.941205863927991*^9, {
+   3.941205915536256*^9, 
+   3.941205924169199*^9}},ExpressionUUID->"699d82bf-f09b-4c86-a9a8-\
+5bedfa81c4dd"],
+
+Cell[TextData[{
+ "One idea, proposed by Charles Sarr in a discussion on 2016.07.10, is that \
+the state string be treated as wrapping around, much as the coils of a \
+spring.  Rules could then seek for 2-d patterns and insert 2-d patterns in \
+the target locations. This would presumably not change the radius of \
+curvature of the spring, but might result in shifting of the line-up of the \
+coils, as can easily be visualized by considering how a physical spring would \
+be affected by inserting or deleting segments of one or more coils:\n\n",
+ StyleBox["*** Not sure if the stuff below should be kept, the OneNote was \
+changed a lot for this section***",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.9349905447402954`*^9, 3.9349905924956894`*^9}, {
+   3.9405349742582073`*^9, 3.940535161252264*^9}, {3.9405364063558598`*^9, 
+   3.940536426918558*^9}, {3.941205724883473*^9, 3.941205751125782*^9}, {
+   3.9412057926337414`*^9, 3.9412058153826404`*^9}, 3.941205863927991*^9, {
+   3.941205915536256*^9, 
+   3.9412059844683084`*^9}},ExpressionUUID->"c38acf4b-463f-4303-982b-\
+218b0c3d845f"],
 
 Cell[CellGroupData[{
 
@@ -11204,13 +11398,12 @@ looking at its keys, \\\"Evolution\\\" and \\\"Net\\\", etc.)\"\>",
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
-              True->
+               ImageSizeCache->{10., {3., 7.}}], True->
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
-               Dynamic[System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -12450,13 +12643,12 @@ and the other choices specify how the causal network is to be shown.\"\>",
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpener"],
-               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}], 
-              True->
+               ImageSizeCache->{10., {3., 7.}}], True->
               
               DynamicBox[FEPrivate`FrontEndResource[
                "FEBitmaps", "DownPointerOpenerHot"],
-               ImageSizeCache->{7.199999999999999, {3., 4.199999999999999}}]},
-               Dynamic[System`InformationDump`mouseOver$$]],
+               ImageSizeCache->{10., {3., 7.}}]}, Dynamic[
+              System`InformationDump`mouseOver$$]],
              Alignment->Left,
              Appearance->{"Default" -> None},
              
@@ -17932,13 +18124,13 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{SSSiCv100`n$$ = 3, Typeset`show$$ = True, 
+   DynamicModuleBox[{SSSiCv100`n$$ = 17, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold[SSSiCv100`n$$], 1, 26, 1}}, Typeset`size$$ = {
-    600., {158., 162.84270144471168`}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True}, 
+    50.0322265625, {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {SSSiCv100`n$$ = 1}, 
       "ControllerVariables" :> {}, 
@@ -17980,7 +18172,7 @@ Cell[BoxData[
        ControlType -> Animator, AppearanceElements -> None, DefaultBaseStyle -> 
         "Animate", DefaultLabelStyle -> "AnimateLabel", SynchronousUpdating -> 
         True, ShrinkingDelay -> 10.}, "DefaultOptions" :> {}],
-     ImageSizeCache->{992., {180.134033203125, 185.865966796875}},
+     ImageSizeCache->{836., {27.134033203125, 32.865966796875}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -18090,16 +18282,18 @@ at the top, with time flowing downward in the graphic. The component ",
 38580f34ef8c"],
 
 Cell["\<\
-FAQ Sessie Intro, 2024.11.13, Kenneth Caviness and Colton Edelbach\
+FAQ Sessie Intro, 2024.11.21, Kenneth Caviness and Colton Edelbach\
 \>", "Affiliation",
  CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
    3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
-   3.9404261759235177`*^9}, 3.940534869007164*^9},
+   3.9404261759235177`*^9}, 3.940534869007164*^9, {3.9412060159623947`*^9, 
+   3.94120601719134*^9}},
  TextAlignment->Center,ExpressionUUID->"5ca40168-f2a4-47e3-bb90-bf95c3ad21c3"]
 }, Open  ]]
+}, Open  ]]
 },
-WindowSize->{949., 472.5},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowSize->{960, 478},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
 FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"1378fcc5-01cb-420a-992d-28589599ae90"
@@ -18120,59 +18314,77 @@ Cell[580, 22, 218, 4, 98, "Title",ExpressionUUID->"8ee9c5e2-24f6-044a-8f22-72e51
 Cell[801, 28, 731, 15, 19, "Input",ExpressionUUID->"d79c0b09-d972-cd43-9c2a-cb7faae7e59a",
  CellOpen->False,
  InitializationCell->True],
-Cell[1535, 45, 1207, 18, 127, "Text",ExpressionUUID->"50a8a905-32ba-2847-98a6-1cc2b2a25e46"],
-Cell[2745, 65, 598, 11, 81, "Text",ExpressionUUID->"94d4bc5b-4980-f441-aa56-c22dad376ae5"],
-Cell[3346, 78, 696, 11, 81, "Text",ExpressionUUID->"3f841c56-8afb-544f-8519-37e9306eb2c4"],
-Cell[4045, 91, 421, 8, 58, "Text",ExpressionUUID->"083da44b-8432-d24a-9ce5-5f850384ec9f"],
-Cell[4469, 101, 414, 9, 35, "Text",ExpressionUUID->"d3915951-b6ee-6b4a-807e-3288f05626c5"],
-Cell[4886, 112, 424, 6, 38, "CodeText",ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-b2311f710ccf"],
-Cell[5313, 120, 276, 5, 35, "Text",ExpressionUUID->"93cb3ee2-8b24-f940-9838-0b0fe052d78c"],
 Cell[CellGroupData[{
-Cell[5614, 129, 1077, 20, 28, "Input",ExpressionUUID->"32164190-3867-0e4e-9b3f-d4142bcd7fb7"],
-Cell[6694, 151, 32455, 661, 194, "Print",ExpressionUUID->"16e3be0e-2a4e-49fe-b545-0132784dfd28"]
-}, Open  ]],
-Cell[39164, 815, 560, 11, 58, "Text",ExpressionUUID->"9dcd13da-1b34-ce45-a144-9754e87692cb"],
+Cell[1557, 47, 186, 3, 45, "Subsubsection",ExpressionUUID->"de5dc2a5-688f-441e-aaec-eeb2c63ce787"],
+Cell[1746, 52, 407, 8, 58, "Text",ExpressionUUID->"7788ee38-7edd-40e7-9f32-645493f97ffe"],
+Cell[2156, 62, 227, 5, 35, "Text",ExpressionUUID->"ad77f93e-485b-4529-b944-540f67dcb711"],
+Cell[2386, 69, 262, 6, 35, "Text",ExpressionUUID->"98f3a8cc-bc83-41b7-89c5-785d120547c7"],
+Cell[2651, 77, 227, 5, 35, "Text",ExpressionUUID->"2848175d-9ed5-42b7-8397-e966bc5d5d5b"],
+Cell[2881, 84, 1207, 18, 127, "Text",ExpressionUUID->"50a8a905-32ba-2847-98a6-1cc2b2a25e46"],
+Cell[4091, 104, 646, 13, 81, "Text",ExpressionUUID->"94d4bc5b-4980-f441-aa56-c22dad376ae5"],
+Cell[4740, 119, 583, 10, 58, "Text",ExpressionUUID->"3f841c56-8afb-544f-8519-37e9306eb2c4"],
+Cell[5326, 131, 421, 8, 58, "Text",ExpressionUUID->"083da44b-8432-d24a-9ce5-5f850384ec9f"],
+Cell[5750, 141, 414, 9, 35, "Text",ExpressionUUID->"d3915951-b6ee-6b4a-807e-3288f05626c5"],
+Cell[6167, 152, 424, 6, 38, "CodeText",ExpressionUUID->"be2cfe98-19d2-4a4a-b9e7-b2311f710ccf"],
+Cell[6594, 160, 331, 5, 35, "Text",ExpressionUUID->"93cb3ee2-8b24-f940-9838-0b0fe052d78c"],
 Cell[CellGroupData[{
-Cell[39749, 830, 894, 19, 28, "Input",ExpressionUUID->"3173bd8a-6d7e-694f-bb33-adbf60e7bd85"],
-Cell[40646, 851, 507052, 9634, 280, "Print",ExpressionUUID->"e9363a1b-94e7-4b40-bc59-653d8761f34f"]
+Cell[6950, 169, 1077, 20, 28, "Input",ExpressionUUID->"32164190-3867-0e4e-9b3f-d4142bcd7fb7"],
+Cell[8030, 191, 32455, 661, 194, "Print",ExpressionUUID->"16e3be0e-2a4e-49fe-b545-0132784dfd28"]
 }, Open  ]],
-Cell[547713, 10488, 319, 6, 35, "Text",ExpressionUUID->"a58a9446-131f-7647-ac6e-4d1db09c6bae"],
+Cell[40500, 855, 719, 12, 81, "Text",ExpressionUUID->"9dcd13da-1b34-ce45-a144-9754e87692cb"],
+Cell[41222, 869, 558, 10, 58, "Text",ExpressionUUID->"13a485e6-3a43-4258-8101-d09b8812ca95"],
+Cell[41783, 881, 585, 10, 58, "Text",ExpressionUUID->"a4737711-7f19-440f-a8bd-f0761d816ef3"],
+Cell[42371, 893, 446, 9, 35, "Text",ExpressionUUID->"8694ccff-2094-4ff2-8fb8-73a2bb66cb77"],
+Cell[42820, 904, 411, 6, 35, "Text",ExpressionUUID->"7b87f425-2eac-4a6f-9bb0-8c810b585205"],
+Cell[43234, 912, 616, 10, 58, "Text",ExpressionUUID->"c957a170-c0dc-4613-9c93-87a84699c8c0"],
+Cell[43853, 924, 496, 9, 35, "Text",ExpressionUUID->"04eff2b1-53e9-41bb-b1f5-285a1c260c6a"],
+Cell[44352, 935, 870, 13, 104, "Text",ExpressionUUID->"f1672f49-ba7a-4719-b0c8-0308f9153d98"],
+Cell[45225, 950, 671, 11, 58, "Text",ExpressionUUID->"9665fa49-4161-4899-9aa0-729e51e6e0f1"],
+Cell[45899, 963, 1275, 20, 173, "Text",ExpressionUUID->"e474088b-6e3b-45e4-a067-a98ae147e35e"],
+Cell[47177, 985, 921, 15, 104, "Text",ExpressionUUID->"699d82bf-f09b-4c86-a9a8-5bedfa81c4dd"],
+Cell[48101, 1002, 1102, 18, 150, "Text",ExpressionUUID->"c38acf4b-463f-4303-982b-218b0c3d845f"],
 Cell[CellGroupData[{
-Cell[548057, 10498, 194, 3, 28, "Input",ExpressionUUID->"0617b732-e8c6-954c-a7cf-85c9a0099251"],
-Cell[548254, 10503, 40328, 867, 245, "Output",ExpressionUUID->"b3d5aeb0-a102-6f41-93f7-aebcded65f78"]
+Cell[49228, 1024, 894, 19, 28, "Input",ExpressionUUID->"3173bd8a-6d7e-694f-bb33-adbf60e7bd85"],
+Cell[50125, 1045, 507052, 9634, 280, "Print",ExpressionUUID->"e9363a1b-94e7-4b40-bc59-653d8761f34f"]
 }, Open  ]],
-Cell[588597, 11373, 528, 12, 58, "Text",ExpressionUUID->"f33d4044-cde4-9c43-9e6d-122b6420d61a"],
+Cell[557192, 10682, 319, 6, 35, "Text",ExpressionUUID->"a58a9446-131f-7647-ac6e-4d1db09c6bae"],
 Cell[CellGroupData[{
-Cell[589150, 11389, 197, 3, 28, "Input",ExpressionUUID->"cfdd8638-1307-c145-854d-0df7131478f6"],
-Cell[589350, 11394, 64730, 1356, 500, "Output",ExpressionUUID->"5bf99526-9e72-b64a-a5a6-700900a32e20"]
+Cell[557536, 10692, 194, 3, 28, "Input",ExpressionUUID->"0617b732-e8c6-954c-a7cf-85c9a0099251"],
+Cell[557733, 10697, 40255, 866, 245, "Output",ExpressionUUID->"b3d5aeb0-a102-6f41-93f7-aebcded65f78"]
 }, Open  ]],
-Cell[654095, 12753, 521, 10, 35, "Text",ExpressionUUID->"74fc68ef-19c1-cd47-9be2-18d7781044fb"],
-Cell[654619, 12765, 225, 3, 28, "Input",ExpressionUUID->"55f33d92-e6dc-c54b-848a-30ffa73a388c"],
-Cell[654847, 12770, 318, 8, 35, "Text",ExpressionUUID->"5024d2a7-d01f-394b-a12b-0d5d96aebf79"],
+Cell[598003, 11566, 528, 12, 58, "Text",ExpressionUUID->"f33d4044-cde4-9c43-9e6d-122b6420d61a"],
 Cell[CellGroupData[{
-Cell[655190, 12782, 1394, 30, 86, "Input",ExpressionUUID->"2776552f-1dce-1844-8037-32c26daadd91"],
-Cell[656587, 12814, 244540, 5098, 315, "Output",ExpressionUUID->"306a7feb-7da0-4250-859a-e1de57cea511"]
+Cell[598556, 11582, 197, 3, 28, "Input",ExpressionUUID->"cfdd8638-1307-c145-854d-0df7131478f6"],
+Cell[598756, 11587, 64657, 1355, 500, "Output",ExpressionUUID->"5bf99526-9e72-b64a-a5a6-700900a32e20"]
 }, Open  ]],
-Cell[901142, 17915, 286, 7, 35, "Text",ExpressionUUID->"1ae5c6ad-82d4-b245-bb85-88d6892b9284"],
+Cell[663428, 12945, 521, 10, 35, "Text",ExpressionUUID->"74fc68ef-19c1-cd47-9be2-18d7781044fb"],
+Cell[663952, 12957, 225, 3, 28, "Input",ExpressionUUID->"55f33d92-e6dc-c54b-848a-30ffa73a388c"],
+Cell[664180, 12962, 318, 8, 35, "Text",ExpressionUUID->"5024d2a7-d01f-394b-a12b-0d5d96aebf79"],
 Cell[CellGroupData[{
-Cell[901453, 17926, 211, 3, 28, "Input",ExpressionUUID->"475ba7fe-429d-be44-9a0b-cf36e190ff79"],
-Cell[901667, 17931, 2916, 64, 383, "Output",ExpressionUUID->"0539eb09-1d31-4467-845a-27cb419f3ac6"]
+Cell[664523, 12974, 1394, 30, 86, "Input",ExpressionUUID->"2776552f-1dce-1844-8037-32c26daadd91"],
+Cell[665920, 13006, 244540, 5098, 315, "Output",ExpressionUUID->"306a7feb-7da0-4250-859a-e1de57cea511"]
 }, Open  ]],
-Cell[904598, 17998, 222, 5, 33, "Text",ExpressionUUID->"636b1af7-976e-3043-aa2f-c0d9bc0af530"],
+Cell[910475, 18107, 286, 7, 35, "Text",ExpressionUUID->"1ae5c6ad-82d4-b245-bb85-88d6892b9284"],
 Cell[CellGroupData[{
-Cell[904845, 18007, 240, 4, 28, "Input",ExpressionUUID->"39ce9149-b506-8348-a365-81947dd58d2a"],
-Cell[905088, 18013, 293, 6, 32, "Output",ExpressionUUID->"238be05f-90ad-b04d-a406-4084714d2d2f"]
+Cell[910786, 18118, 211, 3, 28, "Input",ExpressionUUID->"475ba7fe-429d-be44-9a0b-cf36e190ff79"],
+Cell[911000, 18123, 2906, 64, 79, "Output",ExpressionUUID->"0539eb09-1d31-4467-845a-27cb419f3ac6"]
+}, Open  ]],
+Cell[913921, 18190, 222, 5, 35, "Text",ExpressionUUID->"636b1af7-976e-3043-aa2f-c0d9bc0af530"],
+Cell[CellGroupData[{
+Cell[914168, 18199, 240, 4, 28, "Input",ExpressionUUID->"39ce9149-b506-8348-a365-81947dd58d2a"],
+Cell[914411, 18205, 293, 6, 32, "Output",ExpressionUUID->"238be05f-90ad-b04d-a406-4084714d2d2f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[905418, 18024, 292, 5, 28, "Input",ExpressionUUID->"3e631371-7452-634c-8b8d-cff59e564a0a"],
-Cell[905713, 18031, 912, 15, 70, "Output",ExpressionUUID->"f84ce110-c7b8-e64f-b2cd-da73f331f9c6"]
+Cell[914741, 18216, 292, 5, 28, "Input",ExpressionUUID->"3e631371-7452-634c-8b8d-cff59e564a0a"],
+Cell[915036, 18223, 912, 15, 71, "Output",ExpressionUUID->"f84ce110-c7b8-e64f-b2cd-da73f331f9c6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[906662, 18051, 241, 4, 28, "Input",ExpressionUUID->"8a187969-03ad-194e-8cfb-af60327d4432"],
-Cell[906906, 18057, 439, 8, 32, "Output",ExpressionUUID->"3a4b04c8-c526-964f-85f8-b8ffbc48b9d4"]
+Cell[915985, 18243, 241, 4, 28, "Input",ExpressionUUID->"8a187969-03ad-194e-8cfb-af60327d4432"],
+Cell[916229, 18249, 439, 8, 32, "Output",ExpressionUUID->"3a4b04c8-c526-964f-85f8-b8ffbc48b9d4"]
 }, Open  ]],
-Cell[907360, 18068, 1159, 21, 150, "Text",ExpressionUUID->"0b3bb6ae-9102-ae41-8df4-38580f34ef8c"],
-Cell[908522, 18091, 369, 6, 31, "Affiliation",ExpressionUUID->"5ca40168-f2a4-47e3-bb90-bf95c3ad21c3"]
+Cell[916683, 18260, 1159, 21, 150, "Text",ExpressionUUID->"0b3bb6ae-9102-ae41-8df4-38580f34ef8c"],
+Cell[917845, 18283, 420, 7, 31, "Affiliation",ExpressionUUID->"5ca40168-f2a4-47e3-bb90-bf95c3ad21c3"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
