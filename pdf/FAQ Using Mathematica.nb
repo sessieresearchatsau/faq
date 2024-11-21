@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2147,         66]
-NotebookOptionsPosition[      1677,         50]
-NotebookOutlinePosition[      2076,         66]
-CellTagsIndexPosition[      2033,         63]
+NotebookDataLength[      2183,         68]
+NotebookOptionsPosition[      1695,         51]
+NotebookOutlinePosition[      2094,         67]
+CellTagsIndexPosition[      2051,         64]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,6 +26,7 @@ Cell[BoxData[{
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Needs", "[", "\"\<SSSiCv100`\>\"", "]"}], ";"}]}], "Input",
+ CellOpen->False,
  InitializationCell->True,
  CellChangeTimes->{{3.8159227950159807`*^9, 3.815922857230071*^9}, {
    3.832959057462519*^9, 3.8329590603471575`*^9}, 3.938448124213293*^9, {
@@ -65,9 +66,10 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 712, 14, 64, "Input",ExpressionUUID->"f55629e8-bb3a-3f43-90c1-4901ca2a70f8",
+Cell[558, 20, 730, 15, 19, "Input",ExpressionUUID->"f55629e8-bb3a-3f43-90c1-4901ca2a70f8",
+ CellOpen->False,
  InitializationCell->True],
-Cell[1273, 36, 400, 12, 150, "Text",ExpressionUUID->"7aacb334-82ae-4f7c-8805-8203ca2b457c"]
+Cell[1291, 37, 400, 12, 150, "Text",ExpressionUUID->"7aacb334-82ae-4f7c-8805-8203ca2b457c"]
 }
 ]
 *)
