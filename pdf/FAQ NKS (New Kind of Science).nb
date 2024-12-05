@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5308,        136]
-NotebookOptionsPosition[      4148,        110]
-NotebookOutlinePosition[      4547,        126]
-CellTagsIndexPosition[      4504,        123]
+NotebookDataLength[      5823,        146]
+NotebookOptionsPosition[      4563,        119]
+NotebookOutlinePosition[      4963,        135]
+CellTagsIndexPosition[      4920,        132]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -73,7 +73,7 @@ publications later we now have a robust enumeration algorithm permitting an \
 NKS treatment of sessies.\
 \>", "Text",
  CellChangeTimes->{{3.940410813990349*^9, 
-  3.9404108202450695`*^9}},ExpressionUUID->"ebbc0a79-195f-704f-b542-\
+  3.940410820245069*^9}},ExpressionUUID->"ebbc0a79-195f-704f-b542-\
 6a24bcebafd2"],
 
 Cell["\<\
@@ -104,13 +104,22 @@ https://medium.com/cantors-paradise/richard-feynmans-advice-to-a-young-\
 stephen-wolfram-1985-d572dc360c18\
 \>", "Text",
  CellChangeTimes->{{3.940410813990349*^9, 
-  3.9404108279640846`*^9}},ExpressionUUID->"34869b6f-4d69-2441-8495-\
-9c0126343d55"]
+  3.940410827964084*^9}},ExpressionUUID->"34869b6f-4d69-2441-8495-\
+9c0126343d55"],
+
+Cell["\<\
+FAQ Sessie Intro, 2024.11.21, Kenneth Caviness and Colton Edelbach\
+\>", "Affiliation",
+ CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
+   3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
+   3.940426175923518*^9}, 3.940534869007164*^9, {3.941206015962395*^9, 
+   3.94120601719134*^9}},
+ TextAlignment->Center,ExpressionUUID->"f1097033-c165-f34a-b165-27e24868515d"]
 }, Open  ]]
 },
 WindowSize->{949, 467},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"8dc93cd8-a35e-4903-8577-7d62f2ecd872"
 ]
@@ -132,11 +141,12 @@ Cell[955, 30, 731, 15, 19, "Input",ExpressionUUID->"71cbf5f1-efaf-ef45-baf9-d3eb
  InitializationCell->True],
 Cell[1689, 47, 168, 3, 35, "Text",ExpressionUUID->"f278becb-754c-0342-ab1e-b1af4efdc81e"],
 Cell[1860, 52, 712, 12, 104, "Text",ExpressionUUID->"3b89f29b-6668-ef45-81b5-bb718af1017a"],
-Cell[2575, 66, 559, 10, 81, "Text",ExpressionUUID->"ebbc0a79-195f-704f-b542-6a24bcebafd2"],
-Cell[3137, 78, 254, 6, 35, "Text",ExpressionUUID->"d6f6e025-d85d-2941-952a-03aa19d1ae33"],
-Cell[3394, 86, 257, 6, 35, "Text",ExpressionUUID->"8c61a646-d3d5-0747-8664-4f7a707bd2ae"],
-Cell[3654, 94, 217, 5, 35, "Text",ExpressionUUID->"1ba438c7-dce9-c64c-8e57-4f532ac6258d"],
-Cell[3874, 101, 258, 6, 35, "Text",ExpressionUUID->"34869b6f-4d69-2441-8495-9c0126343d55"]
+Cell[2575, 66, 557, 10, 81, "Text",ExpressionUUID->"ebbc0a79-195f-704f-b542-6a24bcebafd2"],
+Cell[3135, 78, 254, 6, 35, "Text",ExpressionUUID->"d6f6e025-d85d-2941-952a-03aa19d1ae33"],
+Cell[3392, 86, 257, 6, 35, "Text",ExpressionUUID->"8c61a646-d3d5-0747-8664-4f7a707bd2ae"],
+Cell[3652, 94, 217, 5, 35, "Text",ExpressionUUID->"1ba438c7-dce9-c64c-8e57-4f532ac6258d"],
+Cell[3872, 101, 256, 6, 35, "Text",ExpressionUUID->"34869b6f-4d69-2441-8495-9c0126343d55"],
+Cell[4131, 109, 416, 7, 31, "Affiliation",ExpressionUUID->"f1097033-c165-f34a-b165-27e24868515d"]
 }, Open  ]]
 }
 ]

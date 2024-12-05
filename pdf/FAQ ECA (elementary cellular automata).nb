@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     76974,       1372]
-NotebookOptionsPosition[     74494,       1332]
-NotebookOutlinePosition[     74893,       1348]
-CellTagsIndexPosition[     74850,       1345]
+NotebookDataLength[     77991,       1394]
+NotebookOptionsPosition[     75311,       1352]
+NotebookOutlinePosition[     75717,       1368]
+CellTagsIndexPosition[     75674,       1365]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -47,7 +47,7 @@ Cell[BoxData[{
 
 Cell["ECA (elementary cellular automata):", "Text",
  CellChangeTimes->{{3.940410330086769*^9, 
-  3.9404103322723637`*^9}},ExpressionUUID->"84d9c128-665e-f44e-80db-\
+  3.940410332272364*^9}},ExpressionUUID->"84d9c128-665e-f44e-80db-\
 209e4dc4c63b"],
 
 Cell[TextData[{
@@ -75,7 +75,7 @@ its current value ",
 identified by its algorithm and its initial state."
 }], "Text",
  CellChangeTimes->{{3.940410330086769*^9, 
-  3.9404103357485256`*^9}},ExpressionUUID->"10b179a4-f438-bc41-962f-\
+  3.940410335748525*^9}},ExpressionUUID->"10b179a4-f438-bc41-962f-\
 b605cfab950b"],
 
 Cell["\<\
@@ -87,7 +87,7 @@ each case) in the order.  These 8 bits give rise to a decimal number between \
 0 and 255 = 2^8 - 1, which is the index of the ECA.  See examples below.\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 
    3.9404104834372997`*^9}},ExpressionUUID->"43260a81-3fa5-4741-98c1-\
 8e600a146bf1"],
 
@@ -95,15 +95,15 @@ Cell["\<\
 (Dissenting viewpoint: http://generaltheory.webs.com/Ring-of-rules.pdf)\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 
-   3.9404104873329163`*^9}},ExpressionUUID->"0ea9eb74-4adc-f048-bba3-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 
+   3.940410487332917*^9}},ExpressionUUID->"0ea9eb74-4adc-f048-bba3-\
 4ff34e3fdc49"],
 
 Cell[TextData[StyleBox["5/16/2016",
  FontWeight->"Bold",
  FontVariations->{"Underline"->True}]], "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 
    3.9404104886201305`*^9}},ExpressionUUID->"ac001f42-4239-724b-a5cf-\
 a73e13b27aff"],
 
@@ -117,8 +117,8 @@ homogeneous structures, cellular structures, tessellation structures, and \
 iterative arrays."
 }], "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, 
-   3.9404105298362446`*^9},ExpressionUUID->"912cd079-5d3c-8144-86e0-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, 
+   3.940410529836244*^9},ExpressionUUID->"912cd079-5d3c-8144-86e0-\
 8345a62e4c3e"],
 
 Cell["\<\
@@ -128,7 +128,7 @@ Typically, the rule for updating old states into new states does not change \
 over time and is applied to the grid simultaneously.\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, 
    3.940410531388439*^9},ExpressionUUID->"3ef157f6-11ab-1a49-8803-\
 105e6081b208"],
 
@@ -138,7 +138,7 @@ Conway\[CloseCurlyQuote]s famous \[OpenCurlyDoubleQuote]Game of Life\
 reference.  Wikipedia?)\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, 
    3.940410536844265*^9},ExpressionUUID->"9810d08d-35bf-d443-be03-\
 10de7bbd06bb"],
 
@@ -149,9 +149,9 @@ Cell[TextData[{
 1). It is a very simple model of computation."
 }], "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
-   3.9404105846054363`*^9}},ExpressionUUID->"c3c2af5d-8f45-6041-9313-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
+   3.940410584605437*^9}},ExpressionUUID->"c3c2af5d-8f45-6041-9313-\
 8b1e8d66d3b6"],
 
 Cell[TextData[{
@@ -166,8 +166,8 @@ and when a replacement rule occurs, the substitution likewise occurs in \
 binary code. "
 }], "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
    3.940410587076357*^9}},ExpressionUUID->"c668a0b0-8125-7844-9ca8-\
 336b52da8671"],
 
@@ -180,16 +180,16 @@ with the LSB (least significant bit) representing the 000 pattern, the MSB \
 representing the 111 pattern:\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
    3.9404106376082077`*^9}},ExpressionUUID->"77b79bb8-86a0-1543-9675-\
 cae4ffe6d602"],
 
 Cell["Example:", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
-   3.9404106413847504`*^9}},ExpressionUUID->"4cd92b29-2db8-224a-a1ed-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
+   3.940410641384751*^9}},ExpressionUUID->"4cd92b29-2db8-224a-a1ed-\
 896811de530f"],
 
 Cell[TextData[Cell[BoxData[
@@ -1197,8 +1197,8 @@ neLREfZz8fjZiDDxmJTZ22PEf/MfPoXhaA==
     0, 243.}}]], \
 "Input",ExpressionUUID->"1e150ed5-d5f0-d648-aa25-9a6c83b83aab"]], "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
    3.9404106440615654`*^9}},ExpressionUUID->"cd2b1a81-a296-1f42-b4d0-\
 086e4822773d"],
 
@@ -1208,8 +1208,8 @@ two hexadecimal numbers rather than one byte, or 8 bits.  The way I think of \
 it is:\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
    3.940410647685568*^9}},ExpressionUUID->"01b3aeeb-8af2-c44f-b6d9-\
 4945e3c7ff2d"],
 
@@ -1221,9 +1221,9 @@ Cell["\<\
                             = 01101110 (base 2)\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
-   3.9404106864206886`*^9}},ExpressionUUID->"e988dc16-28b1-0a4d-8ef3-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
+   3.940410686420688*^9}},ExpressionUUID->"e988dc16-28b1-0a4d-8ef3-\
 e92e9bdf6764"],
 
 Cell["\<\
@@ -1231,15 +1231,26 @@ After that we use the bits found as the list of new states to use as shown in \
 the table.)\
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 3.94041069262903*^9}, {3.940410737971813*^9, 
-   3.9404107382619286`*^9}},ExpressionUUID->"3ba1a44f-97d3-5842-8e4b-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 3.94041069262903*^9}, {3.940410737971813*^9, 
+   3.940410738261929*^9}, {3.942409726452015*^9, 
+   3.9424097277800655`*^9}},ExpressionUUID->"3ba1a44f-97d3-5842-8e4b-\
 20c7046308bd"],
+
+Cell["\<\
+The ECA created by using this set of new states is shown here:  \
+\>", "Text",
+ CellChangeTimes->{
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 3.94041069262903*^9}, {3.940410737971813*^9, 
+   3.940410738261929*^9}, {3.942409726452015*^9, 
+   3.9424097494913483`*^9}},ExpressionUUID->"52ffc4eb-bc2a-de49-ba07-\
+8cffda553881"],
 
 Cell["", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 3.94041069262903*^9}, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 3.94041069262903*^9}, 
    3.940410737971813*^9},ExpressionUUID->"3713ad28-a5dd-4e4b-9a78-\
 4ed47e023126"],
 
@@ -1294,9 +1305,9 @@ PkXzJur5ohbRny6PDuN6McVnzgczL/G5mQGx5MBl5moXYLqQQz6YeRv1RoYj
 PkPsTgfRacglO3xfRb2Rwa1P+KhUzuAGluzwfcLnZoby1YnkPNexkMENTPjo
 PBafSN3JgKhbPjoQeqFRCT+0U2IouBppkgH7/v/g8w/9PcBC
     "], {{0, 76.5}, {75., 0}}, {0, 255},
-    RasterInterpolation -> "High",
     ColorFunction->RGBColor,
-    ImageResolution->{96., 96.}],
+    ImageResolution->{96., 96.},
+    RasterInterpolation->"High"],
    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
@@ -1306,16 +1317,16 @@ PBafSN3JgKhbPjoQeqFRCT+0U2IouBppkgH7/v/g8w/9PcBC
     0, 76.5}}]], \
 "Input",ExpressionUUID->"6eca8594-c8ab-1c4a-b01c-bdfccfe92f9a"]], "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
-   3.9404107357877007`*^9}},ExpressionUUID->"3046227f-e17a-6544-b81d-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
+   3.940410735787701*^9}},ExpressionUUID->"3046227f-e17a-6544-b81d-\
 8350738ed91d"],
 
 Cell["More details:  https://en.wikipedia.org/wiki/Rule_110", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
-   3.9404107335079365`*^9}},ExpressionUUID->"b85b8524-b10e-f24b-ae50-\
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
+   3.940410733507937*^9}},ExpressionUUID->"b85b8524-b10e-f24b-ae50-\
 a95c37ca6682"],
 
 Cell["\<\
@@ -1324,15 +1335,24 @@ https://en.wikipedia.org/wiki/Elementary_cellular_automaton
 \
 \>", "Text",
  CellChangeTimes->{
-  3.940410330086769*^9, {3.9404104782092857`*^9, 3.940410481886017*^9}, {
-   3.9404105807475433`*^9, 
+  3.940410330086769*^9, {3.9404104782092853`*^9, 3.940410481886017*^9}, {
+   3.940410580747544*^9, 
    3.940410752163872*^9}},ExpressionUUID->"422dd6cf-df93-6b49-9b66-\
-2b05d3b6ac90"]
+2b05d3b6ac90"],
+
+Cell["\<\
+FAQ Sessie Intro, 2024.11.21, Kenneth Caviness and Colton Edelbach\
+\>", "Affiliation",
+ CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
+   3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
+   3.940426175923518*^9}, 3.940534869007164*^9, {3.941206015962395*^9, 
+   3.94120601719134*^9}},
+ TextAlignment->Center,ExpressionUUID->"d9f5e0df-dd49-404b-8f84-ef25ad64db1c"]
 }, Open  ]]
 },
-WindowSize->{949, 467},
-WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+WindowSize->{1440, 747.75},
+WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"5db0a7c7-b157-324f-b041-1e7ef368e44e"
 ]
@@ -1352,27 +1372,29 @@ Cell[580, 22, 380, 6, 98, "Title",ExpressionUUID->"aa700ce5-d16a-4457-9b39-b2968
 Cell[963, 30, 731, 15, 19, "Input",ExpressionUUID->"8a40b07f-7fc6-c14f-b4e9-6a9407aafffb",
  CellOpen->False,
  InitializationCell->True],
-Cell[1697, 47, 179, 3, 35, "Text",ExpressionUUID->"84d9c128-665e-f44e-80db-209e4dc4c63b"],
-Cell[1879, 52, 499, 11, 81, "Text",ExpressionUUID->"403eb4ef-770c-dc41-9ad6-56d47fbfcacf"],
-Cell[2381, 65, 637, 13, 81, "Text",ExpressionUUID->"10b179a4-f438-bc41-962f-b605cfab950b"],
-Cell[3021, 80, 643, 11, 104, "Text",ExpressionUUID->"43260a81-3fa5-4741-98c1-8e600a146bf1"],
-Cell[3667, 93, 251, 6, 35, "Text",ExpressionUUID->"0ea9eb74-4adc-f048-bba3-4ff34e3fdc49"],
-Cell[3921, 101, 260, 6, 35, "Text",ExpressionUUID->"ac001f42-4239-724b-a5cf-a73e13b27aff"],
-Cell[4184, 109, 597, 12, 81, "Text",ExpressionUUID->"912cd079-5d3c-8144-86e0-8345a62e4c3e"],
-Cell[4784, 123, 481, 9, 58, "Text",ExpressionUUID->"3ef157f6-11ab-1a49-8803-105e6081b208"],
-Cell[5268, 134, 370, 8, 35, "Text",ExpressionUUID->"9810d08d-35bf-d443-be03-10de7bbd06bb"],
-Cell[5641, 144, 428, 10, 58, "Text",ExpressionUUID->"c3c2af5d-8f45-6041-9313-8b1e8d66d3b6"],
-Cell[6072, 156, 748, 15, 104, "Text",ExpressionUUID->"c668a0b0-8125-7844-9ca8-336b52da8671"],
-Cell[6823, 173, 649, 12, 81, "Text",ExpressionUUID->"77b79bb8-86a0-1543-9675-cae4ffe6d602"],
-Cell[7475, 187, 232, 5, 35, "Text",ExpressionUUID->"4cd92b29-2db8-224a-a1ed-896811de530f"],
-Cell[7710, 194, 61036, 1008, 258, "Text",ExpressionUUID->"cd2b1a81-a296-1f42-b4d0-086e4822773d"],
-Cell[68749, 1204, 395, 9, 58, "Text",ExpressionUUID->"01b3aeeb-8af2-c44f-b6d9-4945e3c7ff2d"],
-Cell[69147, 1215, 484, 11, 104, "Text",ExpressionUUID->"e988dc16-28b1-0a4d-8ef3-e92e9bdf6764"],
-Cell[69634, 1228, 368, 8, 35, "Text",ExpressionUUID->"3ba1a44f-97d3-5842-8e4b-20c7046308bd"],
-Cell[70005, 1238, 243, 5, 35, "Text",ExpressionUUID->"3713ad28-a5dd-4e4b-9a78-4ed47e023126"],
-Cell[70251, 1245, 3595, 66, 162, "Text",ExpressionUUID->"3046227f-e17a-6544-b81d-8350738ed91d"],
-Cell[73849, 1313, 277, 5, 35, "Text",ExpressionUUID->"b85b8524-b10e-f24b-ae50-a95c37ca6682"],
-Cell[74129, 1320, 349, 9, 81, "Text",ExpressionUUID->"422dd6cf-df93-6b49-9b66-2b05d3b6ac90"]
+Cell[1697, 47, 177, 3, 35, "Text",ExpressionUUID->"84d9c128-665e-f44e-80db-209e4dc4c63b"],
+Cell[1877, 52, 499, 11, 58, "Text",ExpressionUUID->"403eb4ef-770c-dc41-9ad6-56d47fbfcacf"],
+Cell[2379, 65, 635, 13, 58, "Text",ExpressionUUID->"10b179a4-f438-bc41-962f-b605cfab950b"],
+Cell[3017, 80, 643, 11, 58, "Text",ExpressionUUID->"43260a81-3fa5-4741-98c1-8e600a146bf1"],
+Cell[3663, 93, 249, 6, 35, "Text",ExpressionUUID->"0ea9eb74-4adc-f048-bba3-4ff34e3fdc49"],
+Cell[3915, 101, 260, 6, 35, "Text",ExpressionUUID->"ac001f42-4239-724b-a5cf-a73e13b27aff"],
+Cell[4178, 109, 595, 12, 58, "Text",ExpressionUUID->"912cd079-5d3c-8144-86e0-8345a62e4c3e"],
+Cell[4776, 123, 481, 9, 58, "Text",ExpressionUUID->"3ef157f6-11ab-1a49-8803-105e6081b208"],
+Cell[5260, 134, 370, 8, 35, "Text",ExpressionUUID->"9810d08d-35bf-d443-be03-10de7bbd06bb"],
+Cell[5633, 144, 424, 10, 35, "Text",ExpressionUUID->"c3c2af5d-8f45-6041-9313-8b1e8d66d3b6"],
+Cell[6060, 156, 746, 15, 81, "Text",ExpressionUUID->"c668a0b0-8125-7844-9ca8-336b52da8671"],
+Cell[6809, 173, 647, 12, 58, "Text",ExpressionUUID->"77b79bb8-86a0-1543-9675-cae4ffe6d602"],
+Cell[7459, 187, 228, 5, 35, "Text",ExpressionUUID->"4cd92b29-2db8-224a-a1ed-896811de530f"],
+Cell[7690, 194, 61034, 1008, 258, "Text",ExpressionUUID->"cd2b1a81-a296-1f42-b4d0-086e4822773d"],
+Cell[68727, 1204, 393, 9, 35, "Text",ExpressionUUID->"01b3aeeb-8af2-c44f-b6d9-4945e3c7ff2d"],
+Cell[69123, 1215, 480, 11, 104, "Text",ExpressionUUID->"e988dc16-28b1-0a4d-8ef3-e92e9bdf6764"],
+Cell[69606, 1228, 416, 9, 35, "Text",ExpressionUUID->"3ba1a44f-97d3-5842-8e4b-20c7046308bd"],
+Cell[70025, 1239, 389, 8, 35, "Text",ExpressionUUID->"52ffc4eb-bc2a-de49-ba07-8cffda553881"],
+Cell[70417, 1249, 241, 5, 35, "Text",ExpressionUUID->"3713ad28-a5dd-4e4b-9a78-4ed47e023126"],
+Cell[70661, 1256, 3589, 66, 162, "Text",ExpressionUUID->"3046227f-e17a-6544-b81d-8350738ed91d"],
+Cell[74253, 1324, 273, 5, 35, "Text",ExpressionUUID->"b85b8524-b10e-f24b-ae50-a95c37ca6682"],
+Cell[74529, 1331, 347, 9, 81, "Text",ExpressionUUID->"422dd6cf-df93-6b49-9b66-2b05d3b6ac90"],
+Cell[74879, 1342, 416, 7, 31, "Affiliation",ExpressionUUID->"d9f5e0df-dd49-404b-8f84-ef25ad64db1c"]
 }, Open  ]]
 }
 ]
