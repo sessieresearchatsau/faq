@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    125298,       2834]
-NotebookOptionsPosition[    119532,       2756]
-NotebookOutlinePosition[    119938,       2772]
-CellTagsIndexPosition[    119895,       2769]
+NotebookDataLength[    126718,       2859]
+NotebookOptionsPosition[    120953,       2781]
+NotebookOutlinePosition[    121357,       2797]
+CellTagsIndexPosition[    121314,       2794]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -44,7 +44,7 @@ Cell["\<\
 Visually, SSS networks can be identified as 1-dimensional, 2-dimensional, \
 etc. Ex/\
 \>", "Text",
- CellChangeTimes->{{3.9392115550279927`*^9, 
+ CellChangeTimes->{{3.9392115550279937`*^9, 
   3.9392115649688377`*^9}},ExpressionUUID->"514344e5-1325-1149-99c3-\
 f10dbd1edc4d"],
 
@@ -2152,14 +2152,16 @@ Cell["1 4 9 16 25 36 49", "Text",
   3.939211664905863*^9}},ExpressionUUID->"094a7f5f-5d70-bd41-9a68-\
 8897652c03de"],
 
-Cell["3 5 7 9 11 13", "Text",
- CellChangeTimes->{{3.9392115550279927`*^9, 
-  3.93921167613649*^9}},ExpressionUUID->"7e6ca905-9d79-4746-abec-\
+Cell[" 3  5 7   9  11  13", "Text",
+ CellChangeTimes->{{3.9392115550279937`*^9, 3.93921167613649*^9}, {
+  3.9424102637136955`*^9, 
+  3.9424102758849106`*^9}},ExpressionUUID->"7e6ca905-9d79-4746-abec-\
 8a17a1fc05fb"],
 
-Cell["2 2 2 2 2", "Text",
- CellChangeTimes->{{3.9392115550279927`*^9, 
-  3.93921170656456*^9}},ExpressionUUID->"23838f1f-9715-a643-a964-\
+Cell["   2  2  2   2    2", "Text",
+ CellChangeTimes->{{3.9392115550279937`*^9, 3.93921170656456*^9}, {
+  3.9424102784472523`*^9, 
+  3.942410295321211*^9}},ExpressionUUID->"23838f1f-9715-a643-a964-\
 aedb5c89f6c6"],
 
 Cell[TextData[{
@@ -2189,19 +2191,21 @@ any polynomial formula, ",
   3.941204570772508*^9}},ExpressionUUID->"10b47a11-8a4e-3546-8df8-\
 5d2281732def"],
 
-Cell["\<\
-No row in the difference table of an exponential network ever becomes \
+Cell[TextData[{
+ "No row in the difference table of an exponential network ever becomes \
 constant (nor even a straight line), just as repeated derivatives of \
 exponential functions are all exponentials, never constant. To identify them \
 we take ratios of neighboring elements in the rows of the difference table. \
 If any row of this ratio table becomes an integer constant, all further rows \
 will also be constant, and exponential behavior is demonstrated. The constant \
 found is the average out-degree of nodes of the network -- the number of \
-graph branches leading out from the nodes.\
-\>", "Text",
- CellChangeTimes->{{3.9392115550279927`*^9, 3.9392117378863573`*^9}, {
-  3.939211777585593*^9, 
-  3.9392118228351803`*^9}},ExpressionUUID->"84f0b876-77d8-f04d-a8b7-\
+graph branches leading out from the nodes.\n",
+ StyleBox["*** May need to add example to clarify ***",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.9392115550279937`*^9, 3.9392117378863583`*^9}, {
+  3.939211777585593*^9, 3.9392118228351803`*^9}, {3.942410392204027*^9, 
+  3.9424104072983913`*^9}},ExpressionUUID->"84f0b876-77d8-f04d-a8b7-\
 a3d29a82a50e"],
 
 Cell["Problems:", "Text",
@@ -2219,16 +2223,21 @@ to ignore?\
   3.941204589217604*^9}},ExpressionUUID->"33f33636-46eb-7d4e-a056-\
 af591afb9bce"],
 
-Cell["\<\
-2. Fractional dimension in the difference table: no row is exactly constant, \
-but the slope of the best fit lines changes from positive to negative, and \
-then the values begin to fluctuate ever more wildly. The point where this \
-happens approximates the dimension, but somehow we need to be able to \
-calculate the fractional part.\
-\>", "Text",
- CellChangeTimes->{{3.9392115550279927`*^9, 3.9392117378863573`*^9}, {
+Cell[TextData[{
+ "2. Fractional dimension in the difference table: no row is exactly \
+constant, but the slope of the best fit lines changes from positive to \
+negative, and then the values begin to fluctuate ever more wildly. The point \
+where this happens approximates the dimension, but somehow we need to be able \
+to calculate the fractional part.   ",
+ StyleBox["*** So when you graph the data points of the column the line of \
+best fit has a slope close to 0? ***",
+  FontWeight->"Bold"]
+}], "Text",
+ CellChangeTimes->{{3.9392115550279937`*^9, 3.9392117378863583`*^9}, {
   3.939211777585593*^9, 3.939211863544836*^9}, {3.941204588678835*^9, 
-  3.941204591429927*^9}},ExpressionUUID->"0f65ac80-d624-4e44-a05a-\
+  3.941204591429927*^9}, {3.942410772118454*^9, 3.942410776909569*^9}, {
+  3.94241082942297*^9, 
+  3.942410881183443*^9}},ExpressionUUID->"0f65ac80-d624-4e44-a05a-\
 656bd783ab3e"],
 
 Cell["\<\
@@ -2250,16 +2259,20 @@ Cell["Possible solutions:", "Text",
   3.941204598643135*^9}},ExpressionUUID->"ab36facc-89f4-124b-825a-\
 ab5f98ec36ac"],
 
-Cell["\<\
-1. Ignore first 10% of the data to try to get past initial irregularities. If \
-irregularities persist, try further evolution: in theory, the irregular \
-portion will eventually be included in the 10%.\
-\>", "Text",
- CellChangeTimes->{{3.9392115550279937`*^9, 3.9392117378863583`*^9}, {
+Cell[TextData[{
+ "1. Ignore first 10% of the data to try to get past initial irregularities. \
+If irregularities persist, try further evolution ",
+ StyleBox["*** By evolution, do you mean include a higher percentage of \
+data?*** ",
+  FontWeight->"Bold"],
+ ": in theory, the irregular portion will eventually be included in the 10%."
+}], "Text",
+ CellChangeTimes->{{3.9392115550279946`*^9, 3.9392117378863587`*^9}, {
   3.939211777585593*^9, 3.9392120244484177`*^9}, {3.939212153688349*^9, 
   3.939212159864357*^9}, {3.939212224632427*^9, 3.9392123223775234`*^9}, {
   3.939212671832876*^9, 3.939212684505831*^9}, {3.94120459836018*^9, 
-  3.941204600878327*^9}},ExpressionUUID->"97884b42-0d77-4a2f-83da-\
+  3.941204600878327*^9}, {3.942412259204447*^9, 
+  3.94241228028294*^9}},ExpressionUUID->"97884b42-0d77-4a2f-83da-\
 10be61ce2dfd"],
 
 Cell["\<\
@@ -2348,15 +2361,18 @@ each level being a triangle. If at some row ",
  StyleBox["n ",
   FontSlant->"Italic"],
  "differences, indicating dimension ",
- StyleBox["n - 1. ",
+ StyleBox["n - 1.  ",
   FontSlant->"Italic"],
- "\n."
+ StyleBox["*** I don\[CloseCurlyQuote]t understand where the upside down \
+tetrahedron comes from, is it possible to have an example/ visual? ***",
+  FontWeight->"Bold"]
 }], "Text",
- CellChangeTimes->{{3.9392115550279937`*^9, 3.9392117378863583`*^9}, {
+ CellChangeTimes->{{3.9392115550279946`*^9, 3.9392117378863587`*^9}, {
   3.939211777585593*^9, 3.9392120244484177`*^9}, {3.939212153688349*^9, 
   3.939212159864357*^9}, {3.939212224632427*^9, 3.9392123223775234`*^9}, {
   3.939212671832876*^9, 3.939212684505831*^9}, {3.94120459836018*^9, 
-  3.9412046848692183`*^9}},ExpressionUUID->"20203478-be63-42b6-b23f-\
+  3.9412046848692183`*^9}, {3.9424124973725567`*^9, 
+  3.942412566445057*^9}},ExpressionUUID->"20203478-be63-42b6-b23f-\
 450b50e5223d"],
 
 Cell[CellGroupData[{
@@ -2395,10 +2411,12 @@ nodes a distance ",
    3.941015011339245*^9}},ExpressionUUID->"15b3e39f-0226-cf4b-8220-\
 39f485a73ebb"],
 
-Cell["(insert example here)", "Text",
+Cell[TextData[StyleBox["*** (insert example here) ***",
+ FontWeight->"Bold"]], "Text",
  CellChangeTimes->{
-  3.9410149799171047`*^9, {3.941015010854898*^9, 
-   3.9410150196780567`*^9}},ExpressionUUID->"a00bb63a-f327-864e-9aea-\
+  3.9410149799171047`*^9, {3.941015010854898*^9, 3.9410150196780567`*^9}, {
+   3.942412661037737*^9, 
+   3.942412664717764*^9}},ExpressionUUID->"a00bb63a-f327-864e-9aea-\
 2d47ccd4f42e"],
 
 Cell["Second type:  either 2-d or 1-d", "Text",
@@ -2413,22 +2431,28 @@ Cell[TextData[{
  " reports 1-d, others 2-d.  Example:  403701: {\[OpenCurlyDoubleQuote]AB\
 \[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]BA\[CloseCurlyDoubleQuote], \
 \[OpenCurlyDoubleQuote]\[CloseCurlyDoubleQuote]->\[CloseCurlyDoubleQuote]AB\
-\[CloseCurlyDoubleQuote]} : 1x2"
+\[CloseCurlyDoubleQuote]} : 1x2 ",
+ StyleBox["*** Can we make this an active network? ***",
+  FontWeight->"Bold"]
 }], "Text",
  CellChangeTimes->{
-  3.9410149799171047`*^9, {3.941015010854898*^9, 
-   3.941015024929029*^9}},ExpressionUUID->"cd422d0d-66b5-a24a-96a8-\
+  3.9410149799171047`*^9, {3.941015010854898*^9, 3.941015024929029*^9}, {
+   3.942412692157959*^9, 
+   3.94241270765407*^9}},ExpressionUUID->"cd422d0d-66b5-a24a-96a8-\
 67cfb3c3668a"],
 
-Cell["\<\
-
-The problem here is that only nodes 1, 4, 8, 13, 19, 26, 34, 43, 53, \
+Cell[TextData[{
+ "\nThe problem here is that only nodes 1, 4, 8, 13, 19, 26, 34, 43, 53, \
 \[Ellipsis], can be reached from the origin (node 1), so all other nodes are \
-by definition \[Infinity] steps away.  \
-\>", "Text",
+by definition \[Infinity] steps away.  ",
+ StyleBox["*** I dont think I understand why the nodes are infinite steps \
+away from each other ***",
+  FontWeight->"Bold"]
+}], "Text",
  CellChangeTimes->{
-  3.9410149799171047`*^9, {3.941015010854898*^9, 
-   3.94101504176964*^9}},ExpressionUUID->"cbe129f8-524c-ae45-8904-\
+  3.9410149799171047`*^9, {3.941015010854898*^9, 3.94101504176964*^9}, {
+   3.942412785206623*^9, 
+   3.9424128190467587`*^9}},ExpressionUUID->"cbe129f8-524c-ae45-8904-\
 8f0c401cb580"],
 
 Cell["In[266]:= $SSSDistance", "Text",
@@ -2461,13 +2485,14 @@ network as bidirectional, for the purposes of \[OpenCurlyDoubleQuote]distance \
 from origin\[CloseCurlyDoubleQuote]?  But the direction of the arrows is the \
 local direction of time flow, so this really is a case of \
 \[OpenCurlyDoubleQuote]you can\[CloseCurlyQuote]t get there from here\
-\[CloseCurlyDoubleQuote].    But of course other tests say 2-d, since the \
+\[CloseCurlyDoubleQuote]. But of course other tests says 2-d, since the \
 network can be contained in the plane but not on a line without bunching up \
 nodes.\
 \>", "Text",
  CellChangeTimes->{
-  3.9410149799171047`*^9, {3.941015010854898*^9, 
-   3.9410150555541725`*^9}},ExpressionUUID->"2273d813-82d1-5649-bceb-\
+  3.9410149799171047`*^9, {3.941015010854898*^9, 3.9410150555541725`*^9}, {
+   3.9424133944347763`*^9, 
+   3.9424134019948273`*^9}},ExpressionUUID->"2273d813-82d1-5649-bceb-\
 3951474334db"],
 
 Cell["Thoughts, anyone?", "Text",
@@ -2562,15 +2587,15 @@ Cell["\<\
 In regard to application of n-dimensionality \[OpenCurlyQuote]tests\
 \[CloseCurlyQuote]: can tests be applied to localized segments of a network \
 or are tests always run on the entire network? This is where my knowledge \
-deficit is most evident.. The algorithms are formulated based on the \
-(linear?) enumeration sequence to manipulate node-encoding components, but \
-not necessarily in consideration of the structural orientation of the causal \
+deficit is most evident. The algorithms are formulated based on the (linear?) \
+enumeration sequence to manipulate node-encoding components, but not \
+necessarily in consideration of the structural orientation of the causal \
 network model, which is deferred to visual inspection?
  \
 \>", "Text",
  CellChangeTimes->{
-  3.9410149799171047`*^9, {3.941015010854898*^9, 
-   3.9410150941921673`*^9}},ExpressionUUID->"7e40dac4-bf1e-2045-a3b5-\
+  3.9410149799171047`*^9, {3.941015010854898*^9, 3.9410150941921673`*^9}, 
+   3.942413526467247*^9},ExpressionUUID->"7e40dac4-bf1e-2045-a3b5-\
 e3036769b29a"],
 
 Cell["\<\
@@ -2744,18 +2769,18 @@ Thank you for any time spent reading these words.
 256eef93181a"],
 
 Cell["\<\
-FAQ Sessie Intro, 2024.11.21, Kenneth Caviness and Colton Edelbach\
+FAQ Sessie Intro, 2024.12.05, Kenneth Caviness and Colton Edelbach\
 \>", "Affiliation",
  CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
    3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
    3.940426175923518*^9}, 3.940534869007164*^9, {3.941206015962395*^9, 
-   3.94120601719134*^9}},
+   3.94120601719134*^9}, {3.9424137805892506`*^9, 3.942413784477276*^9}},
  TextAlignment->Center,ExpressionUUID->"3703cff2-5555-974a-a693-e6042de8aa8b"]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1440, 747.75},
-WindowMargins->{{-6, Automatic}, {Automatic, -6}},
+WindowSize->{1428, 741.75},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"57b07945-492e-6c44-9aa7-bda26a9564e7"
@@ -2790,50 +2815,50 @@ Cell[94343, 2131, 149, 3, 35, "Text",ExpressionUUID->"a87d986f-c025-42f8-8039-bb
 Cell[94495, 2136, 252, 6, 35, "Text",ExpressionUUID->"6a20274a-935a-bf4a-a135-1d43d9dbfe20"],
 Cell[94750, 2144, 165, 3, 35, "Text",ExpressionUUID->"e87f8065-22c5-bb48-8946-d2a2718de57a"],
 Cell[94918, 2149, 161, 3, 35, "Text",ExpressionUUID->"094a7f5f-5d70-bd41-9a68-8897652c03de"],
-Cell[95082, 2154, 156, 3, 35, "Text",ExpressionUUID->"7e6ca905-9d79-4746-abec-8a17a1fc05fb"],
-Cell[95241, 2159, 152, 3, 35, "Text",ExpressionUUID->"23838f1f-9715-a643-a964-aedb5c89f6c6"],
-Cell[95396, 2164, 1028, 25, 81, "Text",ExpressionUUID->"10b47a11-8a4e-3546-8df8-5d2281732def"],
-Cell[96427, 2191, 781, 13, 127, "Text",ExpressionUUID->"84f0b876-77d8-f04d-a8b7-a3d29a82a50e"],
-Cell[97211, 2206, 204, 4, 35, "Text",ExpressionUUID->"c21e9683-328c-ac41-9f61-d3dc8f5f71a6"],
-Cell[97418, 2212, 338, 7, 35, "Text",ExpressionUUID->"33f33636-46eb-7d4e-a056-af591afb9bce"],
-Cell[97759, 2221, 583, 10, 81, "Text",ExpressionUUID->"0f65ac80-d624-4e44-a05a-656bd783ab3e"],
-Cell[98345, 2233, 504, 9, 58, "Text",ExpressionUUID->"faed27e0-db58-48ae-91dd-21e88985448a"],
-Cell[98852, 2244, 407, 6, 35, "Text",ExpressionUUID->"ab36facc-89f4-124b-825a-ab5f98ec36ac"],
-Cell[99262, 2252, 597, 10, 58, "Text",ExpressionUUID->"97884b42-0d77-4a2f-83da-10be61ce2dfd"],
-Cell[99862, 2264, 497, 9, 35, "Text",ExpressionUUID->"ca56a799-7a56-4053-a669-ff6b8bac176a"],
-Cell[100362, 2275, 979, 25, 58, "Text",ExpressionUUID->"d849c8be-e15e-4587-948d-3351f99e0cf7"],
-Cell[101344, 2302, 627, 10, 58, "Text",ExpressionUUID->"5a53d54d-711b-4f8c-980f-29531638a94f"],
-Cell[101974, 2314, 1715, 45, 173, "Text",ExpressionUUID->"20203478-be63-42b6-b23f-450b50e5223d"],
+Cell[95082, 2154, 215, 4, 35, "Text",ExpressionUUID->"7e6ca905-9d79-4746-abec-8a17a1fc05fb"],
+Cell[95300, 2160, 213, 4, 35, "Text",ExpressionUUID->"23838f1f-9715-a643-a964-aedb5c89f6c6"],
+Cell[95516, 2166, 1028, 25, 58, "Text",ExpressionUUID->"10b47a11-8a4e-3546-8df8-5d2281732def"],
+Cell[96547, 2193, 917, 15, 104, "Text",ExpressionUUID->"84f0b876-77d8-f04d-a8b7-a3d29a82a50e"],
+Cell[97467, 2210, 204, 4, 35, "Text",ExpressionUUID->"c21e9683-328c-ac41-9f61-d3dc8f5f71a6"],
+Cell[97674, 2216, 338, 7, 35, "Text",ExpressionUUID->"33f33636-46eb-7d4e-a056-af591afb9bce"],
+Cell[98015, 2225, 829, 15, 81, "Text",ExpressionUUID->"0f65ac80-d624-4e44-a05a-656bd783ab3e"],
+Cell[98847, 2242, 504, 9, 58, "Text",ExpressionUUID->"faed27e0-db58-48ae-91dd-21e88985448a"],
+Cell[99354, 2253, 407, 6, 35, "Text",ExpressionUUID->"ab36facc-89f4-124b-825a-ab5f98ec36ac"],
+Cell[99764, 2261, 765, 14, 58, "Text",ExpressionUUID->"97884b42-0d77-4a2f-83da-10be61ce2dfd"],
+Cell[100532, 2277, 497, 9, 35, "Text",ExpressionUUID->"ca56a799-7a56-4053-a669-ff6b8bac176a"],
+Cell[101032, 2288, 979, 25, 35, "Text",ExpressionUUID->"d849c8be-e15e-4587-948d-3351f99e0cf7"],
+Cell[102014, 2315, 627, 10, 58, "Text",ExpressionUUID->"5a53d54d-711b-4f8c-980f-29531638a94f"],
+Cell[102644, 2327, 1930, 48, 127, "Text",ExpressionUUID->"20203478-be63-42b6-b23f-450b50e5223d"],
 Cell[CellGroupData[{
-Cell[103714, 2363, 196, 3, 58, "Subtitle",ExpressionUUID->"09fe7266-59ad-5042-9e5f-d2a0b811be41"],
-Cell[103913, 2368, 268, 6, 35, "Text",ExpressionUUID->"1db5cc6c-7ef9-d84a-a782-1ef85028fab0"],
-Cell[104184, 2376, 182, 3, 35, "Text",ExpressionUUID->"2b46a17b-e28b-ae4a-9742-2cbd51cdefac"],
-Cell[104369, 2381, 578, 14, 81, "Text",ExpressionUUID->"15b3e39f-0226-cf4b-8220-39f485a73ebb"],
-Cell[104950, 2397, 193, 4, 35, "Text",ExpressionUUID->"a00bb63a-f327-864e-9aea-2d47ccd4f42e"],
-Cell[105146, 2403, 201, 4, 35, "Text",ExpressionUUID->"433edbd0-9491-d148-a2ba-b4ba06f555f4"],
-Cell[105350, 2409, 497, 11, 35, "Text",ExpressionUUID->"cd422d0d-66b5-a24a-96a8-67cfb3c3668a"],
-Cell[105850, 2422, 367, 9, 81, "Text",ExpressionUUID->"cbe129f8-524c-ae45-8904-8f0c401cb580"],
-Cell[106220, 2433, 192, 4, 35, "Text",ExpressionUUID->"8851fc59-58e4-cf4d-8207-3d67bcefe8c5"],
-Cell[106415, 2439, 940, 16, 58, "Text",ExpressionUUID->"f72ca4f0-8e1e-2d4e-99ed-48c02c9b432f"],
-Cell[107358, 2457, 710, 13, 81, "Text",ExpressionUUID->"2273d813-82d1-5649-bceb-3951474334db"],
-Cell[108071, 2472, 187, 4, 35, "Text",ExpressionUUID->"6cd2cbf2-2c9c-9147-a13b-dbbf1a83e263"],
-Cell[108261, 2478, 298, 7, 35, "Text",ExpressionUUID->"2d73322c-a556-5046-9c4f-c08275eb259b"],
-Cell[108562, 2487, 368, 10, 104, "Text",ExpressionUUID->"769f23f1-67e6-9e40-bbff-5f7536514886"],
-Cell[108933, 2499, 272, 7, 58, "Text",ExpressionUUID->"4a35d4e0-c348-174c-82b1-e3d88a2b4183"],
-Cell[109208, 2508, 808, 15, 127, "Text",ExpressionUUID->"f86e36dd-82f8-3d47-834b-acea18b13f04"],
-Cell[110019, 2525, 1352, 33, 196, "Text",ExpressionUUID->"cccf6320-fa32-034d-819e-17d841ad048c"],
-Cell[111374, 2560, 686, 13, 127, "Text",ExpressionUUID->"7e40dac4-bf1e-2045-a3b5-e3036769b29a"],
-Cell[112063, 2575, 545, 11, 104, "Text",ExpressionUUID->"ccbb7c7d-6153-184d-86fe-3e6772b980a6"],
-Cell[112611, 2588, 1005, 19, 173, "Text",ExpressionUUID->"cbc52c88-a735-584b-9329-04215defdf3f"],
-Cell[113619, 2609, 918, 17, 104, "Text",ExpressionUUID->"6f472fd5-d327-8246-85a2-366c5e08f62d"],
-Cell[114540, 2628, 1722, 40, 173, "Text",ExpressionUUID->"14ee9c72-f94f-4749-b841-7382c9d82496"],
-Cell[116265, 2670, 818, 16, 104, "Text",ExpressionUUID->"8fbfd0e3-ddb3-db45-b299-5aafe9b72f02"],
-Cell[117086, 2688, 412, 9, 58, "Text",ExpressionUUID->"7dc3f17b-23e7-404d-8109-369635154134"],
-Cell[117501, 2699, 589, 12, 81, "Text",ExpressionUUID->"e03b1c5a-e929-6041-82ca-4a42d566a8d8"],
-Cell[118093, 2713, 211, 7, 58, "Text",ExpressionUUID->"3caf4ee9-f572-2e4d-ae31-0ec9bef272ea"],
-Cell[118307, 2722, 543, 11, 104, "Text",ExpressionUUID->"8d016e48-1ee3-3d4a-b880-de2d3aa2ac82"],
-Cell[118853, 2735, 232, 8, 81, "Text",ExpressionUUID->"71f19e5a-75fe-b443-acc3-256eef93181a"],
-Cell[119088, 2745, 416, 7, 31, "Affiliation",ExpressionUUID->"3703cff2-5555-974a-a693-e6042de8aa8b"]
+Cell[104599, 2379, 196, 3, 58, "Subtitle",ExpressionUUID->"09fe7266-59ad-5042-9e5f-d2a0b811be41"],
+Cell[104798, 2384, 268, 6, 35, "Text",ExpressionUUID->"1db5cc6c-7ef9-d84a-a782-1ef85028fab0"],
+Cell[105069, 2392, 182, 3, 35, "Text",ExpressionUUID->"2b46a17b-e28b-ae4a-9742-2cbd51cdefac"],
+Cell[105254, 2397, 578, 14, 58, "Text",ExpressionUUID->"15b3e39f-0226-cf4b-8220-39f485a73ebb"],
+Cell[105835, 2413, 292, 6, 35, "Text",ExpressionUUID->"a00bb63a-f327-864e-9aea-2d47ccd4f42e"],
+Cell[106130, 2421, 201, 4, 35, "Text",ExpressionUUID->"433edbd0-9491-d148-a2ba-b4ba06f555f4"],
+Cell[106334, 2427, 627, 14, 35, "Text",ExpressionUUID->"cd422d0d-66b5-a24a-96a8-67cfb3c3668a"],
+Cell[106964, 2443, 553, 12, 81, "Text",ExpressionUUID->"cbe129f8-524c-ae45-8904-8f0c401cb580"],
+Cell[107520, 2457, 192, 4, 35, "Text",ExpressionUUID->"8851fc59-58e4-cf4d-8207-3d67bcefe8c5"],
+Cell[107715, 2463, 940, 16, 35, "Text",ExpressionUUID->"f72ca4f0-8e1e-2d4e-99ed-48c02c9b432f"],
+Cell[108658, 2481, 762, 14, 58, "Text",ExpressionUUID->"2273d813-82d1-5649-bceb-3951474334db"],
+Cell[109423, 2497, 187, 4, 35, "Text",ExpressionUUID->"6cd2cbf2-2c9c-9147-a13b-dbbf1a83e263"],
+Cell[109613, 2503, 298, 7, 35, "Text",ExpressionUUID->"2d73322c-a556-5046-9c4f-c08275eb259b"],
+Cell[109914, 2512, 368, 10, 104, "Text",ExpressionUUID->"769f23f1-67e6-9e40-bbff-5f7536514886"],
+Cell[110285, 2524, 272, 7, 58, "Text",ExpressionUUID->"4a35d4e0-c348-174c-82b1-e3d88a2b4183"],
+Cell[110560, 2533, 808, 15, 104, "Text",ExpressionUUID->"f86e36dd-82f8-3d47-834b-acea18b13f04"],
+Cell[111371, 2550, 1352, 33, 127, "Text",ExpressionUUID->"cccf6320-fa32-034d-819e-17d841ad048c"],
+Cell[112726, 2585, 707, 13, 104, "Text",ExpressionUUID->"7e40dac4-bf1e-2045-a3b5-e3036769b29a"],
+Cell[113436, 2600, 545, 11, 81, "Text",ExpressionUUID->"ccbb7c7d-6153-184d-86fe-3e6772b980a6"],
+Cell[113984, 2613, 1005, 19, 127, "Text",ExpressionUUID->"cbc52c88-a735-584b-9329-04215defdf3f"],
+Cell[114992, 2634, 918, 17, 104, "Text",ExpressionUUID->"6f472fd5-d327-8246-85a2-366c5e08f62d"],
+Cell[115913, 2653, 1722, 40, 173, "Text",ExpressionUUID->"14ee9c72-f94f-4749-b841-7382c9d82496"],
+Cell[117638, 2695, 818, 16, 104, "Text",ExpressionUUID->"8fbfd0e3-ddb3-db45-b299-5aafe9b72f02"],
+Cell[118459, 2713, 412, 9, 58, "Text",ExpressionUUID->"7dc3f17b-23e7-404d-8109-369635154134"],
+Cell[118874, 2724, 589, 12, 81, "Text",ExpressionUUID->"e03b1c5a-e929-6041-82ca-4a42d566a8d8"],
+Cell[119466, 2738, 211, 7, 58, "Text",ExpressionUUID->"3caf4ee9-f572-2e4d-ae31-0ec9bef272ea"],
+Cell[119680, 2747, 543, 11, 104, "Text",ExpressionUUID->"8d016e48-1ee3-3d4a-b880-de2d3aa2ac82"],
+Cell[120226, 2760, 232, 8, 81, "Text",ExpressionUUID->"71f19e5a-75fe-b443-acc3-256eef93181a"],
+Cell[120461, 2770, 464, 7, 31, "Affiliation",ExpressionUUID->"3703cff2-5555-974a-a693-e6042de8aa8b"]
 }, Open  ]]
 }, Open  ]]
 }
