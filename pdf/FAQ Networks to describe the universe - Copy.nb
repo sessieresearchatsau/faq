@@ -235,7 +235,7 @@ FAQ Sessie Intro, 2025.2.12, Kenneth Caviness and Colton Edelbach\
    3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
    3.940426175923518*^9}, 3.940534869007164*^9, {3.941206015962395*^9, 
    3.94120601719134*^9}, {3.948371750830275*^9, 3.9483717604797997`*^9}},
- TextAlignment->Center,ExpressionUUID->"006e8a2e-364d-b340-a601-4c1617f5e980"]
+ TextAlignment->Center,ExpressionUUID->"5291bdee-4b54-bb4b-83d6-ab76d8730d71"]
 }, Open  ]]
 },
 WindowSize->{960, 478},
@@ -273,7 +273,7 @@ Cell[7093, 181, 568, 11, 81, "Text",ExpressionUUID->"9f48e8c0-010e-4501-a01e-8e4
 Cell[7664, 194, 368, 8, 58, "Text",ExpressionUUID->"287fe736-cdc1-4114-90f9-c9503ec697fb"],
 Cell[8035, 204, 716, 13, 104, "Text",ExpressionUUID->"c63b2117-e234-4053-b6f2-597e9767a8fd"],
 Cell[8754, 219, 308, 9, 81, "Text",ExpressionUUID->"2262fc4c-5cf3-4df3-971f-28065624abe2"],
-Cell[9065, 230, 463, 7, 31, "Affiliation",ExpressionUUID->"006e8a2e-364d-b340-a601-4c1617f5e980"]
+Cell[9065, 230, 463, 7, 31, "Affiliation",ExpressionUUID->"5291bdee-4b54-bb4b-83d6-ab76d8730d71"]
 }, Open  ]]
 }
 ]
