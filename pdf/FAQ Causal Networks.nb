@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     89162,       1741]
-NotebookOptionsPosition[     85488,       1676]
-NotebookOutlinePosition[     85883,       1692]
-CellTagsIndexPosition[     85840,       1689]
+NotebookDataLength[     92903,       1799]
+NotebookOptionsPosition[     89123,       1733]
+NotebookOutlinePosition[     89523,       1749]
+CellTagsIndexPosition[     89480,       1746]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -64,8 +64,8 @@ Deschamps\[CloseCurlyQuote] PPT in the Repo \
   FontWeight->"Bold"]
 }], "Text",
  CellChangeTimes->{
-  3.941031180920673*^9, {3.9501845706802197`*^9, 3.950184572218459*^9}, 
-   3.9501846028972225`*^9},ExpressionUUID->"0f113a7b-c2a7-42f2-8e65-\
+  3.941031180920673*^9, {3.95018457068022*^9, 3.950184572218459*^9}, 
+   3.950184602897223*^9},ExpressionUUID->"0f113a7b-c2a7-42f2-8e65-\
 38e2ae62b89d"],
 
 Cell[TextData[{
@@ -85,18 +85,44 @@ there is a command to make them not appear that would work too. \n\nFrom \
 <https://github.com/orgs/sessieresearchatsau/repositories> "
 }], "Text",
  CellChangeTimes->{
-  3.941031180920673*^9, {3.9501845706802197`*^9, 3.950184572218459*^9}, {
-   3.9501846073685713`*^9, 3.950184651951488*^9}, {3.9501846963629227`*^9, 
-   3.950184781079109*^9}, {3.9501848132731996`*^9, 3.9501849394129567`*^9}, {
+  3.941031180920673*^9, {3.95018457068022*^9, 3.950184572218459*^9}, {
+   3.9501846073685718`*^9, 3.950184651951488*^9}, {3.9501846963629236`*^9, 
+   3.950184781079109*^9}, {3.950184813273199*^9, 3.950184939412957*^9}, {
    3.950185227808928*^9, 
-   3.9501852991169963`*^9}},ExpressionUUID->"4449fef8-edfc-478e-b132-\
+   3.950185299116997*^9}},ExpressionUUID->"4449fef8-edfc-478e-b132-\
 722ed0897960"],
+
+Cell[TextData[StyleBox["Probably this would be based on adapting SSSAnimate, \
+which needs to be fixed anyway, to allow more options. A new option might \
+either replace vertices & edges after a specified number by white (invisible) \
+versions (similar to the current behavior in changing all but one vertex to \
+an unlabeled Point), or generated the Net, make note of all \
+VertexCoordinates, and redisplay a subset of the Net with the same \
+coordinates. ",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{
+  3.941031180920673*^9, {3.950191931664131*^9, 
+   3.950192184578045*^9}},ExpressionUUID->"8778cde1-c668-d74d-938c-\
+b522e228b22c"],
+
+Cell[TextData[StyleBox["In either case, we also want the colored box picture \
+to grow one line at a time, with lines 0-n showing in the SSS when vertices \
+1-n are shown in the Net, and we don\[CloseCurlyQuote]t want things to move \
+around or greatly resize. It might be nice to have the latest vertex still in \
+green, and the last one or two lines of the SSS boxed in green, since the \
+event (vertex) was the application of a rule to make that last change in the \
+SSS state string.",
+ FontWeight->"Bold"]], "Text",
+ CellChangeTimes->{
+  3.941031180920673*^9, {3.950191931664131*^9, 
+   3.9501923674672832`*^9}},ExpressionUUID->"f028e400-9b3f-5f41-aded-\
+cc50090d7baa"],
 
 Cell[CellGroupData[{
 
 Cell["Causal Networks", "Subsubsection",
- CellChangeTimes->{{3.9483685031628475`*^9, 
-  3.9483685160303535`*^9}},ExpressionUUID->"74c3b830-ed8b-6c43-8a18-\
+ CellChangeTimes->{{3.948368503162847*^9, 
+  3.948368516030354*^9}},ExpressionUUID->"74c3b830-ed8b-6c43-8a18-\
 2eb357315bfe"],
 
 Cell["\<\
@@ -115,7 +141,7 @@ nodes rather than just indicating that they are associated. \
    3.948368856592259*^9}, {3.948368960269335*^9, 3.948368970513464*^9}, {
    3.9483690642657146`*^9, 3.9483690744244633`*^9}, {3.948369273751639*^9, 
    3.9483693246644344`*^9}, 
-   3.9483779046538906`*^9},ExpressionUUID->"2601e5df-3aaf-5045-baa3-\
+   3.94837790465389*^9},ExpressionUUID->"2601e5df-3aaf-5045-baa3-\
 11154f4fc046"],
 
 Cell[BoxData[
@@ -628,7 +654,7 @@ e1a4f9fcaf08"],
 Cell["Figure 1: An example of a simple Bayesian network", "Text",
  CellChangeTimes->{{3.948368934769228*^9, 3.948368946179083*^9}, {
   3.948368978506048*^9, 
-  3.9483689877113934`*^9}},ExpressionUUID->"ff399bd8-7213-8d42-87a0-\
+  3.948368987711394*^9}},ExpressionUUID->"ff399bd8-7213-8d42-87a0-\
 409224cd5f1e"],
 
 Cell["\<\
@@ -641,7 +667,7 @@ other nodes, it is strictly dependent and causes no change in the others.\
 \>", "Text",
  CellChangeTimes->{{3.94836899462327*^9, 3.948369048379107*^9}, {
   3.948369086828615*^9, 3.948369230658605*^9}, {3.948370538070921*^9, 
-  3.9483705715260286`*^9}, {3.9483779574004745`*^9, 
+  3.948370571526029*^9}, {3.948377957400475*^9, 
   3.948378018318138*^9}},ExpressionUUID->"15d1c0e7-f04e-5840-a228-\
 20264dd14b1c"]
 }, Open  ]],
@@ -649,7 +675,7 @@ other nodes, it is strictly dependent and causes no change in the others.\
 Cell[CellGroupData[{
 
 Cell["Causality vs Correlation", "Subsubsection",
- CellChangeTimes->{{3.9483694338692675`*^9, 
+ CellChangeTimes->{{3.948369433869267*^9, 
   3.948369463760284*^9}},ExpressionUUID->"83390d42-c483-5a44-95b4-\
 e594a9e64132"],
 
@@ -672,7 +698,7 @@ affected by each other. When constructing causal networks it is important to \
 verify that your two variables are truly affected by each other and that a \
 confounding variable is not affecting your judgment. "
 }], "Text",
- CellChangeTimes->{{3.9483694338692675`*^9, 3.9483698923462567`*^9}, {
+ CellChangeTimes->{{3.948369433869267*^9, 3.948369892346257*^9}, {
   3.948370026685456*^9, 3.948370152886288*^9}, {3.94837018831361*^9, 
   3.948370249486065*^9}, {3.948378051392626*^9, 
   3.948378051740858*^9}},ExpressionUUID->"a9071d0e-99c3-3a42-a957-\
@@ -682,7 +708,7 @@ confounding variable is not affecting your judgment. "
 Cell[CellGroupData[{
 
 Cell["Applications of Causal Networks", "Subsubsection",
- CellChangeTimes->{{3.94836899462327*^9, 3.9483690483791065`*^9}, {
+ CellChangeTimes->{{3.94836899462327*^9, 3.948369048379107*^9}, {
   3.948369086828615*^9, 3.9483692661436176`*^9}, {3.948369352657234*^9, 
   3.948369364812746*^9}},ExpressionUUID->"83bb0f4d-f94e-5445-b015-\
 216556e8b945"],
@@ -697,7 +723,7 @@ examples. \
   3.948369086828615*^9, 3.9483692661436176`*^9}, {3.948369352657234*^9, 
   3.948369389782473*^9}, {3.948370301394863*^9, 3.948370485067444*^9}, {
   3.9483781512489414`*^9, 
-  3.9483781677315464`*^9}},ExpressionUUID->"4599bfce-d702-7244-923c-\
+  3.948378167731547*^9}},ExpressionUUID->"4599bfce-d702-7244-923c-\
 74c25aaa97e6"]
 }, Open  ]],
 
@@ -712,14 +738,20 @@ Cell["Causal Networks of Sequential Substitution Systems", "Subsubsection",
 cfb217d9aea5"],
 
 Cell["\<\
-The causal network shown for a Sessie is built from a study of which cells in \
-the colored picture are created and destroyed by which events. The creation \
-of a cell must precede its destruction. This is taken as a model for a causal \
-connection of any type. \
+The causal network shown for a Sessie (SSS) is built from a study of which \
+cells in the colored picture are created and destroyed by which events. The \
+creation of a cell must precede its destruction. This is taken as a model for \
+a causal connection of any type.  In this example, 25 steps in the \
+\[OpenCurlyDoubleQuote]toy universe\[CloseCurlyDoubleQuote] are shown: 25 \
+lines of colored boxes \[LongDash] giving a quick view of the changing state \
+string, and 25 vertices (or events) in the causal network.\
 \>", "Text",
- CellChangeTimes->{{3.948378224491482*^9, 
-  3.948378288798582*^9}},ExpressionUUID->"2701c3b6-f359-3c4d-961d-\
-223cb1be27a9"],
+ CellChangeTimes->{{3.948378224491482*^9, 3.948378288798582*^9}, {
+  3.950192399964411*^9, 3.95019242171142*^9}, {3.95019261353857*^9, 
+  3.950192683028721*^9}, {3.950192905980781*^9, 3.9501929102806873`*^9}, {
+  3.950193999838684*^9, 
+  3.950194012144909*^9}},ExpressionUUID->"bf917ff3-3585-b34b-a80f-\
+9fc663d484c7"],
 
 Cell[CellGroupData[{
 
@@ -1453,7 +1485,7 @@ Cell[BoxData[
    GridBoxAlignment->{"Columns" -> {{Left}}},
    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
   "Column"]], "Output",
- CellChangeTimes->{{3.9483786589855847`*^9, 3.9483786982802467`*^9}, 
+ CellChangeTimes->{{3.948378658985585*^9, 3.9483786982802467`*^9}, 
    3.9483788060897465`*^9, 3.949588061997076*^9},
  CellLabel->"Out[6]=",ExpressionUUID->"ac436684-2228-c54c-a9c4-c0ade3759607"]
 }, Open  ]],
@@ -1470,7 +1502,7 @@ Cell[BoxData[
      RowBox[{"1", ",", "2", ",", "3", ",", "4", ",", "5"}], "}"}], "]"}], 
    "]"}], "//", "Column"}]], "Input",
  CellChangeTimes->{{3.948378631418028*^9, 3.9483787142089825`*^9}, {
-  3.9483788097033405`*^9, 3.948378811657345*^9}, {3.9495880197492294`*^9, 
+  3.9483788097033405`*^9, 3.948378811657345*^9}, {3.949588019749229*^9, 
   3.949588023371172*^9}},
  CellLabel->"In[5]:=",ExpressionUUID->"e8c35bd9-621a-c140-90f3-ff757ed76991"],
 
@@ -1542,56 +1574,55 @@ Cell[BoxData[
   "Column"]], "Output",
  CellChangeTimes->{
   3.948378715176071*^9, 3.948378812657147*^9, {3.9495880277967453`*^9, 
-   3.9495880519171314`*^9}},
+   3.949588051917132*^9}},
  CellLabel->"Out[5]=",ExpressionUUID->"14f3880c-4e6a-f045-93f5-4f1e66c94d3e"]
 }, Open  ]],
 
-Cell[BoxData[""], "Input",
- CellChangeTimes->{{3.9483788126728992`*^9, 
-  3.9483788147803497`*^9}},ExpressionUUID->"18dbea2c-5757-0243-ac32-\
-994fa3d3dcce"],
-
-Cell[TextData[StyleBox["*** Try to think of words to describe TEvolution \
-better***",
- FontWeight->"Bold"]], "Text",
- CellChangeTimes->{{3.9483789893073997`*^9, 
-  3.9483790147717285`*^9}},ExpressionUUID->"5d5f3546-4afa-5046-b5ba-\
-d04cc98770f7"],
-
 Cell["\<\
-The second number in each S Object is a unique tag that is specific to each \
-unique \[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] or \
-\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]. In the tagged evolution the \
-second number is the personal identifier. The first number identifies \
+Both the list of state strings in the \[OpenCurlyDoubleQuote]Evolution\
+\[CloseCurlyDoubleQuote] and the sequence of S-objects in \
+\[OpenCurlyDoubleQuote]TEvolution\[CloseCurlyDoubleQuote] represent the \
+development of the toy universe, but the \[OpenCurlyDoubleQuote]tagged\
+\[CloseCurlyDoubleQuote] evolution gives more detail:  The first number in \
+each S-object identifies which character of the alphabet is referred to: \
 \[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote], \[OpenCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote], etc.  In our example, the 0 in the first list \
-identifies the letter A. The second number, in our case 1, is a personal \
-identifier that allows us to differentiate between cases with the same \
-letter.  In our example, we can see that the only letter that does not get \
-destroyed is the last \[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote] in the \
-evolution. We can trace it in the tagged evolution by following its \
-identifier, {1, 2}, as it progresses through multiple events. Using the \
-information from the TEvolution, we know that a \[OpenCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote] only becomes permanent once it arrives at the end of \
-the string. Only the cells that were created and destroyed appear as arrows \
-on the causal network graph, connecting the creation event and the \
-destruction event. This means that the \[OpenCurlyDoubleQuote]B\
-\[CloseCurlyDoubleQuote]s at the end of the state string will not appear in \
-our causal network. The causal connections that we display in the graph are \
-limited to creation and destruction of cells. Clearly a cell cannot be \
-destroyed before it is created. This gives a natural ordering of the events \
-in the network. \
+\[CloseCurlyDoubleQuote], etc.  In our example, {0, _} identifies the letter \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote], {1, _} means \
+\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote], etc. The second number in \
+the S-object pair is a unique tag that is specific to each unique \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] or \[OpenCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote], a personal identifier that allows us to \
+differentiate between cases with the same letter.  So the first \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] is {0,1}; no other distinct \
+\[OpenCurlyDoubleQuote]A\[CloseCurlyDoubleQuote] has the same tag (1). In \
+line two, there are two \[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote] \
+characters ({1,4} and {1,2}). In our example, we can see that the only letter \
+that does not get destroyed is the last \[OpenCurlyDoubleQuote]B\
+\[CloseCurlyDoubleQuote] in the evolution. We can trace it in the tagged \
+evolution by following its identifier, {1, 2}, as it progresses through \
+multiple events. Using the information from the TEvolution, we can see that a \
+\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote] only becomes permanent in \
+this universe once it arrives at the end of the string. Only the cells that \
+were created and destroyed appear as arrows on the causal network graph, \
+connecting the creation event and the destruction event. This means that the \
+\[OpenCurlyDoubleQuote]B\[CloseCurlyDoubleQuote]s at the end of the state \
+string will not appear in our causal network: it was primordial -- never \
+created, and it is never destroyed. The causal connections that we display in \
+the graph are limited to creation and destruction of cells. Clearly a cell \
+cannot be destroyed before it is created. This gives a natural ordering of \
+the events in the network. \
 \>", "Text",
  CellChangeTimes->{{3.948378742554394*^9, 3.94837877474465*^9}, {
    3.948378882974058*^9, 3.9483789065684566`*^9}, {3.948379023757389*^9, 
    3.94837904855826*^9}, {3.949586950990837*^9, 3.9495871211139736`*^9}, {
    3.9495871525428486`*^9, 3.949587243907112*^9}, {3.949587436433708*^9, 
-   3.9495874388471527`*^9}, {3.9495878799058113`*^9, 3.949587980812998*^9}, 
+   3.949587438847154*^9}, {3.9495878799058113`*^9, 3.949587980812998*^9}, 
    3.9495880116605415`*^9, {3.949588086756809*^9, 3.949588118914179*^9}, {
-   3.9495882894124794`*^9, 3.949588332982519*^9}, {3.9495883762919064`*^9, 
-   3.9495883784782505`*^9}, {3.949588414502836*^9, 
-   3.9495884673341694`*^9}},ExpressionUUID->"7c26c312-c1ec-7547-ba7b-\
-4994a95363d0"]
+   3.9495882894124794`*^9, 3.949588332982519*^9}, {3.949588376291907*^9, 
+   3.9495883784782505`*^9}, {3.949588414502836*^9, 3.949588467334169*^9}, {
+   3.950192976372404*^9, 3.9501934321609955`*^9}, {3.950193504405472*^9, 
+   3.950193775796829*^9}},ExpressionUUID->"44ec7bf9-a312-d547-a9cc-\
+e4666d435eb7"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1607,76 +1638,102 @@ Cell["Timely Musings", "Subsubsection",
 Cell["\<\
 In the colored picture of our example, time flows downwards. Since each row \
 corresponds to an application of a rule, and nothing happened in between \
-these applications, this can be considered the smallest unit of time ( Planck \
+these applications, this can be considered the smallest unit of time (Planck \
 time!) in our universe. The causal network; however, gives a different view \
 of time. Events 4, 5, 9, and 13 occurred sequentially because the network \
 shows arrows from 4 to 5, 5 to 9 and from 9 to 13. This could be called \
-micro-time in contrast to macro-time representing the overall pattern \
-generated by the Sessie Network. An alternative path to get from 4 to 13 is \
-to go from 4 to 6, 6 to 7, 7 to 10, 10 to 11, 11 to 12, and 12 to 13, which \
-represents six units of micro-time, rather than 3. There are also three other \
-paths to get from 4 to 13 as it could progress from. 
-1. 4 to 5, 5 to 8, 8 to 12, and 12 to 13 (4 units of micro-time)
-2. 4 to 6, 6 to 7, 7 to 8, 8 to 9, and 9 to 13 (5 units of micro-time)
-3. 4 to 6, 6 to 7, 7 to 8, 8 to 12, and 12 to 13 (5 units of micro-time)
-This toy universe has the relativity of time like our universe. Different \
-observers can experience the same time intervals, macro-time,  between the \
-same pair of events, but a different amount of micro time in between these \
-events. For instance, an observer going from 4 to 13 in this network has five \
-ways of getting there, each with their own different amounts of micro-time.  \
-Depending on the path taken it can either take as little as 3 units to as \
-many as 6 units of micro-time. This can be thought of stretching the causal \
-network in various ways, without detaching any of the connections. \
+macro-time in contrast to micro-time which included all events in numerical \
+order. An alternative path to get from 4 to 13 is to go from 4 to 6, 6 to 7, \
+7 to 10, 10 to 11, 11 to 12, and 12 to 13, which represents six units of \
+macro-time, rather than 3. There are also three other paths to get from 4 to \
+13 as it could progress from. \
 \>", "Text",
  CellChangeTimes->{{3.949587466046694*^9, 3.949587812071665*^9}, {
-  3.949588483446417*^9, 3.9495886603521767`*^9}, {3.949588884228775*^9, 
-  3.949588885982645*^9}, {3.9501873177145653`*^9, 3.950187352528579*^9}, {
-  3.9501876419119663`*^9, 3.950187666187213*^9}, {3.950187825381871*^9, 
-  3.950188069378295*^9}, {3.9501881998473167`*^9, 3.9501882615039997`*^9}, {
-  3.950188329409681*^9, 3.950188332903636*^9}, {3.9501884462639127`*^9, 
-  3.95018845058832*^9}, {3.9501884808482494`*^9, 3.9501885207959557`*^9}, {
-  3.9501888461348495`*^9, 3.950188871285879*^9}, {3.95018893341959*^9, 
-  3.950188942630275*^9}},ExpressionUUID->"02b3c917-8291-c44e-9de8-\
+   3.949588483446417*^9, 3.949588660352177*^9}, {3.949588884228775*^9, 
+   3.949588885982645*^9}, {3.9501873177145653`*^9, 3.950187352528579*^9}, {
+   3.9501876419119673`*^9, 3.950187666187213*^9}, {3.950187825381871*^9, 
+   3.950188069378295*^9}, {3.950188199847317*^9, 3.950188261504*^9}, {
+   3.950188329409681*^9, 3.950188332903636*^9}, {3.950188446263913*^9, 
+   3.95018845058832*^9}, {3.9501884808482485`*^9, 3.950188520795956*^9}, {
+   3.950188846134849*^9, 3.950188871285879*^9}, {3.95018893341959*^9, 
+   3.950188942630275*^9}, {3.950205234355257*^9, 3.9502054007473907`*^9}, 
+   3.950205596630064*^9, 
+   3.950205635930458*^9},ExpressionUUID->"02b3c917-8291-c44e-9de8-\
 b8abef898e4f"],
 
 Cell["\<\
-The connections between the nodes can be thought of as worldlines for some \
-observer. Any events that occur on one observers worldline cannot be \
-temporally reversed, as their order is fixed. Macro-time is based on the \
-causal connections between nodes. Nodes that are not connected cannot be \
-differentiated in time, meaning we don\[CloseCurlyQuote]t know weather these \
-events occurred before or after each other. For example, the events 9 and 12 \
-occur on the two different mentioned paths, but are not connected. We have no \
-way of defining either one as earlier in macro-time. \
+1. 4 to 5, 5 to 8, 8 to 12, and 12 to 13 (4 units of macro-time)
+2. 4 to 6, 6 to 7, 7 to 8, 8 to 9, and 9 to 13 (5 units of macro-time)
+3. 4 to 6, 6 to 7, 7 to 8, 8 to 12, and 12 to 13 (5 units of macro-time)\
 \>", "Text",
- CellChangeTimes->{{3.949588891986721*^9, 3.9495890106354523`*^9}, {
-  3.95018739832414*^9, 3.9501874021872206`*^9}, {3.9501875934456024`*^9, 
-  3.9501875954962273`*^9}, {3.9501893217705755`*^9, 
-  3.950189609851016*^9}},ExpressionUUID->"a469648b-fb11-d340-baab-\
-7e7d453a55a3"],
-
-Cell[TextData[StyleBox["*** Look up Macro time and Macro time in the One note \
-***",
- FontWeight->"Bold"]], "Text",
  CellChangeTimes->{{3.949587466046694*^9, 3.949587812071665*^9}, {
-   3.949588483446417*^9, 3.9495886603521767`*^9}, 
-   3.949588884228775*^9},ExpressionUUID->"5c2015b9-2410-634b-ade5-\
-541b74e5c56d"]
+   3.949588483446417*^9, 3.949588660352177*^9}, {3.949588884228775*^9, 
+   3.949588885982645*^9}, {3.9501873177145653`*^9, 3.950187352528579*^9}, {
+   3.9501876419119673`*^9, 3.950187666187213*^9}, {3.950187825381871*^9, 
+   3.950188069378295*^9}, {3.950188199847317*^9, 3.950188261504*^9}, {
+   3.950188329409681*^9, 3.950188332903636*^9}, {3.950188446263913*^9, 
+   3.95018845058832*^9}, {3.9501884808482485`*^9, 3.950188520795956*^9}, {
+   3.950188846134849*^9, 3.950188871285879*^9}, {3.95018893341959*^9, 
+   3.950188942630275*^9}, {3.950205234355257*^9, 3.9502054007473907`*^9}, 
+   3.950205596630064*^9, {3.9502056388255177`*^9, 
+   3.9502056473441696`*^9}},ExpressionUUID->"3c4c1c92-f841-0c45-a0ef-\
+7271af1e497e"],
+
+Cell["\<\
+This toy universe has the relativity of time like our universe. Different \
+observers can experience different time intervals, macro-time,  between the \
+same pair of events. For instance, an observer going from 4 to 13 in this \
+network has five ways of getting there, each with their own different amounts \
+of (macro-) time.  Depending on the path taken it can either take as little \
+as 3 units to as many as 6 macro-time units. This can be thought of \
+stretching the causal network in various ways, without detaching any of the \
+connections. \
+\>", "Text",
+ CellChangeTimes->{{3.949587466046694*^9, 3.949587812071665*^9}, {
+   3.949588483446417*^9, 3.949588660352177*^9}, {3.949588884228775*^9, 
+   3.949588885982645*^9}, {3.9501873177145653`*^9, 3.950187352528579*^9}, {
+   3.9501876419119673`*^9, 3.950187666187213*^9}, {3.950187825381871*^9, 
+   3.950188069378295*^9}, {3.950188199847317*^9, 3.950188261504*^9}, {
+   3.950188329409681*^9, 3.950188332903636*^9}, {3.950188446263913*^9, 
+   3.95018845058832*^9}, {3.9501884808482485`*^9, 3.950188520795956*^9}, {
+   3.950188846134849*^9, 3.950188871285879*^9}, {3.95018893341959*^9, 
+   3.950188942630275*^9}, {3.950205234355257*^9, 3.9502054007473907`*^9}, 
+   3.950205596630064*^9},ExpressionUUID->"d0fbe10b-8bf4-c840-b6f9-\
+8146dd243a2b"],
+
+Cell["\<\
+The connections between the nodes can be thought of as worldlines for some \
+observer. Any events that occur on one observer\[CloseCurlyQuote]s worldline \
+cannot be temporally reversed, as their order is fixed. Macro-time is based \
+on the causal connections between nodes. Nodes that are not connected cannot \
+be differentiated in time, meaning we have no way of defining one of these \
+events as earlier or later than the other. For example, the events 9 and 12 \
+occur on the two different mentioned paths, but are not connected. Except in \
+relation to particular observer, it is meaningless to claim either one as \
+\[OpenCurlyDoubleQuote]earlier\[CloseCurlyDoubleQuote] in macro-time. \
+\>", "Text",
+ CellChangeTimes->{{3.949588891986721*^9, 3.9495890106354527`*^9}, {
+  3.95018739832414*^9, 3.9501874021872206`*^9}, {3.9501875934456024`*^9, 
+  3.9501875954962277`*^9}, {3.9501893217705755`*^9, 3.950189609851016*^9}, {
+  3.950205413318569*^9, 
+  3.950205533672737*^9}},ExpressionUUID->"a469648b-fb11-d340-baab-\
+7e7d453a55a3"]
 }, Open  ]],
 
 Cell["\<\
-FAQ Sessie Intro, 2025.2.12, Kenneth Caviness and Colton Edelbach\
+FAQ Sessie Intro, 2025.03.05, Kenneth Caviness and Colton Edelbach\
 \>", "Subsubsection",
  CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
    3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
    3.940426175923518*^9}, 3.940534869007164*^9, {3.941206015962395*^9, 
-   3.94120601719134*^9}, {3.948371750830275*^9, 3.9483717604797997`*^9}},
+   3.94120601719134*^9}, {3.948371750830275*^9, 3.9483717604798*^9}, {
+   3.95020554379496*^9, 3.9502055519701214`*^9}},
  TextAlignment->Center,ExpressionUUID->"cd4f78e1-fe45-f347-bb36-4d96247b1ada"]
 }, Open  ]]
 },
-WindowSize->{949, 467},
+WindowSize->{949, 461},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
-FrontEndVersion->"13.3 for Microsoft Windows (64-bit) (June 3, 2023)",
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"93c46e0b-dd74-354d-bbe2-9547b66dffd3"
 ]
@@ -1698,50 +1755,51 @@ Cell[847, 28, 730, 15, 19, "Input",ExpressionUUID->"40aa6123-c195-9442-b56e-ee11
  InitializationCell->True],
 Cell[1580, 45, 158, 3, 35, "Text",ExpressionUUID->"052ee0b0-437b-cd44-8add-73a51e6ffb23"],
 Cell[1741, 50, 281, 6, 35, "Text",ExpressionUUID->"954d6371-61dd-894b-90be-29f399f6a344"],
-Cell[2025, 58, 498, 10, 81, "Text",ExpressionUUID->"0f113a7b-c2a7-42f2-8e65-38e2ae62b89d"],
-Cell[2526, 70, 1402, 22, 219, "Text",ExpressionUUID->"4449fef8-edfc-478e-b132-722ed0897960"],
+Cell[2025, 58, 493, 10, 81, "Text",ExpressionUUID->"0f113a7b-c2a7-42f2-8e65-38e2ae62b89d"],
+Cell[2521, 70, 1393, 22, 219, "Text",ExpressionUUID->"4449fef8-edfc-478e-b132-722ed0897960"],
+Cell[3917, 94, 642, 11, 104, "Text",ExpressionUUID->"8778cde1-c668-d74d-938c-b522e228b22c"],
+Cell[4562, 107, 674, 11, 104, "Text",ExpressionUUID->"f028e400-9b3f-5f41-aded-cc50090d7baa"],
 Cell[CellGroupData[{
-Cell[3953, 96, 170, 3, 45, "Subsubsection",ExpressionUUID->"74c3b830-ed8b-6c43-8a18-2eb357315bfe"],
-Cell[4126, 101, 1111, 17, 150, "Text",ExpressionUUID->"2601e5df-3aaf-5045-baa3-11154f4fc046"],
-Cell[5240, 120, 30443, 505, 220, "Input",ExpressionUUID->"b8694437-b265-3144-97a8-e1a4f9fcaf08"],
-Cell[35686, 627, 242, 4, 35, "Text",ExpressionUUID->"ff399bd8-7213-8d42-87a0-409224cd5f1e"],
-Cell[35931, 633, 754, 12, 104, "Text",ExpressionUUID->"15d1c0e7-f04e-5840-a228-20264dd14b1c"]
+Cell[5261, 122, 166, 3, 45, "Subsubsection",ExpressionUUID->"74c3b830-ed8b-6c43-8a18-2eb357315bfe"],
+Cell[5430, 127, 1108, 17, 150, "Text",ExpressionUUID->"2601e5df-3aaf-5045-baa3-11154f4fc046"],
+Cell[6541, 146, 30443, 505, 220, "Input",ExpressionUUID->"b8694437-b265-3144-97a8-e1a4f9fcaf08"],
+Cell[36987, 653, 240, 4, 35, "Text",ExpressionUUID->"ff399bd8-7213-8d42-87a0-409224cd5f1e"],
+Cell[37230, 659, 750, 12, 104, "Text",ExpressionUUID->"15d1c0e7-f04e-5840-a228-20264dd14b1c"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36722, 650, 177, 3, 45, "Subsubsection",ExpressionUUID->"83390d42-c483-5a44-95b4-e594a9e64132"],
-Cell[36902, 655, 1476, 23, 219, "Text",ExpressionUUID->"a9071d0e-99c3-3a42-a957-8f9a3187c40b"]
+Cell[38017, 676, 175, 3, 45, "Subsubsection",ExpressionUUID->"83390d42-c483-5a44-95b4-e594a9e64132"],
+Cell[38195, 681, 1472, 23, 219, "Text",ExpressionUUID->"a9071d0e-99c3-3a42-a957-8f9a3187c40b"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[38415, 683, 280, 4, 45, "Subsubsection",ExpressionUUID->"83bb0f4d-f94e-5445-b015-216556e8b945"],
-Cell[38698, 689, 587, 11, 58, "Text",ExpressionUUID->"4599bfce-d702-7244-923c-74c25aaa97e6"]
+Cell[39704, 709, 278, 4, 45, "Subsubsection",ExpressionUUID->"83bb0f4d-f94e-5445-b015-216556e8b945"],
+Cell[39985, 715, 585, 11, 58, "Text",ExpressionUUID->"4599bfce-d702-7244-923c-74c25aaa97e6"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[39322, 705, 397, 6, 45, "Subsubsection",ExpressionUUID->"ff502024-2e42-6f49-a2c6-cfb217d9aea5"],
-Cell[39722, 713, 412, 8, 58, "Text",ExpressionUUID->"2701c3b6-f359-3c4d-961d-223cb1be27a9"],
+Cell[40607, 731, 397, 6, 45, "Subsubsection",ExpressionUUID->"ff502024-2e42-6f49-a2c6-cfb217d9aea5"],
+Cell[41007, 739, 860, 14, 104, "Text",ExpressionUUID->"bf917ff3-3585-b34b-a80f-9fc663d484c7"],
 Cell[CellGroupData[{
-Cell[40159, 725, 1076, 20, 28, "Input",ExpressionUUID->"a40d1825-0956-8146-ad7d-8b7cc430c840"],
-Cell[41238, 747, 32497, 662, 193, "Print",ExpressionUUID->"1e78b684-035c-9042-bbd4-e6e1ff1ecbfe"]
+Cell[41892, 757, 1076, 20, 28, "Input",ExpressionUUID->"a40d1825-0956-8146-ad7d-8b7cc430c840"],
+Cell[42971, 779, 32497, 662, 193, "Print",ExpressionUUID->"1e78b684-035c-9042-bbd4-e6e1ff1ecbfe"]
 }, Open  ]],
-Cell[73750, 1412, 808, 13, 127, "Text",ExpressionUUID->"c78afd97-b83b-5343-a18a-f8311a704e0a"],
+Cell[75483, 1444, 808, 13, 127, "Text",ExpressionUUID->"c78afd97-b83b-5343-a18a-f8311a704e0a"],
 Cell[CellGroupData[{
-Cell[74583, 1429, 513, 12, 28, "Input",ExpressionUUID->"35787c8c-00ec-ec41-96ad-c2398a45dbfa"],
-Cell[75099, 1443, 523, 14, 97, "Output",ExpressionUUID->"ac436684-2228-c54c-a9c4-c0ade3759607"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[75659, 1462, 514, 12, 28, "Input",ExpressionUUID->"e8c35bd9-621a-c140-90f3-ff757ed76991"],
-Cell[76176, 1476, 2136, 69, 97, "Output",ExpressionUUID->"14f3880c-4e6a-f045-93f5-4f1e66c94d3e"]
-}, Open  ]],
-Cell[78327, 1548, 156, 3, 28, "Input",ExpressionUUID->"18dbea2c-5757-0243-ac32-994fa3d3dcce"],
-Cell[78486, 1553, 247, 5, 35, "Text",ExpressionUUID->"5d5f3546-4afa-5046-b5ba-d04cc98770f7"],
-Cell[78736, 1560, 2258, 33, 242, "Text",ExpressionUUID->"7c26c312-c1ec-7547-ba7b-4994a95363d0"]
+Cell[76316, 1461, 513, 12, 28, "Input",ExpressionUUID->"35787c8c-00ec-ec41-96ad-c2398a45dbfa"],
+Cell[76832, 1475, 521, 14, 97, "Output",ExpressionUUID->"ac436684-2228-c54c-a9c4-c0ade3759607"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[81031, 1598, 408, 6, 45, "Subsubsection",ExpressionUUID->"f2b51d68-5b03-2d4c-b480-47707a432da9"],
-Cell[81442, 1606, 2335, 33, 334, "Text",ExpressionUUID->"02b3c917-8291-c44e-9de8-b8abef898e4f"],
-Cell[83780, 1641, 892, 14, 127, "Text",ExpressionUUID->"a469648b-fb11-d340-baab-7e7d453a55a3"],
-Cell[84675, 1657, 317, 6, 35, "Text",ExpressionUUID->"5c2015b9-2410-634b-ade5-541b74e5c56d"]
+Cell[77390, 1494, 512, 12, 28, "Input",ExpressionUUID->"e8c35bd9-621a-c140-90f3-ff757ed76991"],
+Cell[77905, 1508, 2134, 69, 97, "Output",ExpressionUUID->"14f3880c-4e6a-f045-93f5-4f1e66c94d3e"]
 }, Open  ]],
-Cell[85007, 1666, 465, 7, 45, "Subsubsection",ExpressionUUID->"cd4f78e1-fe45-f347-bb36-4d96247b1ada"]
+Cell[80054, 1580, 3105, 44, 288, "Text",ExpressionUUID->"44ec7bf9-a312-d547-a9cc-e4666d435eb7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[83196, 1629, 408, 6, 45, "Subsubsection",ExpressionUUID->"f2b51d68-5b03-2d4c-b480-47707a432da9"],
+Cell[83607, 1637, 1587, 24, 150, "Text",ExpressionUUID->"02b3c917-8291-c44e-9de8-b8abef898e4f"],
+Cell[85197, 1663, 1022, 16, 81, "Text",ExpressionUUID->"3c4c1c92-f841-0c45-a0ef-7271af1e497e"],
+Cell[86222, 1681, 1309, 20, 104, "Text",ExpressionUUID->"d0fbe10b-8bf4-c840-b6f9-8146dd243a2b"],
+Cell[87534, 1703, 1045, 16, 127, "Text",ExpressionUUID->"a469648b-fb11-d340-baab-7e7d453a55a3"]
+}, Open  ]],
+Cell[88594, 1722, 513, 8, 45, "Subsubsection",ExpressionUUID->"cd4f78e1-fe45-f347-bb36-4d96247b1ada"]
 }, Open  ]]
 }
 ]
