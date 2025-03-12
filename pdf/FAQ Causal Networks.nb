@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     98198,       1903]
+NotebookDataLength[     98197,       1903]
 NotebookOptionsPosition[     94482,       1841]
-NotebookOutlinePosition[     94890,       1857]
-CellTagsIndexPosition[     94847,       1854]
+NotebookOutlinePosition[     94889,       1857]
+CellTagsIndexPosition[     94846,       1854]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1839,8 +1839,8 @@ FAQ Sessie Intro, 2025.03.05, Kenneth Caviness and Colton Edelbach\
  TextAlignment->Center,ExpressionUUID->"cd4f78e1-fe45-f347-bb36-4d96247b1ada"]
 }, Open  ]]
 },
-WindowSize->{1440, 741.75},
-WindowMargins->{{1434, Automatic}, {Automatic, -6}},
+WindowSize->{1428, 735.75},
+WindowMargins->{{1440, Automatic}, {Automatic, 0}},
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"93c46e0b-dd74-354d-bbe2-9547b66dffd3"
