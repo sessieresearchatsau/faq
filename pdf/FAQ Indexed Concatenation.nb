@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    288729,       5437]
-NotebookOptionsPosition[    285851,       5388]
-NotebookOutlinePosition[    286251,       5404]
-CellTagsIndexPosition[    286208,       5401]
+NotebookDataLength[    293951,       5605]
+NotebookOptionsPosition[    291073,       5556]
+NotebookOutlinePosition[    291481,       5572]
+CellTagsIndexPosition[    291438,       5569]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -3839,9 +3839,9 @@ ACBzkAAAAADIHCQAAAAAstZarXUcb8syr+tj256fN033Ybjue3eQAAAAAP7Y
 cZBKKZdv9e4gAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAMDPvQDdfIOB
     "], {{0, 331.5}, {779., 0}}, {0, 255},
-    RasterInterpolation -> "High",
     ColorFunction->RGBColor,
-    ImageResolution->{144., 144.}],
+    ImageResolution->{144., 144.},
+    RasterInterpolation->"High"],
    BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
    Selectable->False],
   DefaultBaseStyle->"ImageGraphics",
@@ -4798,9 +4798,9 @@ Cell[BoxData[{
    3.945895209006925*^9}, {3.947183188784174*^9, 3.9471832797152405`*^9}, {
    3.947183321676976*^9, 3.947183377743099*^9}, 3.947183666064619*^9, {
    3.947183747126585*^9, 3.947183806028948*^9}, {3.94718392436545*^9, 
-   3.9471839292817917`*^9}, {3.9519916470821767`*^9, 
-   3.9519917369266324`*^9}, {3.9519918142016096`*^9, 3.9519918551662064`*^9}},
- CellLabel->"In[20]:=",ExpressionUUID->"ec84fbc5-8218-44a4-be52-c7024376ef55"],
+   3.9471839292817917`*^9}, {3.9519916470821776`*^9, 3.951991736926633*^9}, {
+   3.951991814201609*^9, 3.951991855166207*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"ec84fbc5-8218-44a4-be52-c7024376ef55"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -4905,9 +4905,10 @@ Cell[BoxData[
    RowBox[{"48", "\[Rule]", "61"}], ",", 
    RowBox[{"49", "\[Rule]", "50"}], ",", 
    RowBox[{"49", "\[Rule]", "50"}]}], "}"}]], "Output",
- CellChangeTimes->{3.9519918574263535`*^9},
- CellLabel->"Out[25]=",ExpressionUUID->"9526154e-0ecb-40ff-876f-778f53ecfa9b"]
-}, Open  ]],
+ CellChangeTimes->{
+  3.9519918574263544`*^9, {3.9525959031282425`*^9, 3.952595903256405*^9}},
+ CellLabel->"Out[14]=",ExpressionUUID->"d60cb38d-4d2c-4147-951c-21db2254f52b"]
+}, {2}]],
 
 Cell["\<\
 The data listed above represents the first 100 edges of the graph. 1 -> 2 \
@@ -4915,12 +4916,17 @@ means a connection between vertices 1 and 2.  Taking the differences of the \
 vertex numbers for each edge gives the edge difference set list (EDSL). \
 \>", "Text",
  CellChangeTimes->{{3.951991776957095*^9, 3.951991801815028*^9}, {
-   3.951991908130657*^9, 3.9519919998064766`*^9}, 3.9519930899704137`*^9, {
-   3.9519950271923885`*^9, 3.951995033243985*^9}, {3.9519951122436295`*^9, 
+   3.951991908130657*^9, 3.9519919998064766`*^9}, 3.951993089970414*^9, {
+   3.9519950271923885`*^9, 3.951995033243985*^9}, {3.951995112243629*^9, 
    3.9519951462263055`*^9}, {3.951995258744638*^9, 3.95199526661215*^9}, {
-   3.9519954447807255`*^9, 3.951995459122242*^9}, {3.951995662892049*^9, 
-   3.9519956642354946`*^9}},ExpressionUUID->"004bc8d9-06f8-4449-8d4b-\
+   3.951995444780725*^9, 3.951995459122242*^9}, {3.951995662892049*^9, 
+   3.951995664235494*^9}},ExpressionUUID->"004bc8d9-06f8-4449-8d4b-\
 84f9590aff89"],
+
+Cell["This shows how the edges correspond to sets in the EDSL. ", "Text",
+ CellChangeTimes->{{3.9519921255582223`*^9, 
+  3.9519921417541437`*^9}},ExpressionUUID->"b8f386e7-1c8f-ec4a-a221-\
+20b7bd08d19a"],
 
 Cell[CellGroupData[{
 
@@ -4951,12 +4957,12 @@ Cell[BoxData[
    RowBox[{"Alignment", "->", "Left"}], ",", " ", 
    RowBox[{"Dividers", "->", "All"}]}], "]"}]], "Input",
  CellChangeTimes->{{3.9419164829838943`*^9, 3.9419165320066204`*^9}, {
-   3.9419165728715496`*^9, 3.9419166342510395`*^9}, {3.9419166706127777`*^9, 
-   3.9419166732624664`*^9}, {3.941916705411333*^9, 3.9419169583114796`*^9}, {
-   3.9419172015221634`*^9, 3.9419172394259434`*^9}, {3.941917834191433*^9, 
-   3.941917845882408*^9}, {3.9422294633884506`*^9, 3.942229505437172*^9}, 
+   3.9419165728715496`*^9, 3.941916634251039*^9}, {3.941916670612778*^9, 
+   3.9419166732624664`*^9}, {3.941916705411333*^9, 3.94191695831148*^9}, {
+   3.941917201522164*^9, 3.941917239425944*^9}, {3.941917834191433*^9, 
+   3.941917845882408*^9}, {3.94222946338845*^9, 3.942229505437172*^9}, 
    3.947275561594866*^9, {3.9519922680818796`*^9, 3.9519922871589804`*^9}, {
-   3.9519923232018366`*^9, 3.951992354286287*^9}, {3.951992660583626*^9, 
+   3.951992323201836*^9, 3.951992354286287*^9}, {3.951992660583626*^9, 
    3.9519927029439626`*^9}, {3.951992748009677*^9, 3.951992836106506*^9}},
  CellLabel->"In[42]:=",ExpressionUUID->"8edb90da-09b1-4b9d-b1fd-9be5f63fe703"],
 
@@ -5027,22 +5033,20 @@ Cell[BoxData[
   "Grid"]], "Output",
  CellChangeTimes->{3.951992906311247*^9},
  CellLabel->"Out[42]=",ExpressionUUID->"552cb1ab-02b8-4c69-9c08-d2b8000bdf37"]
-}, Open  ]],
+}, {2}]],
 
 Cell["\<\
 For this graph, the first 100 entries in the EDSL are given below. \
 \>", "Text",
- CellChangeTimes->{{3.9519930922447124`*^9, 
+ CellChangeTimes->{{3.951993092244713*^9, 
   3.951993099339901*^9}},ExpressionUUID->"fe42ae3a-f7f3-4320-9b9f-\
 78ba8c8e7604"],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"EDSL1", "[", 
   RowBox[{"[", 
    RowBox[{"1", ";;", "100"}], "]"}], "]"}]], "Input",
- CellChangeTimes->{{3.951992008868312*^9, 3.9519920324446754`*^9}},
+ CellChangeTimes->{{3.951992008868312*^9, 3.951992032444675*^9}},
  CellLabel->"In[28]:=",ExpressionUUID->"b20b7a59-3853-4526-8f3e-6d0acc64cead"],
 
 Cell[BoxData[
@@ -5073,14 +5077,28 @@ Cell[BoxData[
     RowBox[{"1", ",", "7"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"1", ",", "1"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "12"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "12"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "12"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "12"}], "}"}], ",", 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "12"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "12"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "12"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "12"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], ",", 
    RowBox[{"{", "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"1", ",", "1", ",", "2", ",", "2"}], "}"}], ",", 
@@ -5092,18 +5110,40 @@ Cell[BoxData[
     RowBox[{"1", ",", "9"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"1", ",", "1"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "14"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "14"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "14"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "14"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "14"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "14"}], "}"}], ",", 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "14"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "14"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "14"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "14"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "14"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "14"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], ",", 
    RowBox[{"{", "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"1", ",", "1", ",", "2", ",", "2"}], "}"}], ",", 
@@ -5115,22 +5155,52 @@ Cell[BoxData[
     RowBox[{"1", ",", "11"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"1", ",", "1"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"1", ",", "16"}], "}"}], ",", 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[",",
+    Background->RGBColor[1, 1, 0.85]], 
+   StyleBox[
+    RowBox[{"{", 
+     RowBox[{"1", ",", "16"}], "}"}],
+    Background->RGBColor[1, 1, 0.85]], ",", 
    RowBox[{"{", "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"1", ",", "1", ",", "2", ",", "2"}], "}"}], ",", 
@@ -5240,64 +5310,166 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{"1", ",", "1", ",", "2", ",", "2"}], "}"}], ",", 
    RowBox[{"{", 
-    RowBox[{"2", ",", "2"}], "}"}]}], "}"}]], "Output",
- CellChangeTimes->{{3.951992010573221*^9, 3.9519920337812605`*^9}},
- CellLabel->"Out[28]=",ExpressionUUID->"05103393-b638-48f7-a223-23bfcca7c2e2"]
-}, Open  ]],
-
-Cell["This shows how the edges correspond to sets in the EDSL. ", "Text",
- CellChangeTimes->{{3.9519921255582232`*^9, 
-  3.9519921417541437`*^9}},ExpressionUUID->"15c70209-74e3-4281-b9bb-\
-5f1ecda1f181"],
+    RowBox[{"2", ",", "2"}], "}"}]}], "}"}]], "Input",
+ CellChangeTimes->{
+  3.95259610037158*^9},ExpressionUUID->"05103393-b638-48f7-a223-23bfcca7c2e2"],
 
 Cell["\<\
 An EDSL of a network having some intrinsic pattern typically contains some \
 duplicate sets, which provides an obvious first step in condensing the \
-network down. If, in a network, we see 4 adjacent copies of {1,12}, 6 copies \
-of {1,14}, and 8 copies of {1,16} we could represent these duplications by  \
+network down. In this EDSL we see 4 adjacent copies of {1,12}, 6 copies of \
+{1,14}, and 8 copies of {1,16} we could represent these duplications by  \
 \[Euro]^4[{1, 12}], \[Euro]^6[{1, 14}], \[Euro]^8[{1, 16}]. By reducing the \
 graph down like this, we can notice other cases. By applying this to our EDSL \
 above, we get the condensed version of the EDSL. \
 \>", "Text",
- CellChangeTimes->{{3.9519959448892756`*^9, 3.951995948598974*^9}, {
-  3.9519960722385635`*^9, 3.9519961149221916`*^9}, {3.95199616416691*^9, 
-  3.951996224456128*^9}, {3.9519962741494937`*^9, 3.9519964898958354`*^9}, {
-  3.9519966576190205`*^9, 
-  3.9519966631435733`*^9}},ExpressionUUID->"0d33546e-3bf1-403f-9dbf-\
+ CellChangeTimes->{{3.951995944889275*^9, 3.951995948598974*^9}, {
+  3.9519960722385635`*^9, 3.951996114922191*^9}, {3.95199616416691*^9, 
+  3.951996224456128*^9}, {3.951996274149494*^9, 3.951996489895835*^9}, {
+  3.9519966576190205`*^9, 3.9519966631435733`*^9}, {3.95259604510804*^9, 
+  3.952596054324217*^9}},ExpressionUUID->"0d33546e-3bf1-403f-9dbf-\
 39f1cfc97c68"],
 
-Cell["\<\
-\:f01d{1, 1, 2, 2}, {2, 2}, {2, 4}, {1, 5}, {1, 1}, \[Euro]^2[{1, 10}], {},
-{1, 1, 2, 2}, {2, 2}, {2, 4}, {1, 7}, {1, 1}, \[Euro]^4{1, 12}], {},
-{1, 1, 2, 2}, {2, 2}, {2, 4}, {1, 9}, {1, 1}, \[Euro]^6[{1, 14}], {},
-{1, 1, 2, 2}, {2, 2}, {2, 4}, {1, 11}, {1, 1}, \[Euro]^8[{1, 16}], {}, \
-\[Ellipsis]\:f028\
-\>", "Text",
- CellChangeTimes->{{3.9519966777139893`*^9, 
-  3.9519967262785673`*^9}},ExpressionUUID->"8b4eac4e-d38e-4f2b-a5fe-\
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"\:f01d", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", " ", "1", ",", " ", "2", ",", " ", "2"}], "}"}]}], 
+     ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "2"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "4"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "5"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "1"}], "}"}], ",", " ", 
+     RowBox[{
+      SuperscriptBox["\[Euro]", "2"], "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", " ", "10"}], "}"}], "]"}], ",", " ", 
+     RowBox[{"{", "}"}], ",", "\n", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "1", ",", " ", "2", ",", " ", "2"}], "}"}], ",", 
+     " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "2"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"2", ",", " ", "4"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "7"}], "}"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", " ", "1"}], "}"}], ",", " ", 
+     RowBox[{
+      SuperscriptBox["\[Euro]", "4"], 
+      RowBox[{"{", 
+       RowBox[{"1", ",", " ", "12"}], "}"}]}]}], "]"}], ",", " ", 
+   RowBox[{"{", "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "1", ",", " ", "2", ",", " ", "2"}], "}"}], ",", 
+   " ", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", " ", "2"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", " ", "4"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "9"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{
+    SuperscriptBox["\[Euro]", "6"], "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", " ", "14"}], "}"}], "]"}], ",", " ", 
+   RowBox[{"{", "}"}], ",", "\n", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "1", ",", " ", "2", ",", " ", "2"}], "}"}], ",", 
+   " ", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", " ", "2"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"2", ",", " ", "4"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "11"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", " ", "1"}], "}"}], ",", " ", 
+   RowBox[{
+    SuperscriptBox["\[Euro]", "8"], "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", " ", "16"}], "}"}], "]"}], ",", " ", 
+   RowBox[{"{", "}"}], ",", " ", "\[Ellipsis]\:f028"}], TraditionalForm]],
+ FormatType->
+  TraditionalForm,ExpressionUUID->"ab190cbc-5a2b-2545-a5d4-93ca7cff75b8"]], \
+"Text",
+ CellChangeTimes->{{3.9519966777139893`*^9, 3.9519967262785673`*^9}, 
+   3.9525961567681675`*^9, {3.9525962550748615`*^9, 
+   3.9525963381839943`*^9}},ExpressionUUID->"8b4eac4e-d38e-4f2b-a5fe-\
 ba7da4f49063"],
 
-Cell["\<\
-After we do this, there is no further reduction that can be done based on \
+Cell[TextData[{
+ "After we do this, there is no further reduction that can be done based on \
 exact duplicates of adjacent sets, but we can see that each 7-element row has \
-a common pattern, with only 3 numbers changin gin each row. In the first row \
-these numbers are 5,2, and 10; and in the kth row, they are 2k + 3, 2k, and \
-2k + 8. Before moving on to the details of the Indexed Concatentaion Noation, \
-the fully reduced EDSL is listed below. \
-\>", "Text",
+a common pattern, with only 3 numbers changing in each row. In the first row \
+these numbers are 5, 2, and 10; and in the second row these numbers are 7, 4, \
+and 12; and in the ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["k", "th"], TraditionalForm]],
+  FormatType->TraditionalForm,ExpressionUUID->
+  "60cd9651-ea66-7c4a-a2c3-81f0df85caef"],
+ " row, they are 2k + 3, 2k, and 2k + 8. Before moving on to the details of \
+the Indexed Concatenation Notation, the fully reduced EDSL is listed below. "
+}], "Text",
  CellChangeTimes->{{3.9519967712099695`*^9, 3.9519967815232534`*^9}, {
-  3.951996837749483*^9, 
-  3.9519969782467084`*^9}},ExpressionUUID->"da7d7293-5f3f-4740-9af1-\
+  3.951996837749483*^9, 3.9519969782467084`*^9}, {3.9525963606131535`*^9, 
+  3.952596400444292*^9}, {3.9525964621994724`*^9, 
+  3.952596534196249*^9}},ExpressionUUID->"da7d7293-5f3f-4740-9af1-\
 98e5e39a0bc2"],
 
-Cell["\<\
-\:f01d \[Euro]k\[DoubleRightTee]1\[Infinity]\:f010{1, 1, 2, 2}, \[Euro]j\
-\[DoubleRightTee]12[{2, 2 j}], {1, 2 k + 3}, {1, 1}, \
-\[Euro]i\[DoubleRightTee]12 k [{1, 2 k + 8}], {}\:f016\:f028\
-\>", "Text",
- CellChangeTimes->{{3.9519969916092978`*^9, 
-  3.951997018089508*^9}},ExpressionUUID->"1ba1b4b2-5ca3-45de-a436-\
-718258cd60aa"],
+Cell[CellGroupData[{
+
+Cell[BoxData["IC1"], "Input",
+ CellChangeTimes->{{3.952596597301853*^9, 3.952596597977436*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"04df0aa8-b07c-ce4c-a7d9-d95447c2afc9"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  TagBox[
+   RowBox[{
+    UnderoverscriptBox["\[Euro]", 
+     RowBox[{"k", "\[DoubleRightTee]", "1"}], "18"], "[", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1", ",", "2", ",", "2"}], "}"}], ",", 
+    TagBox[
+     RowBox[{
+      UnderoverscriptBox["\[Euro]", 
+       RowBox[{"j", "\[DoubleRightTee]", "1"}], "2"], "[", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", 
+        RowBox[{"2", " ", "j"}]}], "}"}], "]"}],
+     DisplayForm], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", 
+      RowBox[{"3", "+", 
+       RowBox[{"2", " ", "k"}]}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "1"}], "}"}], ",", 
+    TagBox[
+     RowBox[{
+      OverscriptBox["\[Euro]", 
+       RowBox[{"2", " ", "k"}]], "[", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", 
+        RowBox[{"8", "+", 
+         RowBox[{"2", " ", "k"}]}]}], "}"}], "]"}],
+     DisplayForm], ",", 
+    RowBox[{"{", "}"}], "]"}],
+   DisplayForm], "}"}]], "Output",
+ CellChangeTimes->{3.9525966009516907`*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"c823ef63-ef73-7e42-96c1-184ec6733ddd"]
+}, Open  ]],
 
 Cell[TextData[{
  "Note that the index variables, ",
@@ -5314,21 +5486,16 @@ summation, ",
  StyleBox["k ",
   FontSlant->"Italic"],
  "take on the initial value of 1 and are incremented until the specified \
-final values are reached. In this case its 2k, 2 and infinity. Assuming the \
-pattern has been well established and will continue indefinitely, we have \
+final values are reached. In this case its 2k, 2 and \[Infinity]. Assuming \
+the pattern has been well established and will continue indefinitely, we have \
 succeeded in summarizing the entire infinite network\[CloseCurlyQuote]s EDSL \
-in one to two lines!"
+in one to two lines! Similarly, most causal networks generated by a Sessie \
+Ruleset can be summarized by this notation. "
 }], "Text",
- CellChangeTimes->{{3.9519970280632324`*^9, 
-  3.951997173288564*^9}},ExpressionUUID->"f6972c45-a4a2-4388-9c7a-\
+ CellChangeTimes->{{3.9519970280632324`*^9, 3.951997173288564*^9}, {
+  3.952596638161703*^9, 3.952596649822775*^9}, {3.9525966876956196`*^9, 
+  3.9525967210797234`*^9}},ExpressionUUID->"f6972c45-a4a2-4388-9c7a-\
 de68fd3161d9"],
-
-Cell["\<\
-Describe how the IC can describe an entire (infinite! maybe multiply \
-infinite) causal network generated by a Sessie RuleSet.\
-\>", "Text",
- CellChangeTimes->{{3.940421961564148*^9, 
-  3.9404219787545*^9}},ExpressionUUID->"a888ddda-2fde-4d45-bcf2-b159434e5eb1"],
 
 Cell["Still unknown:", "Text",
  CellChangeTimes->{{3.940421961564148*^9, 
@@ -5348,11 +5515,11 @@ reduced form?  (Either one)
 (tagged evolution) of the Sessie?
 \[Bullet] Can IC be applied in general to repeating strings?
 \[Bullet] Can IC be applied to musical notation?  \"What is the IC reduced \
-form of Beethoven's Nineth?\" (Or of one of Bach's Concertos?\
+form of Beethoven's Ninth?\" (Or of one of Bach's Concertos?\
 \>", "Text",
  CellChangeTimes->{{3.940421961564148*^9, 3.94042200775197*^9}, 
-   3.940422075606901*^9, {3.9519971910309567`*^9, 
-   3.9519972146101923`*^9}},ExpressionUUID->"61f405a7-cdaf-40f0-afe6-\
+   3.940422075606901*^9, {3.951997191030957*^9, 3.951997214610193*^9}, 
+   3.952596754190634*^9},ExpressionUUID->"61f405a7-cdaf-40f0-afe6-\
 791a0de5c3e6"],
 
 Cell["Perhaps more fundamentally,", "Text",
@@ -5377,18 +5544,19 @@ everyone to suggest improvements.
 62a5da43a3d8"],
 
 Cell["\<\
-FAQ Sessie Intro, 2025.2.12, Kenneth Caviness and Colton Edelbach\
+FAQ Sessie Intro, 2025.4.2, Kenneth Caviness and Colton Edelbach\
 \>", "Affiliation",
  CellChangeTimes->{{3.939995416333565*^9, 3.9399955199292727`*^9}, {
    3.9399960732544947`*^9, 3.939996081692621*^9}, {3.94042617528881*^9, 
    3.940426175923518*^9}, 3.940534869007164*^9, {3.941206015962395*^9, 
-   3.94120601719134*^9}, {3.948371750830275*^9, 3.9483717604797997`*^9}},
+   3.94120601719134*^9}, {3.948371750830275*^9, 3.9483717604798*^9}, {
+   3.9525968202316647`*^9, 3.952596823848255*^9}},
  TextAlignment->Center,ExpressionUUID->"eab1f1b7-bbc9-c84f-94c7-ad273494a3f9"]
 }, Open  ]]
 },
-WindowSize->{473, 472},
-WindowMargins->{{Automatic, -5}, {Automatic, 0}},
-FrontEndVersion->"13.0 for Microsoft Windows (64-bit) (February 4, 2022)",
+WindowSize->{1440, 741.75},
+WindowMargins->{{1434, Automatic}, {Automatic, -6}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"07bbe7e6-18f0-204a-9911-4b316452e5f4"
 ]
@@ -5404,40 +5572,40 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 367, 6, 160, "Title",ExpressionUUID->"1d19f40f-dc27-4e31-8ef4-edc93b0c3d23"],
+Cell[580, 22, 367, 6, 98, "Title",ExpressionUUID->"1d19f40f-dc27-4e31-8ef4-edc93b0c3d23"],
 Cell[950, 30, 730, 15, 19, "Input",ExpressionUUID->"d51087e2-8085-a240-8667-02a3f4ca87e6",
  CellOpen->False,
  InitializationCell->True],
-Cell[1683, 47, 421, 8, 104, "Text",ExpressionUUID->"98e31eeb-8633-4d4a-af97-5cbe13306c14"],
-Cell[2107, 57, 292, 5, 68, "Text",ExpressionUUID->"19c72ff8-2d3b-4702-94de-d1d6fa03d314"],
-Cell[2402, 64, 230669, 3788, 151, "Input",ExpressionUUID->"00cdb9f0-7766-4549-895b-bfb7089d3581"],
+Cell[1683, 47, 421, 8, 58, "Text",ExpressionUUID->"98e31eeb-8633-4d4a-af97-5cbe13306c14"],
+Cell[2107, 57, 292, 5, 40, "Text",ExpressionUUID->"19c72ff8-2d3b-4702-94de-d1d6fa03d314"],
+Cell[2402, 64, 230667, 3788, 344, "Input",ExpressionUUID->"00cdb9f0-7766-4549-895b-bfb7089d3581"],
 Cell[CellGroupData[{
-Cell[233096, 3856, 31052, 946, 1966, "Input",ExpressionUUID->"ec84fbc5-8218-44a4-be52-c7024376ef55",
+Cell[233094, 3856, 31045, 946, 635, "Input",ExpressionUUID->"ec84fbc5-8218-44a4-be52-c7024376ef55",
  InitializationCell->True],
-Cell[264151, 4804, 4342, 104, 356, "Output",ExpressionUUID->"9526154e-0ecb-40ff-876f-778f53ecfa9b"]
-}, Open  ]],
-Cell[268508, 4911, 704, 11, 104, "Text",ExpressionUUID->"004bc8d9-06f8-4449-8d4b-84f9590aff89"],
+Cell[264142, 4804, 4393, 105, 109, "Output",ExpressionUUID->"d60cb38d-4d2c-4147-951c-21db2254f52b"]
+}, {2}]],
+Cell[268547, 4912, 696, 11, 58, "Text",ExpressionUUID->"004bc8d9-06f8-4449-8d4b-84f9590aff89"],
+Cell[269246, 4925, 203, 3, 35, "Text",ExpressionUUID->"b8f386e7-1c8f-ec4a-a221-20b7bd08d19a"],
 Cell[CellGroupData[{
-Cell[269237, 4926, 1680, 34, 143, "Input",ExpressionUUID->"8edb90da-09b1-4b9d-b1fd-9be5f63fe703"],
-Cell[270920, 4962, 2236, 66, 330, "Output",ExpressionUUID->"552cb1ab-02b8-4c69-9c08-d2b8000bdf37"]
-}, Open  ]],
-Cell[273171, 5031, 219, 5, 58, "Text",ExpressionUUID->"fe42ae3a-f7f3-4320-9b9f-78ba8c8e7604"],
+Cell[269474, 4932, 1664, 34, 86, "Input",ExpressionUUID->"8edb90da-09b1-4b9d-b1fd-9be5f63fe703"],
+Cell[271141, 4968, 2236, 66, 62, "Output",ExpressionUUID->"552cb1ab-02b8-4c69-9c08-d2b8000bdf37"]
+}, {2}]],
+Cell[273389, 5037, 217, 5, 35, "Text",ExpressionUUID->"fe42ae3a-f7f3-4320-9b9f-78ba8c8e7604"],
+Cell[273609, 5044, 253, 5, 28, "Input",ExpressionUUID->"b20b7a59-3853-4526-8f3e-6d0acc64cead"],
+Cell[273865, 5051, 7813, 263, 124, "Input",ExpressionUUID->"05103393-b638-48f7-a223-23bfcca7c2e2"],
+Cell[281681, 5316, 902, 14, 81, "Text",ExpressionUUID->"0d33546e-3bf1-403f-9dbf-39f1cfc97c68"],
+Cell[282586, 5332, 2700, 76, 123, "Text",ExpressionUUID->"8b4eac4e-d38e-4f2b-a5fe-ba7da4f49063"],
+Cell[285289, 5410, 967, 18, 81, "Text",ExpressionUUID->"da7d7293-5f3f-4740-9af1-98e5e39a0bc2"],
 Cell[CellGroupData[{
-Cell[273415, 5040, 255, 5, 28, "Input",ExpressionUUID->"b20b7a59-3853-4526-8f3e-6d0acc64cead"],
-Cell[273673, 5047, 6110, 197, 375, "Output",ExpressionUUID->"05103393-b638-48f7-a223-23bfcca7c2e2"]
+Cell[286281, 5432, 174, 2, 28, "Input",ExpressionUUID->"04df0aa8-b07c-ce4c-a7d9-d95447c2afc9"],
+Cell[286458, 5436, 1081, 34, 49, "Output",ExpressionUUID->"c823ef63-ef73-7e42-96c1-184ec6733ddd"]
 }, Open  ]],
-Cell[279798, 5247, 203, 3, 35, "Text",ExpressionUUID->"15c70209-74e3-4281-b9bb-5f1ecda1f181"],
-Cell[280004, 5252, 870, 14, 219, "Text",ExpressionUUID->"0d33546e-3bf1-403f-9dbf-39f1cfc97c68"],
-Cell[280877, 5268, 459, 9, 111, "Text",ExpressionUUID->"8b4eac4e-d38e-4f2b-a5fe-ba7da4f49063"],
-Cell[281339, 5279, 638, 11, 196, "Text",ExpressionUUID->"da7d7293-5f3f-4740-9af1-98e5e39a0bc2"],
-Cell[281980, 5292, 341, 7, 65, "Text",ExpressionUUID->"1ba1b4b2-5ca3-45de-a436-718258cd60aa"],
-Cell[282324, 5301, 797, 22, 196, "Text",ExpressionUUID->"f6972c45-a4a2-4388-9c7a-de68fd3161d9"],
-Cell[283124, 5325, 272, 5, 81, "Text",ExpressionUUID->"a888ddda-2fde-4d45-bcf2-b159434e5eb1"],
-Cell[283399, 5332, 158, 3, 35, "Text",ExpressionUUID->"fa5d1ab0-03fe-4f4b-b1f6-0120a48898b5"],
-Cell[283560, 5337, 944, 18, 334, "Text",ExpressionUUID->"61f405a7-cdaf-40f0-afe6-791a0de5c3e6"],
-Cell[284507, 5357, 219, 4, 35, "Text",ExpressionUUID->"3ecf3602-6024-4936-8161-c495b8d6b118"],
-Cell[284729, 5363, 640, 13, 242, "Text",ExpressionUUID->"055052a2-a74f-4e8a-805f-62a5da43a3d8"],
-Cell[285372, 5378, 463, 7, 55, "Affiliation",ExpressionUUID->"eab1f1b7-bbc9-c84f-94c7-ad273494a3f9"]
+Cell[287554, 5473, 1000, 24, 81, "Text",ExpressionUUID->"f6972c45-a4a2-4388-9c7a-de68fd3161d9"],
+Cell[288557, 5499, 158, 3, 35, "Text",ExpressionUUID->"fa5d1ab0-03fe-4f4b-b1f6-0120a48898b5"],
+Cell[288718, 5504, 961, 18, 173, "Text",ExpressionUUID->"61f405a7-cdaf-40f0-afe6-791a0de5c3e6"],
+Cell[289682, 5524, 219, 4, 35, "Text",ExpressionUUID->"3ecf3602-6024-4936-8161-c495b8d6b118"],
+Cell[289904, 5530, 640, 13, 150, "Text",ExpressionUUID->"055052a2-a74f-4e8a-805f-62a5da43a3d8"],
+Cell[290547, 5545, 510, 8, 31, "Affiliation",ExpressionUUID->"eab1f1b7-bbc9-c84f-94c7-ad273494a3f9"]
 }, Open  ]]
 }
 ]
